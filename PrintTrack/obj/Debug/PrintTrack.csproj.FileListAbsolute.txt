@@ -1,0 +1,557 @@
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Licensing.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\ZstdSharp.dll
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.pdb
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.AssemblyReference.cache
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Login.resources
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Properties.Resources.resources
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.GenerateResource.cache
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.licenses
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CoreCompileInputs.cache
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.Up2Date
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
+F:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Licensing.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\ZstdSharp.dll
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.pdb
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.AssemblyReference.cache
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Login.resources
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Properties.Resources.resources
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.GenerateResource.cache
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.licenses
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CoreCompileInputs.cache
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CopyComplete
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
+D:\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\ZstdSharp.dll
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.pdb
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.AssemblyReference.cache
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Login.resources
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Properties.Resources.resources
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.GenerateResource.cache
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.licenses
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CopyComplete
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
+C:\Users\Marcos Daniel\Documents\PrintTrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Licensing.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\ZstdSharp.dll
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.pdb
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.AssemblyReference.cache
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Login.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Properties.Resources.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.GenerateResource.cache
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.licenses
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.MenuFrm.resources
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Licensing.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\ZstdSharp.dll
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\BouncyCastle.Cryptography.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.Dataviz.WinForms.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCheckBox.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuColorTransition.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDataGridView.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuFormDock.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGradientPanel.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuGroupBox.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuImageButton.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRadioButton.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuRating.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuScrollBar.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSeparator.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShadowPanel.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuShapes.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuSnackbar.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToggleSwitch.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuToolTip.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.pdb
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Google.Protobuf.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Compression.LZ4.Streams.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\K4os.Hash.xxHash.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\MySql.Data.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Buffers.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Configuration.ConfigurationManager.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.IO.Pipelines.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Memory.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Numerics.Vectors.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Printrack\PrintTrack\PrintTrack\bin\Debug\System.Threading.Tasks.Extensions.xml
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.AssemblyReference.cache
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.config
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.MenuFrm.resources
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Login.resources
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Properties.Resources.resources
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.GenerateResource.cache
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.licenses
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.CoreCompileInputs.cache
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.Up2Date
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
+F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.DashBoard.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.DashBoard.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.ClientesFrm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.config
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.Up2Date
