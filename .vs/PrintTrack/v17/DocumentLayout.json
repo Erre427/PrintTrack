@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|c:\\users\\marcos daniel\\documents\\printrack\\printtrack\\printtrack\\forms\\clientesfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\clientesfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|c:\\users\\marcos daniel\\documents\\printrack\\printtrack\\printtrack\\forms\\f_clientes\\clientesfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\f_clientes\\clientesfrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\forms\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\forms\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\menufrm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\forms\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\entidades\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\printtrack\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D24AF07A-4B65-41F9-BD7A-1D87A893A8F7}|PrintTrack\\PrintTrack.csproj|solutionrelative:printtrack\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,95 +36,49 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ClientesFrm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\ClientesFrm.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Forms\\ClientesFrm.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\ClientesFrm.cs [Design]",
-              "RelativeToolTip": "PrintTrack\\Forms\\ClientesFrm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\F_Clientes\\ClientesFrm.cs",
+              "RelativeDocumentMoniker": "PrintTrack\\Forms\\F_Clientes\\ClientesFrm.cs",
+              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\F_Clientes\\ClientesFrm.cs [Design]",
+              "RelativeToolTip": "PrintTrack\\Forms\\F_Clientes\\ClientesFrm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T21:31:05.977Z",
+              "WhenOpened": "2025-10-02T07:01:01.653Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MenuFrm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\MenuFrm.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Forms\\MenuFrm.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\MenuFrm.cs [Design]",
-              "RelativeToolTip": "PrintTrack\\Forms\\MenuFrm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T21:21:44.379Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DashBoard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\DashBoard.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Forms\\DashBoard.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\DashBoard.cs [Design]",
-              "RelativeToolTip": "PrintTrack\\Forms\\DashBoard.cs [Design]",
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "PrintTrack\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.Designer.cs",
+              "RelativeToolTip": "PrintTrack\\Login.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T21:12:58.797Z"
+              "WhenOpened": "2025-09-23T20:44:35.52Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.cs",
+              "RelativeDocumentMoniker": "PrintTrack\\Login.cs",
+              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.cs [Design]",
+              "RelativeToolTip": "PrintTrack\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T02:20:36.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.cs",
               "RelativeDocumentMoniker": "PrintTrack\\Login.cs",
               "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Login.cs",
               "RelativeToolTip": "PrintTrack\\Login.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAD4v0gAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T07:49:32.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DashBoard.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\DashBoard.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Forms\\DashBoard.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\DashBoard.cs",
-              "RelativeToolTip": "PrintTrack\\Forms\\DashBoard.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIAwwBQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T07:46:46.755Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuFrm.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\MenuFrm.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Forms\\MenuFrm.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Forms\\MenuFrm.cs",
-              "RelativeToolTip": "PrintTrack\\Forms\\MenuFrm.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowDwAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T07:02:03.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Entidades\\Roles.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Entidades\\Roles.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Entidades\\Roles.cs",
-              "RelativeToolTip": "PrintTrack\\Entidades\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T06:17:18.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Entidades\\Usuarios.cs",
-              "RelativeDocumentMoniker": "PrintTrack\\Entidades\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\Marcos Daniel\\Documents\\Printrack\\PrintTrack\\PrintTrack\\Entidades\\Usuarios.cs",
-              "RelativeToolTip": "PrintTrack\\Entidades\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T06:09:08.958Z"
             }
           ]
         }

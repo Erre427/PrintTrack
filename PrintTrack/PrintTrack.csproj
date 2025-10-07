@@ -205,11 +205,11 @@
     <Compile Include="Entidades\Clientes.cs" />
     <Compile Include="Entidades\Roles.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
-    <Compile Include="Forms\ClientesFrm.cs">
+    <Compile Include="Forms\AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ClientesFrm.Designer.cs">
-      <DependentUpon>ClientesFrm.cs</DependentUpon>
+    <Compile Include="Forms\AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DashBoard.cs">
       <SubType>Form</SubType>
@@ -217,11 +217,41 @@
     <Compile Include="Forms\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Clientes\ClientesFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\ClientesFrm.Designer.cs">
+      <DependentUpon>ClientesFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\DetallesClientes_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\DetallesClientes_Frm.Designer.cs">
+      <DependentUpon>DetallesClientes_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\EditarCliente_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\EditarCliente_Frm.Designer.cs">
+      <DependentUpon>EditarCliente_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\NuevoCliente_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Clientes\NuevoCliente_Frm.Designer.cs">
+      <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\MenuFrm.Designer.cs">
       <DependentUpon>MenuFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -234,15 +264,30 @@
     <Compile Include="Repositorios\ClientesRepositorio.cs" />
     <Compile Include="Repositorios\ConexionDB.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
-    <Compile Include="Repositorios\Utilidades.cs" />
-    <EmbeddedResource Include="Forms\ClientesFrm.resx">
-      <DependentUpon>ClientesFrm.cs</DependentUpon>
+    <Compile Include="Repositorios\VerificarUsuario.cs" />
+    <EmbeddedResource Include="Forms\AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Clientes\ClientesFrm.resx">
+      <DependentUpon>ClientesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Clientes\DetallesClientes_Frm.resx">
+      <DependentUpon>DetallesClientes_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Clientes\EditarCliente_Frm.resx">
+      <DependentUpon>EditarCliente_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Clientes\NuevoCliente_Frm.resx">
+      <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
       <DependentUpon>MenuFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -286,6 +331,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-tablero-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo-cerrado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo-cerrado1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ojo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen_PrintTrack.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

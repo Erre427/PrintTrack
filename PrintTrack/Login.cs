@@ -1,5 +1,6 @@
 ﻿using PrintTrack.Entidades;
 using PrintTrack.Forms;
+using PrintTrack.Properties;
 using PrintTrack.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace PrintTrack
 {
     public partial class Login : Form
     {
+        private bool pboxOjoDown = false;
         public Login()
         {
             InitializeComponent();
@@ -33,15 +35,16 @@ namespace PrintTrack
             UsuarioRepositorio repo = new UsuarioRepositorio();
             Usuarios usuarioencontrado = repo.Login(usuario, contraseña);
 
-            if(usuarioencontrado != null)
+            if (usuarioencontrado != null)
             {
                 this.Hide();
+                VerificarUsuario.SetUsuarioActual(usuarioencontrado);
                 MenuFrm menu = new MenuFrm(usuarioencontrado);
                 menu.Show();
             }
             else
             {
-                MessageBox.Show("Usuario o Clave incorrectos");
+                lblError.Visible = true;
             }
         }
 
@@ -49,5 +52,44 @@ namespace PrintTrack
         {
             Application.Exit();
         }
+
+        private void pboxOjo_MouseDown(object sender, MouseEventArgs e)
+        {
+            pboxOjoDown = true;
+            pboxOjo.Image = Properties.Resources.ojo;
+            if (contraseñaTxt.PasswordChar == '*')
+            {
+                contraseñaTxt.PasswordChar = '\0';
+            }
+        }
+
+        private void pboxOjo_MouseUp(object sender, MouseEventArgs e)
+        {
+            pboxOjoDown = false;
+            pboxOjo.Image = Properties.Resources.ojo_cerrado;
+            if (contraseñaTxt.PasswordChar == '\0')
+            {
+                contraseñaTxt.PasswordChar = '*';
+            }
+        }
+
+        private void usuariotxt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                contraseñaTxt.Focus();
+            }
+        }
+
+        private void contraseñaTxt_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                iniciarSesionBtn_Click(sender, e);
+            }
+        }
     }
+
+
+    
 }

@@ -1,4 +1,5 @@
 ﻿using PrintTrack.Entidades;
+using PrintTrack.Forms.F_Clientes;
 using PrintTrack.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -69,7 +70,7 @@ namespace PrintTrack.Forms
 
         public void btnClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel( new ClientesFrm());
+            AbrirFormularioEnPanel(new ClientesFrm());
         }
     }
 }

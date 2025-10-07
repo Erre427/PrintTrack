@@ -552,6 +552,10 @@ F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
 F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
 F:\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.DashBoard.resources
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.DashBoard.resources
-C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.ClientesFrm.resources
-C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe.config
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.Up2Date
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.AdminLogin.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Clientes.ClientesFrm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Clientes.NuevoCliente_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Clientes.DetallesClientes_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.SplashScreen.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Clientes.EditarCliente_Frm.resources

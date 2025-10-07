@@ -200,9 +200,9 @@
             // 
             // clientesBtn
             // 
-            this.clientesBtn.BackColor = System.Drawing.Color.SeaGreen;
-            this.clientesBtn.color = System.Drawing.Color.SeaGreen;
-            this.clientesBtn.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.clientesBtn.BackColor = System.Drawing.Color.RoyalBlue;
+            this.clientesBtn.color = System.Drawing.Color.RoyalBlue;
+            this.clientesBtn.colorActive = System.Drawing.Color.MidnightBlue;
             this.clientesBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clientesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.clientesBtn.ForeColor = System.Drawing.Color.White;
@@ -220,9 +220,9 @@
             // 
             // btnVenta
             // 
-            this.btnVenta.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnVenta.color = System.Drawing.Color.SeaGreen;
-            this.btnVenta.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnVenta.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnVenta.color = System.Drawing.Color.RoyalBlue;
+            this.btnVenta.colorActive = System.Drawing.Color.MidnightBlue;
             this.btnVenta.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnVenta.ForeColor = System.Drawing.Color.White;
@@ -239,9 +239,9 @@
             // 
             // btnPerfil
             // 
-            this.btnPerfil.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnPerfil.color = System.Drawing.Color.SeaGreen;
-            this.btnPerfil.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.btnPerfil.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnPerfil.color = System.Drawing.Color.RoyalBlue;
+            this.btnPerfil.colorActive = System.Drawing.Color.MidnightBlue;
             this.btnPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.btnPerfil.ForeColor = System.Drawing.Color.White;

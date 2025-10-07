@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrintTrack.Forms;
 
 namespace PrintTrack
 {
@@ -16,6 +17,7 @@ namespace PrintTrack
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new SplashScreen());
             Application.Run(new Login());
         }
     }

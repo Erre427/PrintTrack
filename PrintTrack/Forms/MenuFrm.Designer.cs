@@ -65,7 +65,7 @@
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.menu.BackColor = System.Drawing.Color.DodgerBlue;
             this.menu.Controls.Add(this.btnDashBoard);
             this.menu.Controls.Add(this.btnConfiguracion);
             this.menu.Controls.Add(this.btnPerfil);
@@ -91,7 +91,7 @@
             this.btnDashBoard.AutoSizeLeftIcon = true;
             this.btnDashBoard.AutoSizeRightIcon = true;
             this.btnDashBoard.BackColor = System.Drawing.Color.Transparent;
-            this.btnDashBoard.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnDashBoard.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnDashBoard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDashBoard.BackgroundImage")));
             this.btnDashBoard.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnDashBoard.ButtonText = "Dashboard";
@@ -123,7 +123,7 @@
             this.btnDashBoard.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnDashBoard.IdleBorderRadius = 1;
             this.btnDashBoard.IdleBorderThickness = 1;
-            this.btnDashBoard.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnDashBoard.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnDashBoard.IdleIconLeftImage = global::PrintTrack.Properties.Resources.icons8_tablero_100;
             this.btnDashBoard.IdleIconRightImage = null;
             this.btnDashBoard.IndicateFocus = false;
@@ -149,7 +149,7 @@
             this.btnDashBoard.OnIdleState.BorderRadius = 1;
             this.btnDashBoard.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnDashBoard.OnIdleState.BorderThickness = 1;
-            this.btnDashBoard.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnDashBoard.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnDashBoard.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnDashBoard.OnIdleState.IconLeftImage = global::PrintTrack.Properties.Resources.icons8_tablero_100;
             this.btnDashBoard.OnIdleState.IconRightImage = null;
@@ -181,7 +181,7 @@
             this.btnConfiguracion.AutoSizeLeftIcon = true;
             this.btnConfiguracion.AutoSizeRightIcon = true;
             this.btnConfiguracion.BackColor = System.Drawing.Color.Transparent;
-            this.btnConfiguracion.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnConfiguracion.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnConfiguracion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnConfiguracion.BackgroundImage")));
             this.btnConfiguracion.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnConfiguracion.ButtonText = "Configuracion";
@@ -213,7 +213,7 @@
             this.btnConfiguracion.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnConfiguracion.IdleBorderRadius = 1;
             this.btnConfiguracion.IdleBorderThickness = 1;
-            this.btnConfiguracion.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfiguracion.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnConfiguracion.IdleIconLeftImage = null;
             this.btnConfiguracion.IdleIconRightImage = null;
             this.btnConfiguracion.IndicateFocus = false;
@@ -239,7 +239,7 @@
             this.btnConfiguracion.OnIdleState.BorderRadius = 1;
             this.btnConfiguracion.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnConfiguracion.OnIdleState.BorderThickness = 1;
-            this.btnConfiguracion.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnConfiguracion.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnConfiguracion.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnConfiguracion.OnIdleState.IconLeftImage = null;
             this.btnConfiguracion.OnIdleState.IconRightImage = null;
@@ -270,7 +270,7 @@
             this.btnPerfil.AutoSizeLeftIcon = true;
             this.btnPerfil.AutoSizeRightIcon = true;
             this.btnPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.btnPerfil.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnPerfil.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnPerfil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPerfil.BackgroundImage")));
             this.btnPerfil.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnPerfil.ButtonText = "Perfil";
@@ -302,7 +302,7 @@
             this.btnPerfil.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnPerfil.IdleBorderRadius = 1;
             this.btnPerfil.IdleBorderThickness = 1;
-            this.btnPerfil.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnPerfil.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnPerfil.IdleIconLeftImage = null;
             this.btnPerfil.IdleIconRightImage = null;
             this.btnPerfil.IndicateFocus = false;
@@ -328,7 +328,7 @@
             this.btnPerfil.OnIdleState.BorderRadius = 1;
             this.btnPerfil.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnPerfil.OnIdleState.BorderThickness = 1;
-            this.btnPerfil.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnPerfil.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnPerfil.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnPerfil.OnIdleState.IconLeftImage = null;
             this.btnPerfil.OnIdleState.IconRightImage = null;
@@ -359,7 +359,7 @@
             this.btnProductos.AutoSizeLeftIcon = true;
             this.btnProductos.AutoSizeRightIcon = true;
             this.btnProductos.BackColor = System.Drawing.Color.Transparent;
-            this.btnProductos.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnProductos.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnProductos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProductos.BackgroundImage")));
             this.btnProductos.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnProductos.ButtonText = "Productos";
@@ -391,7 +391,7 @@
             this.btnProductos.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnProductos.IdleBorderRadius = 1;
             this.btnProductos.IdleBorderThickness = 1;
-            this.btnProductos.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnProductos.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnProductos.IdleIconLeftImage = null;
             this.btnProductos.IdleIconRightImage = null;
             this.btnProductos.IndicateFocus = false;
@@ -417,7 +417,7 @@
             this.btnProductos.OnIdleState.BorderRadius = 1;
             this.btnProductos.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnProductos.OnIdleState.BorderThickness = 1;
-            this.btnProductos.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnProductos.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnProductos.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnProductos.OnIdleState.IconLeftImage = null;
             this.btnProductos.OnIdleState.IconRightImage = null;
@@ -448,7 +448,7 @@
             this.btnClientes.AutoSizeLeftIcon = true;
             this.btnClientes.AutoSizeRightIcon = true;
             this.btnClientes.BackColor = System.Drawing.Color.Transparent;
-            this.btnClientes.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnClientes.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClientes.BackgroundImage")));
             this.btnClientes.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnClientes.ButtonText = "Clientes";
@@ -480,7 +480,7 @@
             this.btnClientes.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnClientes.IdleBorderRadius = 1;
             this.btnClientes.IdleBorderThickness = 1;
-            this.btnClientes.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnClientes.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnClientes.IdleIconLeftImage = null;
             this.btnClientes.IdleIconRightImage = null;
             this.btnClientes.IndicateFocus = false;
@@ -506,7 +506,7 @@
             this.btnClientes.OnIdleState.BorderRadius = 1;
             this.btnClientes.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnClientes.OnIdleState.BorderThickness = 1;
-            this.btnClientes.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnClientes.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnClientes.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnClientes.OnIdleState.IconLeftImage = null;
             this.btnClientes.OnIdleState.IconRightImage = null;
@@ -538,7 +538,7 @@
             this.btnCaja.AutoSizeLeftIcon = true;
             this.btnCaja.AutoSizeRightIcon = true;
             this.btnCaja.BackColor = System.Drawing.Color.Transparent;
-            this.btnCaja.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnCaja.BackColor1 = System.Drawing.Color.RoyalBlue;
             this.btnCaja.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCaja.BackgroundImage")));
             this.btnCaja.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnCaja.ButtonText = "Caja";
@@ -570,7 +570,7 @@
             this.btnCaja.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.btnCaja.IdleBorderRadius = 1;
             this.btnCaja.IdleBorderThickness = 1;
-            this.btnCaja.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnCaja.IdleFillColor = System.Drawing.Color.RoyalBlue;
             this.btnCaja.IdleIconLeftImage = null;
             this.btnCaja.IdleIconRightImage = null;
             this.btnCaja.IndicateFocus = false;
@@ -596,7 +596,7 @@
             this.btnCaja.OnIdleState.BorderRadius = 1;
             this.btnCaja.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnCaja.OnIdleState.BorderThickness = 1;
-            this.btnCaja.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnCaja.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnCaja.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.btnCaja.OnIdleState.IconLeftImage = null;
             this.btnCaja.OnIdleState.IconRightImage = null;
@@ -633,7 +633,7 @@
             this.cerrarSesionBtn.ActiveFillColor = System.Drawing.Color.Red;
             this.cerrarSesionBtn.ActiveForecolor = System.Drawing.Color.Transparent;
             this.cerrarSesionBtn.ActiveLineColor = System.Drawing.Color.Red;
-            this.cerrarSesionBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.cerrarSesionBtn.BackColor = System.Drawing.Color.DodgerBlue;
             this.cerrarSesionBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("cerrarSesionBtn.BackgroundImage")));
             this.cerrarSesionBtn.ButtonText = "Cerrar Sesion";
             this.cerrarSesionBtn.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -697,7 +697,9 @@
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.plecaInfo);
             this.Controls.Add(this.menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MenuFrm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PrintTrack - Punto de Venta 2025";
             this.Load += new System.EventHandler(this.MenuFrm_Load);
             this.menu.ResumeLayout(false);

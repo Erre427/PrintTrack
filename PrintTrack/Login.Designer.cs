@@ -39,6 +39,8 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.lblError = new System.Windows.Forms.Label();
+            this.pboxOjo = new System.Windows.Forms.PictureBox();
             this.cerrarSesionBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.iniciarSesionBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +50,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +70,8 @@
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.lblError);
+            this.bunifuGradientPanel1.Controls.Add(this.pboxOjo);
             this.bunifuGradientPanel1.Controls.Add(this.cerrarSesionBtn);
             this.bunifuGradientPanel1.Controls.Add(this.iniciarSesionBtn);
             this.bunifuGradientPanel1.Controls.Add(this.label3);
@@ -84,6 +89,30 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1048, 607);
             this.bunifuGradientPanel1.TabIndex = 1;
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(408, 393);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(226, 17);
+            this.lblError.TabIndex = 1;
+            this.lblError.Text = "¡Usuario o Contraseña incorrectos!";
+            this.lblError.Visible = false;
+            // 
+            // pboxOjo
+            // 
+            this.pboxOjo.Image = global::PrintTrack.Properties.Resources.ojo_cerrado;
+            this.pboxOjo.Location = new System.Drawing.Point(662, 355);
+            this.pboxOjo.Name = "pboxOjo";
+            this.pboxOjo.Size = new System.Drawing.Size(24, 23);
+            this.pboxOjo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboxOjo.TabIndex = 0;
+            this.pboxOjo.TabStop = false;
+            this.pboxOjo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pboxOjo_MouseDown);
+            this.pboxOjo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pboxOjo_MouseUp);
             // 
             // cerrarSesionBtn
             // 
@@ -174,7 +203,7 @@
             this.contraseñaTxt.IconRight = null;
             this.contraseñaTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.contraseñaTxt.Lines = new string[0];
-            this.contraseñaTxt.Location = new System.Drawing.Point(393, 343);
+            this.contraseñaTxt.Location = new System.Drawing.Point(393, 346);
             this.contraseñaTxt.MaxLength = 32767;
             this.contraseñaTxt.MinimumSize = new System.Drawing.Size(1, 1);
             this.contraseñaTxt.Modified = false;
@@ -220,6 +249,7 @@
             this.contraseñaTxt.TextPlaceholder = "Ingrese Contraseña";
             this.contraseñaTxt.UseSystemPasswordChar = false;
             this.contraseñaTxt.WordWrap = true;
+            this.contraseñaTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.contraseñaTxt_KeyDown);
             // 
             // label2
             // 
@@ -304,6 +334,7 @@
             this.usuariotxt.TextPlaceholder = "Ingrese Usuario";
             this.usuariotxt.UseSystemPasswordChar = false;
             this.usuariotxt.WordWrap = true;
+            this.usuariotxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usuariotxt_KeyDown);
             // 
             // pictureBox1
             // 
@@ -330,6 +361,7 @@
             this.panel1.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -346,6 +378,8 @@
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuTextBox contraseñaTxt;
         private Bunifu.Framework.UI.BunifuThinButton2 cerrarSesionBtn;
+        private System.Windows.Forms.PictureBox pboxOjo;
+        private System.Windows.Forms.Label lblError;
     }
 }
 
