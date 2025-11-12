@@ -1,5 +1,6 @@
 ﻿using Org.BouncyCastle.Crypto.Parameters;
 using PrintTrack.Entidades;
+using PrintTrack.Entidades.Enums;
 using PrintTrack.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,8 @@ namespace PrintTrack.Forms.F_Clientes
     public partial class ClientesFrm : Form
     {
         private ClientesRepositorio repo = new ClientesRepositorio();
-        private List<Clientes> listaClientes = new List<Clientes>();    
+        private List<Clientes> listaClientes = new List<Clientes>();
+        private Usuarios usuarioActual;
         public ClientesFrm()
         {
             InitializeComponent();
@@ -25,6 +27,14 @@ namespace PrintTrack.Forms.F_Clientes
 
         public void CargarDatos()
         {
+            usuarioActual = VerificarUsuario.GetUsuarioActual();
+
+            if(usuarioActual.Roles.idRoles != 0 && usuarioActual.Roles.idRoles != 1)
+            {
+                btnArchivo.Visible = false;
+                btnNuevoCliente.Size = new System.Drawing.Size(375, 41);
+            }
+
             dgvClientes.AutoGenerateColumns = false;
             listaClientes = repo.ObtenerClientes();
 
@@ -57,8 +67,8 @@ namespace PrintTrack.Forms.F_Clientes
 
         private void btnNuevoCliente_Click(object sender, EventArgs e)
         {
-            NuevoCliente_Frm nuevoCliente_Frm = new NuevoCliente_Frm();
-            nuevoCliente_Frm.ShowDialog();
+            DetallesClientes_Frm frm = new DetallesClientes_Frm(null, ModoFormulario.Crear);
+            frm.ShowDialog();
             CargarDatos();
         }
 
@@ -75,8 +85,9 @@ namespace PrintTrack.Forms.F_Clientes
             switch (dgvClientes.Columns[e.ColumnIndex].Name)
             {
                 case "Detalles":
-                    DetallesClientes_Frm detalle = new DetallesClientes_Frm(clienteSeleccionado);
+                    DetallesClientes_Frm detalle = new DetallesClientes_Frm(clienteSeleccionado,ModoFormulario.Editar);
                     detalle.ShowDialog();
+                    CargarDatos();
                     break;
 
                 case "Archivar":
@@ -88,15 +99,13 @@ namespace PrintTrack.Forms.F_Clientes
                         CargarDatos();
                     }
                     break;
-
-                case "Editar":
-                    EditarCliente_Frm editar = new EditarCliente_Frm(clienteSeleccionado);
-                    editar.ShowDialog();
-                    CargarDatos();
-                    break;
             }
-            
-
+        }
+        private void btnArchivo_Click(object sender, EventArgs e)
+        {
+            ArchivoClientes_Frm frm = new ArchivoClientes_Frm();
+            frm.ShowDialog();
+            CargarDatos();
         }
     }
 }

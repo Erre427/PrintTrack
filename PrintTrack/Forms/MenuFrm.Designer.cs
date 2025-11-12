@@ -113,7 +113,7 @@
             this.btnDashBoard.ForeColor = System.Drawing.Color.White;
             this.btnDashBoard.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDashBoard.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashBoard.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnDashBoard.IconLeftPadding = new System.Windows.Forms.Padding(18, 3, 3, 3);
             this.btnDashBoard.IconMarginLeft = 11;
             this.btnDashBoard.IconPadding = 10;
             this.btnDashBoard.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -258,6 +258,7 @@
             this.btnConfiguracion.TextMarginLeft = 0;
             this.btnConfiguracion.TextPadding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnConfiguracion.UseDefaultRadiusAndThickness = true;
+            this.btnConfiguracion.Click += new System.EventHandler(this.btnConfiguracion_Click);
             // 
             // btnPerfil
             // 
@@ -292,7 +293,7 @@
             this.btnPerfil.ForeColor = System.Drawing.Color.White;
             this.btnPerfil.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPerfil.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPerfil.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnPerfil.IconLeftPadding = new System.Windows.Forms.Padding(18, 3, 3, 3);
             this.btnPerfil.IconMarginLeft = 11;
             this.btnPerfil.IconPadding = 10;
             this.btnPerfil.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -303,7 +304,7 @@
             this.btnPerfil.IdleBorderRadius = 1;
             this.btnPerfil.IdleBorderThickness = 1;
             this.btnPerfil.IdleFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnPerfil.IdleIconLeftImage = null;
+            this.btnPerfil.IdleIconLeftImage = global::PrintTrack.Properties.Resources.avatar;
             this.btnPerfil.IdleIconRightImage = null;
             this.btnPerfil.IndicateFocus = false;
             this.btnPerfil.Location = new System.Drawing.Point(0, 377);
@@ -330,7 +331,7 @@
             this.btnPerfil.OnIdleState.BorderThickness = 1;
             this.btnPerfil.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnPerfil.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnPerfil.OnIdleState.IconLeftImage = null;
+            this.btnPerfil.OnIdleState.IconLeftImage = global::PrintTrack.Properties.Resources.avatar;
             this.btnPerfil.OnIdleState.IconRightImage = null;
             this.btnPerfil.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnPerfil.OnPressedState.BorderRadius = 1;
@@ -381,7 +382,7 @@
             this.btnProductos.ForeColor = System.Drawing.Color.White;
             this.btnProductos.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductos.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProductos.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnProductos.IconLeftPadding = new System.Windows.Forms.Padding(18, 3, 3, 3);
             this.btnProductos.IconMarginLeft = 11;
             this.btnProductos.IconPadding = 10;
             this.btnProductos.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -392,7 +393,7 @@
             this.btnProductos.IdleBorderRadius = 1;
             this.btnProductos.IdleBorderThickness = 1;
             this.btnProductos.IdleFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnProductos.IdleIconLeftImage = null;
+            this.btnProductos.IdleIconLeftImage = global::PrintTrack.Properties.Resources.entrega;
             this.btnProductos.IdleIconRightImage = null;
             this.btnProductos.IndicateFocus = false;
             this.btnProductos.Location = new System.Drawing.Point(0, 317);
@@ -419,7 +420,7 @@
             this.btnProductos.OnIdleState.BorderThickness = 1;
             this.btnProductos.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnProductos.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnProductos.OnIdleState.IconLeftImage = null;
+            this.btnProductos.OnIdleState.IconLeftImage = global::PrintTrack.Properties.Resources.entrega;
             this.btnProductos.OnIdleState.IconRightImage = null;
             this.btnProductos.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnProductos.OnPressedState.BorderRadius = 1;
@@ -470,7 +471,7 @@
             this.btnClientes.ForeColor = System.Drawing.Color.White;
             this.btnClientes.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnClientes.IconLeftPadding = new System.Windows.Forms.Padding(18, 3, 3, 3);
             this.btnClientes.IconMarginLeft = 11;
             this.btnClientes.IconPadding = 10;
             this.btnClientes.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -481,7 +482,7 @@
             this.btnClientes.IdleBorderRadius = 1;
             this.btnClientes.IdleBorderThickness = 1;
             this.btnClientes.IdleFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnClientes.IdleIconLeftImage = null;
+            this.btnClientes.IdleIconLeftImage = global::PrintTrack.Properties.Resources.personas;
             this.btnClientes.IdleIconRightImage = null;
             this.btnClientes.IndicateFocus = false;
             this.btnClientes.Location = new System.Drawing.Point(0, 257);
@@ -508,7 +509,7 @@
             this.btnClientes.OnIdleState.BorderThickness = 1;
             this.btnClientes.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnClientes.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnClientes.OnIdleState.IconLeftImage = null;
+            this.btnClientes.OnIdleState.IconLeftImage = global::PrintTrack.Properties.Resources.personas;
             this.btnClientes.OnIdleState.IconRightImage = null;
             this.btnClientes.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnClientes.OnPressedState.BorderRadius = 1;
@@ -560,7 +561,7 @@
             this.btnCaja.ForeColor = System.Drawing.Color.White;
             this.btnCaja.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCaja.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCaja.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnCaja.IconLeftPadding = new System.Windows.Forms.Padding(18, 3, 3, 3);
             this.btnCaja.IconMarginLeft = 11;
             this.btnCaja.IconPadding = 10;
             this.btnCaja.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -571,7 +572,7 @@
             this.btnCaja.IdleBorderRadius = 1;
             this.btnCaja.IdleBorderThickness = 1;
             this.btnCaja.IdleFillColor = System.Drawing.Color.RoyalBlue;
-            this.btnCaja.IdleIconLeftImage = null;
+            this.btnCaja.IdleIconLeftImage = global::PrintTrack.Properties.Resources.punto_de_venta;
             this.btnCaja.IdleIconRightImage = null;
             this.btnCaja.IndicateFocus = false;
             this.btnCaja.Location = new System.Drawing.Point(0, 197);
@@ -598,7 +599,7 @@
             this.btnCaja.OnIdleState.BorderThickness = 1;
             this.btnCaja.OnIdleState.FillColor = System.Drawing.Color.RoyalBlue;
             this.btnCaja.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnCaja.OnIdleState.IconLeftImage = null;
+            this.btnCaja.OnIdleState.IconLeftImage = global::PrintTrack.Properties.Resources.punto_de_venta;
             this.btnCaja.OnIdleState.IconRightImage = null;
             this.btnCaja.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
             this.btnCaja.OnPressedState.BorderRadius = 1;

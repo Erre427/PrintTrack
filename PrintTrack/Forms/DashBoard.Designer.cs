@@ -230,7 +230,7 @@
             this.btnVenta.ImagePosition = 20;
             this.btnVenta.ImageZoom = 50;
             this.btnVenta.LabelPosition = 41;
-            this.btnVenta.LabelText = "Venta";
+            this.btnVenta.LabelText = "Caja";
             this.btnVenta.Location = new System.Drawing.Point(86, 70);
             this.btnVenta.Margin = new System.Windows.Forms.Padding(6);
             this.btnVenta.Name = "btnVenta";

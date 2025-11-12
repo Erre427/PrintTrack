@@ -1,5 +1,7 @@
 ﻿using PrintTrack.Entidades;
+using PrintTrack.Entidades.Enums;
 using PrintTrack.Forms;
+using PrintTrack.Forms.F_Configuracion.F_Empleados;
 using PrintTrack.Properties;
 using PrintTrack.Repositorios;
 using System;
@@ -39,7 +41,8 @@ namespace PrintTrack
             {
                 this.Hide();
                 VerificarUsuario.SetUsuarioActual(usuarioencontrado);
-                MenuFrm menu = new MenuFrm(usuarioencontrado);
+                MenuFrm menu = new MenuFrm();
+                menu.UsuarioReciente(usuarioencontrado);
                 menu.Show();
             }
             else
@@ -88,6 +91,8 @@ namespace PrintTrack
                 iniciarSesionBtn_Click(sender, e);
             }
         }
+
+        
     }
 
 

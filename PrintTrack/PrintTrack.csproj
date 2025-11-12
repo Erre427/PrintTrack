@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BCrypt.Net-Next, Version=4.0.3.0, Culture=neutral, PublicKeyToken=1e11be04b6288443, processorArchitecture=MSIL">
+      <HintPath>..\packages\BCrypt.Net-Next.4.0.3\lib\net472\BCrypt.Net-Next.dll</HintPath>
+    </Reference>
     <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
       <HintPath>..\packages\BouncyCastle.Cryptography.2.5.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
     </Reference>
@@ -203,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Clientes.cs" />
+    <Compile Include="Entidades\Enums\ModoFormulario.cs" />
     <Compile Include="Entidades\Roles.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Forms\AdminLogin.cs">
@@ -229,17 +248,41 @@
     <Compile Include="Forms\F_Clientes\DetallesClientes_Frm.Designer.cs">
       <DependentUpon>DetallesClientes_Frm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\F_Clientes\EditarCliente_Frm.cs">
+    <Compile Include="Forms\F_Clientes\ArchivoClientes_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\F_Clientes\EditarCliente_Frm.Designer.cs">
-      <DependentUpon>EditarCliente_Frm.cs</DependentUpon>
+    <Compile Include="Forms\F_Clientes\ArchivoClientes_Frm.Designer.cs">
+      <DependentUpon>ArchivoClientes_Frm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\F_Clientes\NuevoCliente_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\F_Clientes\NuevoCliente_Frm.Designer.cs">
       <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\Configuracion_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\Configuracion_Frm.Designer.cs">
+      <DependentUpon>Configuracion_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\EmpleadosFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\EmpleadosFrm.Designer.cs">
+      <DependentUpon>EmpleadosFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosArchivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosArchivo.Designer.cs">
+      <DependentUpon>EmpleadosArchivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.Designer.cs">
+      <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\MenuFrm.cs">
       <SubType>Form</SubType>
@@ -263,6 +306,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ClientesRepositorio.cs" />
     <Compile Include="Repositorios\ConexionDB.cs" />
+    <Compile Include="Repositorios\RolesRepository.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />
     <EmbeddedResource Include="Forms\AdminLogin.resx">
@@ -277,11 +321,23 @@
     <EmbeddedResource Include="Forms\F_Clientes\DetallesClientes_Frm.resx">
       <DependentUpon>DetallesClientes_Frm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_Clientes\EditarCliente_Frm.resx">
-      <DependentUpon>EditarCliente_Frm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_Clientes\ArchivoClientes_Frm.resx">
+      <DependentUpon>ArchivoClientes_Frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Clientes\NuevoCliente_Frm.resx">
       <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\Configuracion_Frm.resx">
+      <DependentUpon>Configuracion_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\EmpleadosFrm.resx">
+      <DependentUpon>EmpleadosFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosArchivo.resx">
+      <DependentUpon>EmpleadosArchivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.resx">
+      <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
       <DependentUpon>MenuFrm.cs</DependentUpon>
@@ -352,6 +408,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SplashScreen_PrintTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satisfaccion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-de-informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\historial-de-transacciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\entrega.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nueva-cuenta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardar-el-archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camara-fotografica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empleado %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archivo %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

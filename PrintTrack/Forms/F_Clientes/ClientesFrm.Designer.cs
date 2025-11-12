@@ -30,23 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientesFrm));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnNuevoCliente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.idCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,8 +49,13 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Archivar = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.btnArchivo = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnNuevoCliente = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -131,16 +131,15 @@
             this.Email,
             this.Estado,
             this.Detalles,
-            this.Editar,
             this.Archivar});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Azure;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Azure;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvClientes.EnableHeadersVisualStyles = false;
             this.dgvClientes.Location = new System.Drawing.Point(23, 18);
             this.dgvClientes.Name = "dgvClientes";
@@ -153,12 +152,100 @@
             this.dgvClientes.TabIndex = 0;
             this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
+            // idCliente
+            // 
+            this.idCliente.DataPropertyName = "idCliente";
+            this.idCliente.HeaderText = "id";
+            this.idCliente.Name = "idCliente";
+            this.idCliente.ReadOnly = true;
+            this.idCliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.idCliente.Visible = false;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.FillWeight = 57.44501F;
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Telefono
+            // 
+            this.Telefono.DataPropertyName = "Telefono";
+            this.Telefono.FillWeight = 57.44501F;
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            this.Telefono.ReadOnly = true;
+            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.FillWeight = 57.44501F;
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.FillWeight = 57.44501F;
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Estado
+            // 
+            this.Estado.DataPropertyName = "Estado";
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Estado.Visible = false;
+            // 
+            // Detalles
+            // 
+            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
+            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Detalles.FillWeight = 355.33F;
+            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Detalles.HeaderText = "";
+            this.Detalles.Name = "Detalles";
+            this.Detalles.ReadOnly = true;
+            this.Detalles.Text = "Detalles";
+            this.Detalles.UseColumnTextForButtonValue = true;
+            this.Detalles.Width = 80;
+            // 
+            // Archivar
+            // 
+            this.Archivar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Firebrick;
+            this.Archivar.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Archivar.FillWeight = 57.44501F;
+            this.Archivar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Archivar.HeaderText = "";
+            this.Archivar.Name = "Archivar";
+            this.Archivar.ReadOnly = true;
+            this.Archivar.Text = "Archivar";
+            this.Archivar.UseColumnTextForButtonValue = true;
+            this.Archivar.Width = 80;
+            // 
             // bunifuShadowPanel1
             // 
             this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel1.BorderRadius = 10;
             this.bunifuShadowPanel1.BorderThickness = 1;
+            this.bunifuShadowPanel1.Controls.Add(this.btnArchivo);
             this.bunifuShadowPanel1.Controls.Add(this.txtBuscar);
             this.bunifuShadowPanel1.Controls.Add(this.pictureBox1);
             this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
@@ -177,6 +264,96 @@
             this.bunifuShadowPanel1.Size = new System.Drawing.Size(1120, 106);
             this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel1.TabIndex = 0;
+            // 
+            // btnArchivo
+            // 
+            this.btnArchivo.AllowAnimations = true;
+            this.btnArchivo.AllowMouseEffects = true;
+            this.btnArchivo.AllowToggling = false;
+            this.btnArchivo.AnimationSpeed = 200;
+            this.btnArchivo.AutoGenerateColors = false;
+            this.btnArchivo.AutoRoundBorders = false;
+            this.btnArchivo.AutoSizeLeftIcon = true;
+            this.btnArchivo.AutoSizeRightIcon = true;
+            this.btnArchivo.BackColor = System.Drawing.Color.Transparent;
+            this.btnArchivo.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnArchivo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnArchivo.BackgroundImage")));
+            this.btnArchivo.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnArchivo.ButtonText = "Archivo";
+            this.btnArchivo.ButtonTextMarginLeft = 0;
+            this.btnArchivo.ColorContrastOnClick = 45;
+            this.btnArchivo.ColorContrastOnHover = 45;
+            this.btnArchivo.Cursor = System.Windows.Forms.Cursors.Default;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.btnArchivo.CustomizableEdges = borderEdges1;
+            this.btnArchivo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnArchivo.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnArchivo.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnArchivo.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnArchivo.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnArchivo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArchivo.ForeColor = System.Drawing.Color.White;
+            this.btnArchivo.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnArchivo.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.btnArchivo.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.btnArchivo.IconMarginLeft = 11;
+            this.btnArchivo.IconPadding = 10;
+            this.btnArchivo.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnArchivo.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.btnArchivo.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.btnArchivo.IconSize = 25;
+            this.btnArchivo.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnArchivo.IdleBorderRadius = 10;
+            this.btnArchivo.IdleBorderThickness = 1;
+            this.btnArchivo.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnArchivo.IdleIconLeftImage = null;
+            this.btnArchivo.IdleIconRightImage = null;
+            this.btnArchivo.IndicateFocus = false;
+            this.btnArchivo.Location = new System.Drawing.Point(955, 38);
+            this.btnArchivo.Name = "btnArchivo";
+            this.btnArchivo.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnArchivo.OnDisabledState.BorderRadius = 10;
+            this.btnArchivo.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnArchivo.OnDisabledState.BorderThickness = 1;
+            this.btnArchivo.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnArchivo.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnArchivo.OnDisabledState.IconLeftImage = null;
+            this.btnArchivo.OnDisabledState.IconRightImage = null;
+            this.btnArchivo.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnArchivo.onHoverState.BorderRadius = 10;
+            this.btnArchivo.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnArchivo.onHoverState.BorderThickness = 1;
+            this.btnArchivo.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.btnArchivo.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.btnArchivo.onHoverState.IconLeftImage = null;
+            this.btnArchivo.onHoverState.IconRightImage = null;
+            this.btnArchivo.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnArchivo.OnIdleState.BorderRadius = 10;
+            this.btnArchivo.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnArchivo.OnIdleState.BorderThickness = 1;
+            this.btnArchivo.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnArchivo.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnArchivo.OnIdleState.IconLeftImage = null;
+            this.btnArchivo.OnIdleState.IconRightImage = null;
+            this.btnArchivo.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnArchivo.OnPressedState.BorderRadius = 10;
+            this.btnArchivo.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnArchivo.OnPressedState.BorderThickness = 1;
+            this.btnArchivo.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.btnArchivo.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.btnArchivo.OnPressedState.IconLeftImage = null;
+            this.btnArchivo.OnPressedState.IconRightImage = null;
+            this.btnArchivo.Size = new System.Drawing.Size(144, 41);
+            this.btnArchivo.TabIndex = 4;
+            this.btnArchivo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnArchivo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnArchivo.TextMarginLeft = 0;
+            this.btnArchivo.TextPadding = new System.Windows.Forms.Padding(0);
+            this.btnArchivo.UseDefaultRadiusAndThickness = true;
+            this.btnArchivo.Click += new System.EventHandler(this.btnArchivo_Click);
             // 
             // txtBuscar
             // 
@@ -298,11 +475,11 @@
             this.btnNuevoCliente.ColorContrastOnClick = 45;
             this.btnNuevoCliente.ColorContrastOnHover = 45;
             this.btnNuevoCliente.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnNuevoCliente.CustomizableEdges = borderEdges1;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnNuevoCliente.CustomizableEdges = borderEdges2;
             this.btnNuevoCliente.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnNuevoCliente.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoCliente.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -326,7 +503,7 @@
             this.btnNuevoCliente.IdleIconLeftImage = null;
             this.btnNuevoCliente.IdleIconRightImage = null;
             this.btnNuevoCliente.IndicateFocus = false;
-            this.btnNuevoCliente.Location = new System.Drawing.Point(744, 39);
+            this.btnNuevoCliente.Location = new System.Drawing.Point(724, 38);
             this.btnNuevoCliente.Name = "btnNuevoCliente";
             this.btnNuevoCliente.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnNuevoCliente.OnDisabledState.BorderRadius = 10;
@@ -360,7 +537,7 @@
             this.btnNuevoCliente.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnNuevoCliente.OnPressedState.IconLeftImage = null;
             this.btnNuevoCliente.OnPressedState.IconRightImage = null;
-            this.btnNuevoCliente.Size = new System.Drawing.Size(326, 41);
+            this.btnNuevoCliente.Size = new System.Drawing.Size(225, 41);
             this.btnNuevoCliente.TabIndex = 0;
             this.btnNuevoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnNuevoCliente.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -368,110 +545,6 @@
             this.btnNuevoCliente.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnNuevoCliente.UseDefaultRadiusAndThickness = true;
             this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
-            // 
-            // idCliente
-            // 
-            this.idCliente.DataPropertyName = "idCliente";
-            this.idCliente.HeaderText = "id";
-            this.idCliente.Name = "idCliente";
-            this.idCliente.ReadOnly = true;
-            this.idCliente.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.idCliente.Visible = false;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.FillWeight = 57.44501F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Telefono
-            // 
-            this.Telefono.DataPropertyName = "Telefono";
-            this.Telefono.FillWeight = 57.44501F;
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.FillWeight = 57.44501F;
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.FillWeight = 57.44501F;
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Estado
-            // 
-            this.Estado.DataPropertyName = "Estado";
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Estado.Visible = false;
-            // 
-            // Detalles
-            // 
-            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Detalles.FillWeight = 355.33F;
-            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Detalles.HeaderText = "";
-            this.Detalles.Name = "Detalles";
-            this.Detalles.ReadOnly = true;
-            this.Detalles.Text = "Detalles";
-            this.Detalles.UseColumnTextForButtonValue = true;
-            this.Detalles.Width = 80;
-            // 
-            // Editar
-            // 
-            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Green;
-            this.Editar.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Editar.FillWeight = 57.44501F;
-            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Editar.HeaderText = "";
-            this.Editar.Name = "Editar";
-            this.Editar.ReadOnly = true;
-            this.Editar.Text = "Editar";
-            this.Editar.UseColumnTextForButtonValue = true;
-            this.Editar.Width = 80;
-            // 
-            // Archivar
-            // 
-            this.Archivar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Firebrick;
-            this.Archivar.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Archivar.FillWeight = 57.44501F;
-            this.Archivar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Archivar.HeaderText = "";
-            this.Archivar.Name = "Archivar";
-            this.Archivar.ReadOnly = true;
-            this.Archivar.Text = "Archivar";
-            this.Archivar.UseColumnTextForButtonValue = true;
-            this.Archivar.Width = 80;
             // 
             // ClientesFrm
             // 
@@ -509,7 +582,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewButtonColumn Detalles;
-        private System.Windows.Forms.DataGridViewButtonColumn Editar;
         private System.Windows.Forms.DataGridViewButtonColumn Archivar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnArchivo;
     }
 }

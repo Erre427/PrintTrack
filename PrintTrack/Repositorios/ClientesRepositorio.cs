@@ -38,10 +38,44 @@ namespace PrintTrack.Repositorios
                             }
                         }
                     }
+                conn.Close();
                 }
 
                 return lista;
         }
+
+        public List<Clientes> ObtenerClientesArchivados()
+        {
+            var lista = new List<Clientes>();
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                conn.Open();
+                string query = "SELECT * FROM Cliente WHERE Estado = 0";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            lista.Add(new Clientes
+                            {
+                                idCliente = reader.GetInt32("idCliente"),
+                                Nombre = reader.GetString("Nombre"),
+                                Telefono = reader.GetString("Telefono"),
+                                Email = reader.GetString("Email"),
+                                Descripcion = reader.GetString("Descripcion"),
+                                Estado = reader.GetInt32("Estado")
+                            });
+                        }
+                    }
+                }
+                conn.Close();
+            }
+
+            return lista;
+        }
+
+
         // Agregar clientes a la base de datos
         public bool AgregarCliente(Clientes cliente)
         {
@@ -73,6 +107,24 @@ namespace PrintTrack.Repositorios
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id",idCliente);
+
+                    conn.Open();
+                    int filasafectadas = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    return filasafectadas > 0;
+                }
+            }
+        }
+
+        public bool DesarchivarCliente(int idCliente)
+        {
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "UPDATE Cliente SET Estado = 1 WHERE (idCliente = @id)";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", idCliente);
 
                     conn.Open();
                     int filasafectadas = cmd.ExecuteNonQuery();

@@ -12,5 +12,10 @@ namespace PrintTrack.Entidades
         public int idRoles {  get; set; }
         public string Tipo {  get; set; }
 
+        public override string ToString()
+        {
+            return this.Tipo; 
+        }
+
     }
 }
