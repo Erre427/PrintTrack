@@ -39,6 +39,7 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblError = new System.Windows.Forms.Label();
             this.pboxOjo = new System.Windows.Forms.PictureBox();
             this.cerrarSesionBtn = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -50,6 +51,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +72,7 @@
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.pictureBox2);
             this.bunifuGradientPanel1.Controls.Add(this.lblError);
             this.bunifuGradientPanel1.Controls.Add(this.pboxOjo);
             this.bunifuGradientPanel1.Controls.Add(this.cerrarSesionBtn);
@@ -90,12 +93,22 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1048, 607);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PrintTrack.Properties.Resources._5132510;
+            this.pictureBox2.Location = new System.Drawing.Point(-75, -3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(591, 607);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
+            // 
             // lblError
             // 
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblError.ForeColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(408, 393);
+            this.lblError.Location = new System.Drawing.Point(657, 407);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(226, 17);
             this.lblError.TabIndex = 1;
@@ -105,7 +118,7 @@
             // pboxOjo
             // 
             this.pboxOjo.Image = global::PrintTrack.Properties.Resources.ojo_cerrado;
-            this.pboxOjo.Location = new System.Drawing.Point(662, 355);
+            this.pboxOjo.Location = new System.Drawing.Point(911, 369);
             this.pboxOjo.Name = "pboxOjo";
             this.pboxOjo.Size = new System.Drawing.Size(24, 23);
             this.pboxOjo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,7 +145,7 @@
             this.cerrarSesionBtn.IdleFillColor = System.Drawing.Color.White;
             this.cerrarSesionBtn.IdleForecolor = System.Drawing.Color.Red;
             this.cerrarSesionBtn.IdleLineColor = System.Drawing.Color.Red;
-            this.cerrarSesionBtn.Location = new System.Drawing.Point(573, 446);
+            this.cerrarSesionBtn.Location = new System.Drawing.Point(787, 464);
             this.cerrarSesionBtn.Margin = new System.Windows.Forms.Padding(5);
             this.cerrarSesionBtn.Name = "cerrarSesionBtn";
             this.cerrarSesionBtn.Size = new System.Drawing.Size(211, 57);
@@ -158,7 +171,7 @@
             this.iniciarSesionBtn.IdleFillColor = System.Drawing.Color.White;
             this.iniciarSesionBtn.IdleForecolor = System.Drawing.Color.SeaGreen;
             this.iniciarSesionBtn.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.iniciarSesionBtn.Location = new System.Drawing.Point(258, 446);
+            this.iniciarSesionBtn.Location = new System.Drawing.Point(566, 464);
             this.iniciarSesionBtn.Margin = new System.Windows.Forms.Padding(5);
             this.iniciarSesionBtn.Name = "iniciarSesionBtn";
             this.iniciarSesionBtn.Size = new System.Drawing.Size(211, 57);
@@ -170,7 +183,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(447, 303);
+            this.label3.Location = new System.Drawing.Point(696, 317);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 37);
             this.label3.TabIndex = 5;
@@ -203,7 +216,7 @@
             this.contraseñaTxt.IconRight = null;
             this.contraseñaTxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.contraseñaTxt.Lines = new string[0];
-            this.contraseñaTxt.Location = new System.Drawing.Point(393, 346);
+            this.contraseñaTxt.Location = new System.Drawing.Point(642, 360);
             this.contraseñaTxt.MaxLength = 32767;
             this.contraseñaTxt.MinimumSize = new System.Drawing.Size(1, 1);
             this.contraseñaTxt.Modified = false;
@@ -255,7 +268,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Yu Gothic UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(470, 208);
+            this.label2.Location = new System.Drawing.Point(719, 222);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 37);
             this.label2.TabIndex = 3;
@@ -288,7 +301,7 @@
             this.usuariotxt.IconRight = null;
             this.usuariotxt.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.usuariotxt.Lines = new string[0];
-            this.usuariotxt.Location = new System.Drawing.Point(393, 248);
+            this.usuariotxt.Location = new System.Drawing.Point(642, 262);
             this.usuariotxt.MaxLength = 32767;
             this.usuariotxt.MinimumSize = new System.Drawing.Size(1, 1);
             this.usuariotxt.Modified = false;
@@ -339,7 +352,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PrintTrack.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(373, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(632, 65);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(300, 126);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,6 +374,7 @@
             this.panel1.ResumeLayout(false);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -380,6 +394,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 cerrarSesionBtn;
         private System.Windows.Forms.PictureBox pboxOjo;
         private System.Windows.Forms.Label lblError;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -117,20 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="txtContraseña.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAASYAAAAlCAYAAADvJ0TAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEhSURBVHhe7daxTcNgFIXRlIzGAozAEOxAxTR0jvPbqSJR
-        pEtBlY7CQkFEwoqM/sZSMoBzi3Ok273601utAFI1TfPY9/3Her2ezMyWXG3PZrN5vopSKeVpt9sNwzBM
-        AEur7dnv99+llJc5TF3XfZ5Op9tbgMWM4zi1bfs7h6m+UgD3VlskTEAUYQLiCBMQR5iAOMIExBEmII4w
-        AXGECYgjTEAcYQLiCBMQR5iAOMIExBEmII4wAXGECYgjTEAcYQLiCBMQR5iAOMIExBEmII4wAXGECYgj
-        TEAcYQLiCBMQR5iAOFdhKqV8nc/n2xuAxVwul6lt23EOU9d1r4fD4ef2EGApx+Pxb7vdvs9hqvq+f6tv
-        lJnZPVaj1DTNw1WYAFL8AzvJKC621SFWAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuLabel5.BaseStylesheet" xml:space="preserve">
+  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Segoe UI Semibold'; font-size: 12pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtCorreo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAXAAAAAlCAYAAABbLbLPAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEqSURBVHhe7daxacNgFIVRlxktC2SEDJEdUmWadLL8S64M
+        Kdy5SOUuhQgOMUQIhb8R2BPowjlwu1d/vM0GgGxN0zz2ff+x3W5nMzNb32qjd7vd8028SylPh8NhGIZh
+        BmCdaqOPx+N3KeVlCXjXdZ+Xy+X+FoCVGcdxbtv2dwl4fc0ByFCbLeAAgQQcIJSAA4QScIBQAg4QSsAB
+        Qgk4QCgBBwgl4AChBBwglIADhBJwgFACDhBKwAFCCThAKAEHCCXgAKEEHCCUgAOEEnCAUAIOEErAAUIJ
+        OEAoAQcIJeAAoQQcIJSAA4QScIBQNwEvpXxdr9f7GwBWZpqmuW3bcQl413Wvp9Pp5/4QgHU5n89/+/3+
+        fQl41ff9W33Lzcxsvavxbprm4SbgAGT5Bx4WDMqIuafRAAAAAElFTkSuQmCC
+</value>
   </data>
   <data name="btnGuardar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

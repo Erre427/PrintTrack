@@ -10,8 +10,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 using PrintTrack.Entidades.Enums;
 using System.Management;
+using Org.BouncyCastle.Tls;
 
 namespace PrintTrack.Forms.F_Configuracion.F_Empleados
 {
@@ -80,14 +82,17 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             {
                 this.Text = "Editar Empleado";
                 lblTitulo.Text = "Detalles";
-                pnlClave.Visible = false;
                 pnlModificar.Visible = true;
                 btnGuardar.Visible = true;
 
                 CargarDatosTxt();
                 DeshabilitarControles();
+
+                MessageBox.Show(usuarioActual.Foto?.Length.ToString() ?? "null");
+                MessageBox.Show(pbxFoto.Image == null ? "SIN IMAGEN" : "IMAGEN CARGADA");
+
             }
-            
+
         }
 
 
@@ -104,25 +109,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             CargarDatosTxt();
         }
 
-        private void pboxOjo_MouseDown(object sender, MouseEventArgs e)
-        {
-            pboxOjo.Image = Properties.Resources.ojo;
-            if (txtContraseña.PasswordChar == '*')
-            {
-                txtContraseña.PasswordChar = '\0';
-            }
-
-        }
-
-        private void pboxOjo_MouseUp(object sender, MouseEventArgs e)
-        {
-            pboxOjo.Image = Properties.Resources.ojo_cerrado;
-            if (txtContraseña.PasswordChar == '\0')
-            {
-                txtContraseña.PasswordChar = '*';
-
-            }
-        }
+        
 
         public void ObtenerFoto()
         {
@@ -148,7 +135,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             {
                 try
                 {
-                    if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtContraseña.Text) || String.IsNullOrEmpty(txtAlias.Text))
+                    if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtAlias.Text))
                     {
                         throw new Exception("No se permiten espacios en blanco (Nombre, Usuario, Contraseña)");
                     }
@@ -169,7 +156,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
                             idUsuarios = usuarioActual.idUsuarios,
                             NombreCompleto = txtNombre.Text.Trim(),
                             NombreAlias = txtAlias.Text.Trim(),
-                            Clave = txtContraseña.Text.Trim(),
+                            Email = txtCorreo.Text.Trim(),
                             Roles = new Roles
                             {
                                 idRoles = Convert.ToInt32(dropRoles.SelectedValue)
@@ -203,9 +190,11 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
         private void RegistrarNuevoEmpleado()
         {
             byte[] fotoBytes = null;
+            ProtocoloEmail protocolemail = new ProtocoloEmail();
             try
             {
-                if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtContraseña.Text) || String.IsNullOrEmpty(txtAlias.Text))
+
+                if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtAlias.Text))
                 {
                     throw new Exception("No se permiten espacios en blanco (Nombre, Usuario, Contraseña)");
                 }
@@ -219,20 +208,24 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
                         fotoBytes = ms.ToArray();
                     }
                 }
-                    
+
+                string claveTemporal = GenerarClaveTemporal();
+
                 Usuarios NuevoEmpleado = new Usuarios
                 {
                     NombreCompleto = txtNombre.Text.Trim(),
                     NombreAlias = txtAlias.Text.Trim(),
-                    Clave = txtContraseña.Text.Trim(),
+                    Clave = claveTemporal,
                     Roles = new Roles
                     {
                         idRoles = Convert.ToInt32(dropRoles.SelectedValue)
                     },
                     Telefono = txtTelefono.Text.Trim(),
+                    Email = txtCorreo.Text.Trim(),
                     Foto = fotoBytes
                 };
 
+                protocolemail.EnviarCredenciales(NuevoEmpleado.Email,NuevoEmpleado.Clave,NuevoEmpleado.NombreAlias);
                 bool exito = usuarioRepo.NuevoEmpleado(NuevoEmpleado);
 
                 if (exito)
@@ -254,12 +247,33 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             }
         }
 
+        // Clase que genera una clave temporal a empleados nuevos
+        public static string GenerarClaveTemporal(int longitud = 10)
+        {
+            const string caracteres = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789@$!%*?";
+            var password = new char[longitud];
+
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                byte[] data = new byte[longitud];
+
+                rng.GetBytes(data);
+
+                for (int i = 0; i < longitud; i++)
+                {
+                    password[i] = caracteres[data[i] % caracteres.Length];
+                }
+            }
+
+            return new string(password);
+        }
+
         private void DeshabilitarControles()
         {
             txtNombre.Enabled = false;
             txtAlias.Enabled = false;
             txtTelefono.Enabled = false;
-            txtContraseña.Enabled = false;
+            txtCorreo.Enabled = false;
             dropRoles.Enabled = false;
             btnActualizarFoto.Enabled = false;
             btnGuardar.Enabled = false;
@@ -272,10 +286,10 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             txtNombre.Enabled = true;
             txtAlias.Enabled = true;
             txtTelefono.Enabled = true;
+            txtCorreo.Enabled = true;
             dropRoles.Enabled = true;
             btnActualizarFoto.Enabled = true;
             btnModificar.Enabled = false;
-            txtContraseña.Enabled = true;
             btnCancelar.Enabled = true;
         }
 
@@ -285,6 +299,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             txtNombre.Text = usuarioActual.NombreCompleto.ToString();
             txtAlias.Text = usuarioActual.NombreAlias.ToString();
             txtTelefono.Text = usuarioActual.Telefono.ToString();
+            txtCorreo.Text = usuarioActual.Email.ToString();
 
             if (usuarioActual.UltimoLogin == null)
                 lblUltimoAcceso.Text = "---";
@@ -307,6 +322,6 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             dropRoles.DisplayMember = "Tipo";
             dropRoles.ValueMember = "idRoles";
         }
-                  
+
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BCrypt.Net;
+using System.Security.Cryptography;
 
 namespace PrintTrack.Repositorios
 {
@@ -19,7 +20,7 @@ namespace PrintTrack.Repositorios
         {
             using(MySqlConnection conexion = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT u.idUsuarios,u.NombreCompleto,u.NombreAlias,u.Clave,u.Telefono," +
+                string query = "SELECT u.idUsuarios,u.NombreCompleto,u.NombreAlias,u.Clave,u.Telefono,u.Email,u.Foto," +
                     "r.idRoles,r.Tipo,u.UltimoLogin,u.Estado " +
                     "FROM Usuarios u " +
                     "INNER JOIN Roles r ON u.Roles = r.idRoles " +
@@ -46,6 +47,8 @@ namespace PrintTrack.Repositorios
                                     NombreCompleto = reader["NombreCompleto"].ToString(),
                                     NombreAlias = reader["NombreAlias"].ToString(),
                                     Telefono = reader["Telefono"].ToString(),
+                                    Email = reader["Email"].ToString(),
+                                    Foto = reader["Foto"] == DBNull.Value ? null : (byte[])reader["Foto"],
                                     Estado = Convert.ToInt32(reader["Estado"]),
                                     Roles = new Roles
                                     {
@@ -87,7 +90,7 @@ namespace PrintTrack.Repositorios
             using (var conn = ConexionDB.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias,u.Telefono,u.Foto," +
+                string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias,u.Telefono,u.Foto,u.Email," +
                     "r.idRoles, r.Tipo,u.UltimoLogin,u.Estado " +
                     "FROM Usuarios u " +
                     "INNER JOIN Roles r ON u.Roles = r.idRoles " +
@@ -104,6 +107,7 @@ namespace PrintTrack.Repositorios
                                 NombreCompleto = reader["NombreCompleto"].ToString(),
                                 NombreAlias = reader["NombreAlias"].ToString(),
                                 Telefono = reader["Telefono"].ToString(),
+                                Email = reader["Email"].ToString(),
                                 Estado = reader.GetInt32("Estado"),
                                 Foto = reader["Foto"] == DBNull.Value ? null : (byte[])reader["Foto"],
                                 Roles = new Roles
@@ -121,13 +125,14 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        // Obtener los empleados archivados en la lista
         public List<Usuarios> ObtenerUsuariosArchivados()
         {
             var lista = new List<Usuarios>();
             using (var conn = ConexionDB.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias, u.Telefono,u.Foto," +
+                string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias, u.Telefono,u.Foto,u.Email," +
                     "r.idRoles, r.Tipo,u.UltimoLogin,u.Estado " +
                     "FROM Usuarios u " +
                     "INNER JOIN Roles r ON u.Roles = r.idRoles " +
@@ -144,6 +149,7 @@ namespace PrintTrack.Repositorios
                                 NombreCompleto = reader["NombreCompleto"].ToString(),
                                 NombreAlias = reader["NombreAlias"].ToString(),
                                 Telefono = reader["Telefono"].ToString(),
+                                Email = reader["Email"].ToString(),
                                 Estado = reader.GetInt32("Estado"),
                                 Foto = reader["Foto"] == DBNull.Value ? null : (byte[])reader["Foto"],
                                 Roles = new Roles
@@ -162,8 +168,8 @@ namespace PrintTrack.Repositorios
         }
 
 
-
-
+        
+        // Archivar empleado en la base de datos
         public bool ArchivarEmpleado(int idUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
@@ -183,6 +189,7 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        // Desarchivar empleado en la base de datos
         public bool DesarchivarEmpleado(int idUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
@@ -200,12 +207,13 @@ namespace PrintTrack.Repositorios
         }
 
 
+        // Actualizar datos del empleado en la base de datos
         public bool ActualizarEmpleado(Usuarios empleado)
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
                 string query = "UPDATE USUARIOS SET NombreCompleto = @nombre, " +
-                    "NombreAlias = @Alias, Clave = @clave, Roles = @rol, Telefono = @telefono, Foto = @foto " +
+                    "NombreAlias = @Alias, Roles = @rol, Telefono = @telefono, Foto = @foto, Email = @email " +
                     "WHERE (idUsuarios = @id)";
 
 
@@ -214,10 +222,11 @@ namespace PrintTrack.Repositorios
                     cmd.Parameters.AddWithValue("@id", empleado.idUsuarios);
                     cmd.Parameters.AddWithValue("@nombre", empleado.NombreCompleto);
                     cmd.Parameters.AddWithValue("@alias", empleado.NombreAlias);
+                    cmd.Parameters.AddWithValue("@email", empleado.Email);
                     cmd.Parameters.AddWithValue("@rol", empleado.Roles.idRoles);
                     cmd.Parameters.AddWithValue("@telefono", empleado.Telefono);
                     cmd.Parameters.AddWithValue("@foto", (empleado.Foto != null && empleado.Foto.Length > 0) ? empleado.Foto : (object)DBNull.Value);
-
+                    
 
                     conn.Open();
                     int filasAfectadas = cmd.ExecuteNonQuery();
@@ -230,14 +239,15 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        // Nuevo empleado en la base de datos (Utilizando Hasheo a la contraseña)
         public bool NuevoEmpleado(Usuarios NuevoEmpleado)
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-
+                // Hasheo a la contraseña
                 string hash = BCrypt.Net.BCrypt.HashPassword(NuevoEmpleado.Clave);
 
-                string query = "INSERT INTO USUARIOS (NombreCompleto,NombreAlias,Clave,Roles,Telefono,Foto) VALUES (@nombre,@alias,@clave,@rol,@telefono,@foto)";
+                string query = "INSERT INTO USUARIOS (NombreCompleto,NombreAlias,Clave,Roles,Telefono,Foto,Email) VALUES (@nombre,@alias,@clave,@rol,@telefono,@foto,@email)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -246,6 +256,7 @@ namespace PrintTrack.Repositorios
                     cmd.Parameters.AddWithValue("@clave", hash);
                     cmd.Parameters.AddWithValue("@rol", NuevoEmpleado.Roles.idRoles);
                     cmd.Parameters.AddWithValue("@telefono", NuevoEmpleado.Telefono);
+                    cmd.Parameters.AddWithValue("@email", NuevoEmpleado.Email);
                     cmd.Parameters.AddWithValue("@foto", (NuevoEmpleado.Foto != null && NuevoEmpleado.Foto.Length > 0) ? NuevoEmpleado.Foto : (object)DBNull.Value);
 
                     conn.Open();
@@ -256,6 +267,118 @@ namespace PrintTrack.Repositorios
                 }
 
 
+            }
+        }
+
+
+        // Actualizar clave/contraseña de usuario
+        public bool ActualizarClave(int idUsuario, string nuevaClave)
+        {
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                // Hasheo de contraseña
+                string hash = BCrypt.Net.BCrypt.HashPassword(nuevaClave);
+
+                // Query SQL
+                string query = "UPDATE USUARIOS SET Clave = @clave WHERE (idUsuarios = @id)";
+
+                using(var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@clave", hash);
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    return filasAfectadas > 0;
+                }
+
+            }
+        }
+
+        public bool ActualizarNombreUsuario(int idUsuario, string nuevoUsuario)
+        {
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "UPDATE USUARIOS SET NombreAlias = @nuevo WHERE (idUsuarios = @id)";
+
+                using(var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nuevo", nuevoUsuario);
+                    cmd.Parameters.AddWithValue("@id", idUsuario);
+
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
+        public Usuarios ReloadUsuario(int idUsuario)
+        {
+            using (MySqlConnection conexion = ConexionDB.ObtenerConexion())
+            {
+                string query = @"SELECT u.idUsuarios,u.NombreCompleto,u.NombreAlias,u.Clave,
+                                u.Telefono,u.Email,u.Foto,
+                                r.idRoles,r.Tipo,
+                                u.UltimoLogin,u.Estado
+                         FROM Usuarios u
+                         INNER JOIN Roles r ON u.Roles = r.idRoles
+                         WHERE u.idUsuarios = @id";
+
+                MySqlCommand cmd = new MySqlCommand(query, conexion);
+                cmd.Parameters.AddWithValue("@id", idUsuario);
+
+                conexion.Open();
+
+                using (MySqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new Usuarios
+                        {
+                            idUsuarios = Convert.ToInt32(reader["idUsuarios"]),
+                            NombreCompleto = reader["NombreCompleto"].ToString(),
+                            NombreAlias = reader["NombreAlias"].ToString(),
+                            Telefono = reader["Telefono"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            Foto = reader["Foto"] == DBNull.Value ? null : (byte[])reader["Foto"],
+                            Estado = Convert.ToInt32(reader["Estado"]),
+                            Roles = new Roles
+                            {
+                                idRoles = Convert.ToInt32(reader["idRoles"]),
+                                Tipo = reader["Tipo"].ToString()
+                            },
+                            UltimoLogin = reader["UltimoLogin"] == DBNull.Value
+                                            ? (DateTime?)null
+                                            : Convert.ToDateTime(reader["UltimoLogin"])
+                        };
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        public bool VerificadorUsuarioExistente(string nombreUsuario)
+        {
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "SELECT COUNT(*) FROM USUARIOS WHERE NombreAlias = @usuario";
+
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@usuario", nombreUsuario);
+
+                    conn.Open();
+                    int conteo = Convert.ToInt32(cmd.ExecuteScalar());
+                    conn.Close();
+
+                    return conteo > 0;
+                }
             }
         }
 

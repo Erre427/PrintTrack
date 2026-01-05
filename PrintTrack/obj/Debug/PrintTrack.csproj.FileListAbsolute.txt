@@ -566,3 +566,9 @@ C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\Print
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Clientes.ArchivoClientes_Frm.resources
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\BCrypt.Net-Next.dll
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Inventario_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.DetallesProducto_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.MonitoreoInventario_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Perfil.Perfil_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Configuracion.ClaveNueva_Frm.resources
+C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Perfil.NuevoNombre_Frm.resources

@@ -15,6 +15,7 @@ namespace PrintTrack.Forms.F_Clientes
 {
     public partial class DetallesClientes_Frm : Form
     {
+        // Variables iniciales
         ClientesRepositorio repo = new ClientesRepositorio();
         private Clientes cliente;
         private ModoFormulario modo;
@@ -48,6 +49,9 @@ namespace PrintTrack.Forms.F_Clientes
             txtDescripcion.Enabled = true;
         }
 
+        
+
+
         private void NuevoCliente()
         {
             try
@@ -59,6 +63,14 @@ namespace PrintTrack.Forms.F_Clientes
                     {
                         throw new Exception("Minimo se requiere un nombre y numero de telefono!");
                     }
+
+                    bool verificarEmail = Verificador.Email(txtEmail.Text);
+
+                    if (verificarEmail == false)
+                    {
+                        throw new Exception("Correo Electronico no valido");
+                    }
+
                     Clientes nuevoCliente = new Clientes()
                     {
                         Nombre = txtNombre.Text.Trim(),
@@ -92,28 +104,42 @@ namespace PrintTrack.Forms.F_Clientes
         {
             DialogResult resultado = MessageBox.Show($"¿Desea editar el cliente? {cliente.Nombre}", "Editar Cliente", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(resultado == DialogResult.Yes)
+            try
             {
-                Clientes clienteEditado = new Clientes()
+                if (resultado == DialogResult.Yes)
                 {
-                    idCliente = cliente.idCliente,
-                    Nombre = txtNombre.Text.Trim(),
-                    Telefono = txtTelefono.Text.Trim(),
-                    Email = txtEmail.Text.Trim(),
-                    Descripcion = txtDescripcion.Text.Trim()
-                };
+                    bool verificador = Verificador.Email(txtEmail.Text);
 
-                bool exito = repo.EditarCliente(clienteEditado);
+                    if (verificador == false)
+                        throw new Exception("Email no valido");
+                    
+                    Clientes clienteEditado = new Clientes()
+                    {
+                        idCliente = cliente.idCliente,
+                        Nombre = txtNombre.Text.Trim(),
+                        Telefono = txtTelefono.Text.Trim(),
+                        Email = txtEmail.Text.Trim(),
+                        Descripcion = txtDescripcion.Text.Trim()
+                    };
 
-                if (exito)
-                {
-                    MessageBox.Show("Cliente editado con exito");
-                }
-                else
-                {
-                    MessageBox.Show("Ocurrio un error");
+                    bool exito = repo.EditarCliente(clienteEditado);
+
+                    if (exito)
+                    {
+                        MessageBox.Show("Cliente editado con exito");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrio un error");
+                    }
                 }
             }
+
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
 
 
         }   
@@ -174,5 +200,6 @@ namespace PrintTrack.Forms.F_Clientes
             DeshabilitarTxt();
             CargarDatos();
         }
+
     }
 }

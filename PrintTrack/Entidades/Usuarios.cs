@@ -14,7 +14,7 @@ namespace PrintTrack.Entidades
         public string NombreCompleto { get; set; }
         public string NombreAlias { get; set; }
         public string Clave { get; set; }
-
+        public string Email { get; set; }
         public string Telefono { get; set; }
         public int Estado { get; set; }
         public Roles Roles { get; set; } // Propiedad de la clase Roles por el FK

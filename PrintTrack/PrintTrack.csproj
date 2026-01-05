@@ -260,6 +260,12 @@
     <Compile Include="Forms\F_Clientes\NuevoCliente_Frm.Designer.cs">
       <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Configuracion\ClaveNueva_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\ClaveNueva_Frm.Designer.cs">
+      <DependentUpon>ClaveNueva_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Configuracion\Configuracion_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -284,6 +290,42 @@
     <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.Designer.cs">
       <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.Designer.cs">
+      <DependentUpon>EntradasProductos_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\Inventario_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\Inventario_Frm.Designer.cs">
+      <DependentUpon>Inventario_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\MonitoreoInventario_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\MonitoreoInventario_Frm.Designer.cs">
+      <DependentUpon>MonitoreoInventario_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\DetallesProducto_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\DetallesProducto_Frm.Designer.cs">
+      <DependentUpon>DetallesProducto_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Perfil\NuevoNombre_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Perfil\NuevoNombre_Frm.Designer.cs">
+      <DependentUpon>NuevoNombre_Frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\F_Perfil\Perfil_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Perfil\Perfil_Frm.Designer.cs">
+      <DependentUpon>Perfil_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MenuFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -306,8 +348,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ClientesRepositorio.cs" />
     <Compile Include="Repositorios\ConexionDB.cs" />
+    <Compile Include="Repositorios\ProtocoloEmail.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
+    <Compile Include="Repositorios\Verificador.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />
     <EmbeddedResource Include="Forms\AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
@@ -327,6 +371,9 @@
     <EmbeddedResource Include="Forms\F_Clientes\NuevoCliente_Frm.resx">
       <DependentUpon>NuevoCliente_Frm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\ClaveNueva_Frm.resx">
+      <DependentUpon>ClaveNueva_Frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Configuracion\Configuracion_Frm.resx">
       <DependentUpon>Configuracion_Frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,6 +385,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.resx">
       <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
+      <DependentUpon>Inventario_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\DetallesProducto_Frm.resx">
+      <DependentUpon>DetallesProducto_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\MonitoreoInventario_Frm.resx">
+      <DependentUpon>MonitoreoInventario_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Perfil\NuevoNombre_Frm.resx">
+      <DependentUpon>NuevoNombre_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Perfil\Perfil_Frm.resx">
+      <DependentUpon>Perfil_Frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
       <DependentUpon>MenuFrm.cs</DependentUpon>
@@ -468,6 +530,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\archivo %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5132510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filtrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\almacenar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor-de-ekg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -50,10 +50,8 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pnlClave = new System.Windows.Forms.Panel();
-            this.txtContraseña = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuLabel5 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.pboxOjo = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtCorreo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnGuardar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnActualizarFoto = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.lblUltimoAcceso = new Bunifu.UI.WinForms.BunifuLabel();
@@ -72,8 +70,6 @@
             this.lblTitulo = new Bunifu.UI.WinForms.BunifuLabel();
             this.pnlModificar = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
-            this.pnlClave.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).BeginInit();
             this.pnlModificar.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +77,8 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pnlClave);
+            this.panel2.Controls.Add(this.bunifuLabel1);
+            this.panel2.Controls.Add(this.txtCorreo);
             this.panel2.Controls.Add(this.btnGuardar);
             this.panel2.Controls.Add(this.btnActualizarFoto);
             this.panel2.Controls.Add(this.lblUltimoAcceso);
@@ -97,122 +94,99 @@
             this.panel2.Controls.Add(this.pbxFoto);
             this.panel2.Location = new System.Drawing.Point(12, 81);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(656, 503);
+            this.panel2.Size = new System.Drawing.Size(656, 477);
             this.panel2.TabIndex = 6;
             // 
-            // pnlClave
+            // bunifuLabel1
             // 
-            this.pnlClave.Controls.Add(this.txtContraseña);
-            this.pnlClave.Controls.Add(this.bunifuLabel5);
-            this.pnlClave.Controls.Add(this.pboxOjo);
-            this.pnlClave.Location = new System.Drawing.Point(28, 327);
-            this.pnlClave.Name = "pnlClave";
-            this.pnlClave.Size = new System.Drawing.Size(355, 69);
-            this.pnlClave.TabIndex = 18;
+            this.bunifuLabel1.AllowParentOverrides = false;
+            this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.Location = new System.Drawing.Point(24, 315);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(137, 21);
+            this.bunifuLabel1.TabIndex = 19;
+            this.bunifuLabel1.Text = "Correo Electronico";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // txtContraseña
+            // txtCorreo
             // 
-            this.txtContraseña.AcceptsReturn = false;
-            this.txtContraseña.AcceptsTab = false;
-            this.txtContraseña.AnimationSpeed = 200;
-            this.txtContraseña.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtContraseña.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtContraseña.BackColor = System.Drawing.Color.Transparent;
-            this.txtContraseña.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtContraseña.BackgroundImage")));
-            this.txtContraseña.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtContraseña.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtContraseña.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtContraseña.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtContraseña.BorderRadius = 5;
-            this.txtContraseña.BorderThickness = 1;
-            this.txtContraseña.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtContraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.txtContraseña.DefaultText = "";
-            this.txtContraseña.Enabled = false;
-            this.txtContraseña.FillColor = System.Drawing.Color.White;
-            this.txtContraseña.HideSelection = true;
-            this.txtContraseña.IconLeft = null;
-            this.txtContraseña.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.IconPadding = 10;
-            this.txtContraseña.IconRight = null;
-            this.txtContraseña.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtContraseña.Lines = new string[0];
-            this.txtContraseña.Location = new System.Drawing.Point(0, 29);
-            this.txtContraseña.MaxLength = 32767;
-            this.txtContraseña.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtContraseña.Modified = false;
-            this.txtContraseña.Multiline = false;
-            this.txtContraseña.Name = "txtContraseña";
+            this.txtCorreo.AcceptsReturn = false;
+            this.txtCorreo.AcceptsTab = false;
+            this.txtCorreo.AnimationSpeed = 200;
+            this.txtCorreo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtCorreo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtCorreo.BackColor = System.Drawing.Color.Transparent;
+            this.txtCorreo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtCorreo.BackgroundImage")));
+            this.txtCorreo.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtCorreo.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtCorreo.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtCorreo.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtCorreo.BorderRadius = 5;
+            this.txtCorreo.BorderThickness = 1;
+            this.txtCorreo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCorreo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCorreo.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
+            this.txtCorreo.DefaultText = "";
+            this.txtCorreo.Enabled = false;
+            this.txtCorreo.FillColor = System.Drawing.Color.White;
+            this.txtCorreo.HideSelection = true;
+            this.txtCorreo.IconLeft = null;
+            this.txtCorreo.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCorreo.IconPadding = 10;
+            this.txtCorreo.IconRight = null;
+            this.txtCorreo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCorreo.Lines = new string[0];
+            this.txtCorreo.Location = new System.Drawing.Point(24, 342);
+            this.txtCorreo.MaxLength = 32767;
+            this.txtCorreo.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtCorreo.Modified = false;
+            this.txtCorreo.Multiline = false;
+            this.txtCorreo.Name = "txtCorreo";
             stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties1.FillColor = System.Drawing.Color.Empty;
             stateProperties1.ForeColor = System.Drawing.Color.Empty;
             stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtContraseña.OnActiveState = stateProperties1;
+            this.txtCorreo.OnActiveState = stateProperties1;
             stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtContraseña.OnDisabledState = stateProperties2;
+            this.txtCorreo.OnDisabledState = stateProperties2;
             stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties3.FillColor = System.Drawing.Color.Empty;
             stateProperties3.ForeColor = System.Drawing.Color.Empty;
             stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtContraseña.OnHoverState = stateProperties3;
+            this.txtCorreo.OnHoverState = stateProperties3;
             stateProperties4.BorderColor = System.Drawing.Color.Silver;
             stateProperties4.FillColor = System.Drawing.Color.White;
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtContraseña.OnIdleState = stateProperties4;
-            this.txtContraseña.Padding = new System.Windows.Forms.Padding(3);
-            this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtContraseña.PlaceholderText = "Buscar empleado";
-            this.txtContraseña.ReadOnly = false;
-            this.txtContraseña.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtContraseña.SelectedText = "";
-            this.txtContraseña.SelectionLength = 0;
-            this.txtContraseña.SelectionStart = 0;
-            this.txtContraseña.ShortcutsEnabled = true;
-            this.txtContraseña.Size = new System.Drawing.Size(294, 37);
-            this.txtContraseña.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtContraseña.TabIndex = 8;
-            this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtContraseña.TextMarginBottom = 0;
-            this.txtContraseña.TextMarginLeft = 3;
-            this.txtContraseña.TextMarginTop = 0;
-            this.txtContraseña.TextPlaceholder = "Buscar empleado";
-            this.txtContraseña.UseSystemPasswordChar = false;
-            this.txtContraseña.WordWrap = true;
-            this.txtContraseña.TextChange += new System.EventHandler(this.CambiosNoGuardados);
-            // 
-            // bunifuLabel5
-            // 
-            this.bunifuLabel5.AllowParentOverrides = false;
-            this.bunifuLabel5.AutoEllipsis = false;
-            this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel5.Location = new System.Drawing.Point(3, 2);
-            this.bunifuLabel5.Name = "bunifuLabel5";
-            this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel5.Size = new System.Drawing.Size(162, 21);
-            this.bunifuLabel5.TabIndex = 7;
-            this.bunifuLabel5.Text = "Contraseña de Acceso";
-            this.bunifuLabel5.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel5.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // pboxOjo
-            // 
-            this.pboxOjo.Image = global::PrintTrack.Properties.Resources.ojo_cerrado;
-            this.pboxOjo.Location = new System.Drawing.Point(300, 37);
-            this.pboxOjo.Name = "pboxOjo";
-            this.pboxOjo.Size = new System.Drawing.Size(24, 23);
-            this.pboxOjo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pboxOjo.TabIndex = 17;
-            this.pboxOjo.TabStop = false;
-            this.pboxOjo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pboxOjo_MouseDown);
-            this.pboxOjo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pboxOjo_MouseUp);
+            this.txtCorreo.OnIdleState = stateProperties4;
+            this.txtCorreo.Padding = new System.Windows.Forms.Padding(3);
+            this.txtCorreo.PasswordChar = '\0';
+            this.txtCorreo.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtCorreo.PlaceholderText = "Buscar empleado";
+            this.txtCorreo.ReadOnly = false;
+            this.txtCorreo.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtCorreo.SelectedText = "";
+            this.txtCorreo.SelectionLength = 0;
+            this.txtCorreo.SelectionStart = 0;
+            this.txtCorreo.ShortcutsEnabled = true;
+            this.txtCorreo.Size = new System.Drawing.Size(368, 37);
+            this.txtCorreo.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtCorreo.TabIndex = 20;
+            this.txtCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtCorreo.TextMarginBottom = 0;
+            this.txtCorreo.TextMarginLeft = 3;
+            this.txtCorreo.TextMarginTop = 0;
+            this.txtCorreo.TextPlaceholder = "Buscar empleado";
+            this.txtCorreo.UseSystemPasswordChar = false;
+            this.txtCorreo.WordWrap = true;
             // 
             // btnGuardar
             // 
@@ -401,7 +375,7 @@
             this.lblUltimoAcceso.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblUltimoAcceso.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblUltimoAcceso.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblUltimoAcceso.Location = new System.Drawing.Point(28, 443);
+            this.lblUltimoAcceso.Location = new System.Drawing.Point(24, 434);
             this.lblUltimoAcceso.Name = "lblUltimoAcceso";
             this.lblUltimoAcceso.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblUltimoAcceso.Size = new System.Drawing.Size(92, 21);
@@ -509,7 +483,7 @@
             this.lblTextoUltimoAcceso.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblTextoUltimoAcceso.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblTextoUltimoAcceso.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTextoUltimoAcceso.Location = new System.Drawing.Point(28, 416);
+            this.lblTextoUltimoAcceso.Location = new System.Drawing.Point(24, 407);
             this.lblTextoUltimoAcceso.Name = "lblTextoUltimoAcceso";
             this.lblTextoUltimoAcceso.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblTextoUltimoAcceso.Size = new System.Drawing.Size(106, 21);
@@ -585,7 +559,7 @@
             this.bunifuLabel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel3.Location = new System.Drawing.Point(28, 90);
+            this.bunifuLabel3.Location = new System.Drawing.Point(24, 89);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(191, 21);
@@ -622,7 +596,7 @@
             this.txtAlias.IconRight = null;
             this.txtAlias.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAlias.Lines = new string[0];
-            this.txtAlias.Location = new System.Drawing.Point(28, 117);
+            this.txtAlias.Location = new System.Drawing.Point(24, 116);
             this.txtAlias.MaxLength = 32767;
             this.txtAlias.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtAlias.Modified = false;
@@ -677,7 +651,7 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(28, 19);
+            this.bunifuLabel2.Location = new System.Drawing.Point(24, 18);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(138, 21);
@@ -714,7 +688,7 @@
             this.txtNombre.IconRight = null;
             this.txtNombre.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(28, 44);
+            this.txtNombre.Location = new System.Drawing.Point(24, 43);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombre.Modified = false;
@@ -982,7 +956,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 619);
+            this.ClientSize = new System.Drawing.Size(679, 576);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.pnlModificar);
             this.Controls.Add(this.panel2);
@@ -994,9 +968,6 @@
             this.Load += new System.EventHandler(this.EmpleadosDetalles_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnlClave.ResumeLayout(false);
-            this.pnlClave.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxOjo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFoto)).EndInit();
             this.pnlModificar.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1012,8 +983,6 @@
         private Bunifu.UI.WinForms.BunifuLabel lblTextoUltimoAcceso;
         private Bunifu.UI.WinForms.BunifuDropdown dropRoles;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
-        private Bunifu.UI.WinForms.BunifuTextBox txtContraseña;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuTextBox txtAlias;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
@@ -1023,10 +992,10 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGuardar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnModificar;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnCancelar;
-        private System.Windows.Forms.PictureBox pboxOjo;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnActualizarFoto;
         private Bunifu.UI.WinForms.BunifuLabel lblTitulo;
         private System.Windows.Forms.Panel pnlModificar;
-        private System.Windows.Forms.Panel pnlClave;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuTextBox txtCorreo;
     }
 }

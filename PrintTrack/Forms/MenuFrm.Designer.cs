@@ -348,6 +348,7 @@
             this.btnPerfil.TextMarginLeft = 0;
             this.btnPerfil.TextPadding = new System.Windows.Forms.Padding(53, 0, 0, 0);
             this.btnPerfil.UseDefaultRadiusAndThickness = true;
+            this.btnPerfil.Click += new System.EventHandler(this.btnPerfil_Click);
             // 
             // btnProductos
             // 

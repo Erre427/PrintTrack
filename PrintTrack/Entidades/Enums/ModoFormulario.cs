@@ -9,6 +9,7 @@ namespace PrintTrack.Entidades.Enums
     public enum ModoFormulario
     {
         Crear,
-        Editar
+        Editar,
+        NuevoUusuario
     }
 }

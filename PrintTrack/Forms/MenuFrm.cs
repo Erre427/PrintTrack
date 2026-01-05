@@ -1,6 +1,8 @@
 ﻿using PrintTrack.Entidades;
+using PrintTrack.Entidades.Enums;
 using PrintTrack.Forms.F_Clientes;
 using PrintTrack.Forms.F_Configuracion;
+using PrintTrack.Forms.F_Perfil;
 using PrintTrack.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -17,7 +19,6 @@ namespace PrintTrack.Forms
     public partial class MenuFrm : Form
     {
         private Usuarios usuario;
-        
         public MenuFrm()
         {
             InitializeComponent();
@@ -36,6 +37,12 @@ namespace PrintTrack.Forms
             if(usuario.Roles.idRoles != 1 && usuario.Roles.idRoles != 0)
             {
                 btnConfiguracion.Visible = false;
+            }
+
+            if(usuario.UltimoLogin == null)
+            {
+                ClaveNueva_Frm activacion = new ClaveNueva_Frm(usuario, ModoFormulario.NuevoUusuario);
+                activacion.ShowDialog();
             }
             
         }
@@ -94,6 +101,11 @@ namespace PrintTrack.Forms
         private void btnConfiguracion_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new Configuracion_Frm(this)); // se pasa como parametro el Form para que lo ubique el constructor
+        }
+
+        private void btnPerfil_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Perfil_Frm());
         }
     }
 }
