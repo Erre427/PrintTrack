@@ -194,6 +194,7 @@
     <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
     </Reference>
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
@@ -290,6 +291,12 @@
     <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.Designer.cs">
       <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.Designer.cs">
+      <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -332,6 +339,12 @@
     <Compile Include="Forms\MenuFrm.Designer.cs">
       <DependentUpon>MenuFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\pantallaCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\pantallaCarga.Designer.cs">
+      <DependentUpon>pantallaCarga.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\SplashScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +361,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorios\ClientesRepositorio.cs" />
     <Compile Include="Repositorios\ConexionDB.cs" />
+    <Compile Include="Repositorios\Plantillas\htmls.cs" />
     <Compile Include="Repositorios\ProtocoloEmail.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
@@ -386,6 +400,9 @@
     <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosDetalles.resx">
       <DependentUpon>EmpleadosDetalles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.resx">
+      <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
       <DependentUpon>Inventario_Frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +420,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MenuFrm.resx">
       <DependentUpon>MenuFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\pantallaCarga.resx">
+      <DependentUpon>pantallaCarga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.cs</DependentUpon>
@@ -551,6 +571,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\person.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\correo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\correo %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -102,6 +102,8 @@ namespace PrintTrack.Forms.F_Configuracion
                         CargarDatos();
                     }
                     break;
+
+                
             }
         }
 
@@ -111,6 +113,12 @@ namespace PrintTrack.Forms.F_Configuracion
             EmpleadosArchivo frm = new EmpleadosArchivo();
             frm.ShowDialog();
             CargarDatos();
+        }
+
+        private void btnCorreo_Click(object sender, EventArgs e)
+        {
+            EmpleadosEnviarCorreos_Frm enviarCorreo = new EmpleadosEnviarCorreos_Frm(listaEmpleados);
+            enviarCorreo.ShowDialog();
         }
     }
 }

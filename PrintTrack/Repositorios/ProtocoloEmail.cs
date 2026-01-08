@@ -1,6 +1,10 @@
-﻿using System;
+﻿using PrintTrack.Entidades;
+using PrintTrack.Repositorios.Plantillas;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
+using System.Management;
 using System.Net;
 using System.Net.Mail;
 using System.Text;
@@ -11,67 +15,62 @@ namespace PrintTrack.Repositorios
     // Clase logica para mandar correos
     internal class ProtocoloEmail
     {
-        // Credenciales y datos principales
-        MailAddress remitente = new MailAddress("printtracknoreply@gmail.com", "PrintTrack");
-        SmtpClient cliente = new SmtpClient("smtp.gmail.com");
+        private readonly string _correo;
+        private readonly string _clave;
+
+        public ProtocoloEmail()
+        {
+            _correo = ConfigurationManager.AppSettings["EmailUser"];
+            _clave = ConfigurationManager.AppSettings["EmailPass"];
+        }
+
+
+        public void Enviar(string destinatario, string asunto, string html)
+        {
+            var remitente = new MailAddress(_correo, "PrintTrack");
+            var mensaje = new MailMessage(remitente, new MailAddress(destinatario))
+            {
+                Subject = asunto,
+                Body = html,
+                IsBodyHtml = true
+            };
+
+            var cliente = new SmtpClient("smtp.gmail.com", 587)
+            {
+                EnableSsl = true,
+                Credentials = new NetworkCredential(_correo, _clave)
+            };
+
+            cliente.Send(mensaje);
+
+        }
 
 
         // Metodo para enviar credenciales a empleados nuevos
         public void EnviarCredenciales(string correo,string clave,string usuario)
         {
+            string html;
+
             string asunto = "CREDENCIALES DE ACCESO AL SISTEMA";
-            string cuerpo = $@"
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-</head>
-<body style='font-family: Arial, Helvetica, sans-serif; color:#333; line-height:1.6'>
 
-    <p><strong>Hola!</strong></p>
+            html = htmls.CredencialesNuevoUsuario(clave, usuario, asunto);
+            
 
-    <p>
-        Nos da mucho gusto tenerte como nuevo miembro en el equipo,<br>
-        por lo tanto te adjuntamos en este correo las credenciales para<br>
-        entrar a nuestro sistema por primera vez.
-    </p>
-
-    <h3 style='margin-top:25px;'>CREDENCIALES</h3>
-
-    <table style='border-collapse: collapse;'>
-        <tr>
-            <td style='padding:6px 10px; font-weight:bold;'>Usuario:</td>
-            <td style='padding:6px 10px;'>{usuario}</td>
-        </tr>
-        <tr>
-            <td style='padding:6px 10px; font-weight:bold;'>Contraseña temporal:</td>
-            <td style='padding:6px 10px;'>{clave}</td>
-        </tr>
-    </table>
-
-    <p style='margin-top:20px;'>
-        Por seguridad el sistema te pedirá crear una contraseña nueva solo<br>
-        para que tú puedas entrar con tu perfil.
-    </p>
-
-    <p style='margin-top:20px;'>Un saludo.</p>
-
-</body>
-</html>";
-
-            MailAddress destinatario = new MailAddress(correo);
-            MailMessage mensaje = new MailMessage(remitente, destinatario);
-            mensaje.Subject = asunto;
-            mensaje.IsBodyHtml = true;
-            mensaje.Body = cuerpo;
-
-            cliente.Port = 587;
-            cliente.EnableSsl = true;
-            cliente.UseDefaultCredentials = false;
-            cliente.Credentials = new NetworkCredential("printtracknoreply@gmail.com", "gbunyythijfaettn");
-
-            cliente.Send(mensaje);
+            Enviar(correo, asunto, html);
 
         }
+
+        public void AnuncioGeneral(List<Usuarios> usuariosSeleccionados, string asunto, string mensaje)
+        {
+            string html;
+
+            foreach(Usuarios user in usuariosSeleccionados)
+            {
+                html = htmls.Anuncio(asunto, mensaje, user.NombreCompleto);
+
+                Enviar(user.Email.ToLower(), asunto, html);
+            }
+        }
+
     }
 }

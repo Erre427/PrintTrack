@@ -18,33 +18,81 @@ using Org.BouncyCastle.Tls;
 namespace PrintTrack.Forms.F_Configuracion.F_Empleados
 {
     
+    // Formulario para ver, crear y editar los detalles de un empleado.
+    // - Muestra y edita propiedades de la entidad Usuarios.
+    // - Usa RolesRepository para obtener la lista de roles.
+    // - Usa UsuarioRepositorio para persistir cambios en la base de datos.
+    // - Maneja la foto del usuario como un arreglo de bytes (byte[]), normalmente en formato JPEG.
     public partial class EmpleadosDetalles : Form
     {
+        // Variables e instancias principales
         private Usuarios usuarioActual;
         RolesRepository repoRoles = new RolesRepository();
         UsuarioRepositorio usuarioRepo = new UsuarioRepositorio();
+        pantallaCarga carga = new pantallaCarga();
         private ModoFormulario modo;
 
+        // Inicializa una nueva instancia del formulario con el usuario y el modo (Crear/Editar).
+        // usuarioActual: Instancia de Usuarios a mostrar o editar. Puede ser null al crear.
+        // modo: Modo del formulario. Determina el flujo (Crear o Editar).
         public EmpleadosDetalles(Usuarios usuarioActual, ModoFormulario modo)
         {
             this.usuarioActual = usuarioActual;
             InitializeComponent();
             this.modo = modo;
         }
-        private void btnGuardar_Click(object sender, EventArgs e)
-        {
-            switch (modo)
-            {
-                case ModoFormulario.Crear:
-                    RegistrarNuevoEmpleado();
-                    break;
 
-                case ModoFormulario.Editar:
-                    EditarEmpleado();
+        // Manejador del botón Guardar. Decide entre crear o editar según el modo.
+        private async void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Enabled = false;
+                switch (modo)
+                {
+                    case ModoFormulario.Crear:
+                        carga.Show();
+                        await Task.Run(() => RegistrarNuevoEmpleado());
+                        CerrarPantallaCarga();
+
+                        MessageBox.Show(this,"Empleado creado con exito!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        this.Close();
+                        this.Dispose();
+                        break;
+
+                    case ModoFormulario.Editar:
+                        DialogResult opc = MessageBox.Show($"¿Esta seguro de editar los datos del empleado {usuarioActual.NombreCompleto}?", "Editar informacion empleado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                        
+                        if(opc == DialogResult.Yes)
+                        {
+                            carga.Show();
+                            await Task.Run(() => EditarEmpleado());
+                            CerrarPantallaCarga();
+
+                            MessageBox.Show(this,"Empleado editado con exito!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        
                     break;
+                }
+
+
             }
+            catch(Exception ex)
+            {
+                CerrarPantallaCarga();
+                MessageBox.Show(this,ex.Message);
+            }
+            finally
+            {
+                this.Enabled = true;
+                this.Activate();
+                this.Focus();
+            }
+            
         }
 
+        // Abre un diálogo para seleccionar una imagen y la carga en el control de imagen.
         private void btnActualizarFoto_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog explorador = new OpenFileDialog();
@@ -60,12 +108,14 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
         }
       
 
+        // Marca que hay cambios no guardados y habilita botones correspondientes.
         private void CambiosNoGuardados(object sender, EventArgs e)
         {
             btnGuardar.Enabled = true;
             btnCancelar.Enabled = true;
         }
 
+        // Inicialización al cargar el formulario. Configura la UI según el modo.
         private void EmpleadosDetalles_Load(object sender, EventArgs e)
         {
             if(modo == ModoFormulario.Crear)
@@ -88,9 +138,6 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
                 CargarDatosTxt();
                 DeshabilitarControles();
 
-                MessageBox.Show(usuarioActual.Foto?.Length.ToString() ?? "null");
-                MessageBox.Show(pbxFoto.Image == null ? "SIN IMAGEN" : "IMAGEN CARGADA");
-
             }
 
         }
@@ -111,6 +158,8 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
 
         
 
+        // Convierte el arreglo de bytes de la propiedad usuarioActual.Foto a Image
+        // y la asigna al control pbxFoto. Realiza una copia segura para evitar problemas GDI+.
         public void ObtenerFoto()
         {
             if (usuarioActual.Foto != null && usuarioActual.Foto.Length > 0)
@@ -127,14 +176,11 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             }
         }
 
+        // Valida campos y actualiza los datos del empleado en la base de datos.
+        // Construye un objeto Usuarios y llama a UsuarioRepositorio.ActualizarEmpleado.
         private void EditarEmpleado()
         {
-            DialogResult opc = MessageBox.Show($"¿Esta seguro de editar los datos del empleado {usuarioActual.NombreCompleto}?", "Editar informacion empleado", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (opc == DialogResult.Yes)
-            {
-                try
-                {
+                
                     if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtAlias.Text))
                     {
                         throw new Exception("No se permiten espacios en blanco (Nombre, Usuario, Contraseña)");
@@ -169,30 +215,24 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
 
                         if (exito)
                         {
-                            MessageBox.Show("Cambios echos con exito");
                             usuarioActual = datosNuevos;
                             CargarDatosTxt();
                             DeshabilitarControles();
                         }
                         else
                         {
-                            MessageBox.Show("Hubo un error");
+                            throw new Exception("Hubo un error");
                         }
 
                     }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }
         }
+        // Valida campos y crea un nuevo empleado en la base de datos.
+        // Genera una clave temporal, envía credenciales por correo y llama a UsuarioRepositorio.NuevoEmpleado.
         private void RegistrarNuevoEmpleado()
         {
             byte[] fotoBytes = null;
             ProtocoloEmail protocolemail = new ProtocoloEmail();
-            try
-            {
+            
 
                 if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(txtAlias.Text))
                 {
@@ -228,26 +268,16 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
                 protocolemail.EnviarCredenciales(NuevoEmpleado.Email,NuevoEmpleado.Clave,NuevoEmpleado.NombreAlias);
                 bool exito = usuarioRepo.NuevoEmpleado(NuevoEmpleado);
 
-                if (exito)
-                {
-                    MessageBox.Show("Empleado registrado con exito");
-                    this.Close();
-                }
-                else
+                if (!exito)
                 {
                     MessageBox.Show("Hubo un error");
                 }
 
-                
-            }
-
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
-        // Clase que genera una clave temporal a empleados nuevos
+        // Genera una contraseña temporal segura.
+        // longitud: Longitud de la contraseña (por defecto 10).
+        // returns: Cadena aleatoria generada con un RNG criptográfico.
         public static string GenerarClaveTemporal(int longitud = 10)
         {
             const string caracteres = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz0123456789@$!%*?";
@@ -268,6 +298,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             return new string(password);
         }
 
+        // Deshabilita los controles de edición en el formulario.
         private void DeshabilitarControles()
         {
             txtNombre.Enabled = false;
@@ -281,6 +312,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             btnModificar.Enabled = true;
         }
 
+        // Habilita los controles para permitir la edición.
         private void HabilitarControles()
         {
             txtNombre.Enabled = true;
@@ -294,6 +326,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
         }
 
 
+        // Carga los datos de usuarioActual en los controles del formulario.
         private void CargarDatosTxt()
         {
             txtNombre.Text = usuarioActual.NombreCompleto.ToString();
@@ -313,6 +346,7 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
 
         }
 
+        // Carga la lista de roles desde el repositorio y la asigna al control dropRoles.
         private void CargarRoles()
         {
             var roles = repoRoles.ObtenerRoles();
@@ -323,5 +357,10 @@ namespace PrintTrack.Forms.F_Configuracion.F_Empleados
             dropRoles.ValueMember = "idRoles";
         }
 
+        private void CerrarPantallaCarga()
+        {
+            carga.Close();
+            carga.Dispose();
+        }
     }
 }

@@ -12,10 +12,14 @@ using System.Security.Cryptography;
 
 namespace PrintTrack.Repositorios
 {
+    // Repositorio encargado de las operaciones CRUD y consultas relacionadas con la entidad Usuarios.
+    // - Encapsula llamadas a la base de datos MySQL usando MySql.Data.
+    // - Realiza mapeo entre filas del DB y objetos de dominio (Usuarios, Roles).
     internal class UsuarioRepositorio
     {
 
         // Login del usuario, obtiene todos sus datos con la ayuda del Inner Join
+        // Devuelve la entidad Usuarios completa si las credenciales son válidas; actualiza UltimoLogin.
         public Usuarios Login(string alias, string contraseña)
         {
             using(MySqlConnection conexion = ConexionDB.ObtenerConexion())
@@ -84,6 +88,7 @@ namespace PrintTrack.Repositorios
         }
 
         // Obtener una lista de usuarios de la base de datos, excluyendo al propietario (idRoles != 0)
+        // Devuelve una lista de entidades Usuarios con su Rol asociado.
         public List<Usuarios> ObtenerUsuarios()
         {
             var lista = new List<Usuarios>();
@@ -125,7 +130,7 @@ namespace PrintTrack.Repositorios
             }
         }
 
-        // Obtener los empleados archivados en la lista
+        // Obtener los empleados archivados en la lista (Estado = 0)
         public List<Usuarios> ObtenerUsuariosArchivados()
         {
             var lista = new List<Usuarios>();
@@ -168,8 +173,7 @@ namespace PrintTrack.Repositorios
         }
 
 
-        
-        // Archivar empleado en la base de datos
+        // Archivar empleado en la base de datos (set Estado = 0)
         public bool ArchivarEmpleado(int idUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
@@ -189,7 +193,7 @@ namespace PrintTrack.Repositorios
             }
         }
 
-        // Desarchivar empleado en la base de datos
+        // Desarchivar empleado en la base de datos (set Estado = 1)
         public bool DesarchivarEmpleado(int idUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
@@ -208,6 +212,7 @@ namespace PrintTrack.Repositorios
 
 
         // Actualizar datos del empleado en la base de datos
+        // Asegúrate de pasar Roles.idRoles (int) en lugar de la entidad Roles completa.
         public bool ActualizarEmpleado(Usuarios empleado)
         {
             using (var conn = ConexionDB.ObtenerConexion())
@@ -297,10 +302,12 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        // Metodo para actualizar el nombre de usuario
         public bool ActualizarNombreUsuario(int idUsuario, string nuevoUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
+                // Query SQL
                 string query = "UPDATE USUARIOS SET NombreAlias = @nuevo WHERE (idUsuarios = @id)";
 
                 using(var cmd = new MySqlCommand(query, conn))
@@ -317,6 +324,7 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        // Metodo para recargar los datos del usuario en tiempo real o cuando se invoque
         public Usuarios ReloadUsuario(int idUsuario)
         {
             using (MySqlConnection conexion = ConexionDB.ObtenerConexion())
@@ -363,6 +371,7 @@ namespace PrintTrack.Repositorios
             return null;
         }
 
+        // Metodo verificador si hay un usuario con el mismo nombre en la base de datos
         public bool VerificadorUsuarioExistente(string nombreUsuario)
         {
             using (var conn = ConexionDB.ObtenerConexion())
