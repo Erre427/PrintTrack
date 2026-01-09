@@ -16,5 +16,11 @@ namespace PrintTrack.Forms.F_Inventario
         {
             InitializeComponent();
         }
+
+        private void btnProveedores_Click(object sender, EventArgs e)
+        {
+            Proveedores_Frm proveedores = new Proveedores_Frm();
+            proveedores.ShowDialog();
+        }
     }
 }

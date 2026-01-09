@@ -3,6 +3,7 @@ using PrintTrack.Entidades.Enums;
 using PrintTrack.Forms.F_Clientes;
 using PrintTrack.Forms.F_Configuracion;
 using PrintTrack.Forms.F_Perfil;
+using PrintTrack.Forms.F_Inventario;
 using PrintTrack.Repositorios;
 using System;
 using System.Collections.Generic;
@@ -106,6 +107,11 @@ namespace PrintTrack.Forms
         private void btnPerfil_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new Perfil_Frm());
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioEnPanel(new Inventario_Frm());
         }
     }
 }

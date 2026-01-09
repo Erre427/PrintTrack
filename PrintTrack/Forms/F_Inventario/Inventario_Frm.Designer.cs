@@ -60,6 +60,7 @@
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.btnProveedores = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -93,6 +94,7 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 10;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.btnProveedores);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel2);
             this.bunifuShadowPanel2.Controls.Add(this.comboBox2);
             this.bunifuShadowPanel2.Controls.Add(this.btnEntradas);
@@ -179,7 +181,7 @@
             this.btnRegistrar.ImageZoom = 50;
             this.btnRegistrar.LabelPosition = 41;
             this.btnRegistrar.LabelText = "Registrar";
-            this.btnRegistrar.Location = new System.Drawing.Point(822, 102);
+            this.btnRegistrar.Location = new System.Drawing.Point(724, 104);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(182, 162);
@@ -505,6 +507,26 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.color = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Image = global::PrintTrack.Properties.Resources.anadir__1_;
+            this.btnProveedores.ImagePosition = 20;
+            this.btnProveedores.ImageZoom = 50;
+            this.btnProveedores.LabelPosition = 41;
+            this.btnProveedores.LabelText = "Proveedores";
+            this.btnProveedores.Location = new System.Drawing.Point(918, 104);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(6);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(182, 162);
+            this.btnProveedores.TabIndex = 14;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
+            // 
             // Inventario_Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -551,5 +573,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ubicación;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lote;
         private System.Windows.Forms.DataGridViewButtonColumn Detalles;
+        private Bunifu.Framework.UI.BunifuTileButton btnProveedores;
     }
 }
