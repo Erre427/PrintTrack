@@ -17,7 +17,6 @@ namespace PrintTrack.Forms.F_Clientes
     {
         List<Clientes> listaClientes = new List<Clientes>();
         ClientesRepositorio repo = new ClientesRepositorio();
-        ModoFormulario modo;
 
         public ArchivoClientes_Frm()
         {

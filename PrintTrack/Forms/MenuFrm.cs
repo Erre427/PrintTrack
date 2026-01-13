@@ -19,6 +19,7 @@ namespace PrintTrack.Forms
     public partial class MenuFrm : Form
     {
         private Usuarios usuario;
+        private RegistroTurnosRepositorio repoTurnos = new RegistroTurnosRepositorio();
         public MenuFrm()
         {
             InitializeComponent();
@@ -33,8 +34,10 @@ namespace PrintTrack.Forms
         // Carga del dashboard, 
         private void MenuFrm_Load(object sender, EventArgs e)
         {
+            Sesion.idRegistroTurno = repoTurnos.ConsultaRegistro(usuario.idUsuarios);
+
             AbrirFormularioEnPanel(new DashBoard(this,usuario));
-            if(usuario.Roles.idRoles != 1 && usuario.Roles.idRoles != 0)
+            if (usuario.Roles.idRoles != 1 && usuario.Roles.idRoles != 0)
             {
                 btnConfiguracion.Visible = false;
             }
@@ -44,7 +47,6 @@ namespace PrintTrack.Forms
                 ClaveNueva_Frm activacion = new ClaveNueva_Frm(usuario, ModoFormulario.NuevoUusuario);
                 activacion.ShowDialog();
             }
-            
         }
 
         // Metodo para abrir los formularios en el panel
@@ -73,10 +75,18 @@ namespace PrintTrack.Forms
 
         // Cerrar sesion
         private void cerrarSesionBtn_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            this.Close();
+        {  
+            if(Sesion.idRegistroTurno == 0)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Actualmente estas en turno, no puedes cerrar sesion");
+            }
+            
         }
 
         // Actualizar fecha y hora en tiempo real
@@ -107,5 +117,7 @@ namespace PrintTrack.Forms
         {
             AbrirFormularioEnPanel(new Perfil_Frm());
         }
+
+       
     }
 }

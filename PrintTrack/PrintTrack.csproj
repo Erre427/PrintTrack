@@ -223,6 +223,8 @@
   <ItemGroup>
     <Compile Include="Entidades\Clientes.cs" />
     <Compile Include="Entidades\Enums\ModoFormulario.cs" />
+    <Compile Include="Entidades\Enums\TipoTurnos.cs" />
+    <Compile Include="Entidades\registroTurnos.cs" />
     <Compile Include="Entidades\Roles.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Forms\AdminLogin.cs">
@@ -297,6 +299,12 @@
     <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.Designer.cs">
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Configuracion\RegistroTurnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Configuracion\RegistroTurnos.Designer.cs">
+      <DependentUpon>RegistroTurnos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,7 +371,9 @@
     <Compile Include="Repositorios\ConexionDB.cs" />
     <Compile Include="Repositorios\Plantillas\htmls.cs" />
     <Compile Include="Repositorios\ProtocoloEmail.cs" />
+    <Compile Include="Repositorios\RegistroTurnosRepositorio.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
+    <Compile Include="Repositorios\Sesion.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Repositorios\Verificador.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />

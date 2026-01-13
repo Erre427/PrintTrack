@@ -74,6 +74,8 @@
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.lblEstado = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel3.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
@@ -213,6 +215,7 @@
             this.btnFinTurno.TextMarginLeft = 0;
             this.btnFinTurno.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnFinTurno.UseDefaultRadiusAndThickness = true;
+            this.btnFinTurno.Click += new System.EventHandler(this.btnFinTurno_Click);
             // 
             // btnIniciarTurno
             // 
@@ -302,6 +305,7 @@
             this.btnIniciarTurno.TextMarginLeft = 0;
             this.btnIniciarTurno.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnIniciarTurno.UseDefaultRadiusAndThickness = true;
+            this.btnIniciarTurno.Click += new System.EventHandler(this.btnIniciarTurno_Click);
             // 
             // bunifuShadowPanel2
             // 
@@ -309,6 +313,8 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 10;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.lblEstado);
+            this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel2.Controls.Add(this.pbImagen);
             this.bunifuShadowPanel2.Controls.Add(this.btnGuardarCambios);
             this.bunifuShadowPanel2.Controls.Add(this.txtNombreCompleto);
@@ -465,7 +471,7 @@
             this.txtNombreCompleto.IconRight = null;
             this.txtNombreCompleto.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreCompleto.Lines = new string[0];
-            this.txtNombreCompleto.Location = new System.Drawing.Point(624, 106);
+            this.txtNombreCompleto.Location = new System.Drawing.Point(639, 179);
             this.txtNombreCompleto.MaxLength = 32767;
             this.txtNombreCompleto.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombreCompleto.Modified = false;
@@ -539,7 +545,7 @@
             this.txtNombreUsuario.IconRight = null;
             this.txtNombreUsuario.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombreUsuario.Lines = new string[0];
-            this.txtNombreUsuario.Location = new System.Drawing.Point(624, 163);
+            this.txtNombreUsuario.Location = new System.Drawing.Point(639, 236);
             this.txtNombreUsuario.MaxLength = 32767;
             this.txtNombreUsuario.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtNombreUsuario.Modified = false;
@@ -613,7 +619,7 @@
             this.txtEmail.IconRight = null;
             this.txtEmail.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Lines = new string[0];
-            this.txtEmail.Location = new System.Drawing.Point(624, 228);
+            this.txtEmail.Location = new System.Drawing.Point(639, 301);
             this.txtEmail.MaxLength = 32767;
             this.txtEmail.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtEmail.Modified = false;
@@ -687,7 +693,7 @@
             this.txtTelefono.IconRight = null;
             this.txtTelefono.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTelefono.Lines = new string[0];
-            this.txtTelefono.Location = new System.Drawing.Point(624, 290);
+            this.txtTelefono.Location = new System.Drawing.Point(639, 363);
             this.txtTelefono.MaxLength = 32767;
             this.txtTelefono.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtTelefono.Modified = false;
@@ -781,7 +787,7 @@
             this.btnEditarClave.IdleIconLeftImage = null;
             this.btnEditarClave.IdleIconRightImage = null;
             this.btnEditarClave.IndicateFocus = false;
-            this.btnEditarClave.Location = new System.Drawing.Point(537, 368);
+            this.btnEditarClave.Location = new System.Drawing.Point(552, 441);
             this.btnEditarClave.Name = "btnEditarClave";
             this.btnEditarClave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditarClave.OnDisabledState.BorderRadius = 10;
@@ -871,7 +877,7 @@
             this.btnEditarUsuario.IdleIconLeftImage = null;
             this.btnEditarUsuario.IdleIconRightImage = null;
             this.btnEditarUsuario.IndicateFocus = false;
-            this.btnEditarUsuario.Location = new System.Drawing.Point(914, 163);
+            this.btnEditarUsuario.Location = new System.Drawing.Point(929, 236);
             this.btnEditarUsuario.Name = "btnEditarUsuario";
             this.btnEditarUsuario.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnEditarUsuario.OnDisabledState.BorderRadius = 10;
@@ -921,7 +927,7 @@
             this.bunifuLabel9.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel9.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel9.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.bunifuLabel9.Location = new System.Drawing.Point(373, 368);
+            this.bunifuLabel9.Location = new System.Drawing.Point(388, 441);
             this.bunifuLabel9.Name = "bunifuLabel9";
             this.bunifuLabel9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel9.Size = new System.Drawing.Size(120, 32);
@@ -937,7 +943,7 @@
             this.bunifuLabel8.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel8.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel8.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.bunifuLabel8.Location = new System.Drawing.Point(373, 295);
+            this.bunifuLabel8.Location = new System.Drawing.Point(388, 368);
             this.bunifuLabel8.Name = "bunifuLabel8";
             this.bunifuLabel8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel8.Size = new System.Drawing.Size(229, 32);
@@ -953,7 +959,7 @@
             this.bunifuLabel5.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel5.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.bunifuLabel5.Location = new System.Drawing.Point(373, 233);
+            this.bunifuLabel5.Location = new System.Drawing.Point(388, 306);
             this.bunifuLabel5.Name = "bunifuLabel5";
             this.bunifuLabel5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel5.Size = new System.Drawing.Size(73, 32);
@@ -969,7 +975,7 @@
             this.bunifuLabel7.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel7.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.bunifuLabel7.Location = new System.Drawing.Point(373, 168);
+            this.bunifuLabel7.Location = new System.Drawing.Point(388, 241);
             this.bunifuLabel7.Name = "bunifuLabel7";
             this.bunifuLabel7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel7.Size = new System.Drawing.Size(214, 32);
@@ -985,7 +991,7 @@
             this.bunifuLabel6.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel6.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.bunifuLabel6.Location = new System.Drawing.Point(373, 106);
+            this.bunifuLabel6.Location = new System.Drawing.Point(388, 179);
             this.bunifuLabel6.Name = "bunifuLabel6";
             this.bunifuLabel6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel6.Size = new System.Drawing.Size(205, 32);
@@ -1002,7 +1008,7 @@
             this.lblUltimoAcceso.CursorType = System.Windows.Forms.Cursors.Default;
             this.lblUltimoAcceso.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.lblUltimoAcceso.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblUltimoAcceso.Location = new System.Drawing.Point(750, 41);
+            this.lblUltimoAcceso.Location = new System.Drawing.Point(765, 114);
             this.lblUltimoAcceso.Name = "lblUltimoAcceso";
             this.lblUltimoAcceso.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblUltimoAcceso.Size = new System.Drawing.Size(40, 32);
@@ -1019,7 +1025,7 @@
             this.bunifuLabel3.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 18F);
             this.bunifuLabel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuLabel3.Location = new System.Drawing.Point(577, 41);
+            this.bunifuLabel3.Location = new System.Drawing.Point(592, 114);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel3.Size = new System.Drawing.Size(154, 32);
@@ -1035,7 +1041,7 @@
             this.bunifuLabel2.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel2.Location = new System.Drawing.Point(373, 41);
+            this.bunifuLabel2.Location = new System.Drawing.Point(388, 114);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel2.Size = new System.Drawing.Size(165, 32);
@@ -1093,6 +1099,38 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // bunifuLabel4
+            // 
+            this.bunifuLabel4.AllowParentOverrides = false;
+            this.bunifuLabel4.AutoEllipsis = false;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Default;
+            this.bunifuLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel4.Location = new System.Drawing.Point(388, 54);
+            this.bunifuLabel4.Name = "bunifuLabel4";
+            this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel4.Size = new System.Drawing.Size(78, 32);
+            this.bunifuLabel4.TabIndex = 24;
+            this.bunifuLabel4.Text = "Estado:";
+            this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.bunifuLabel4.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AllowParentOverrides = false;
+            this.lblEstado.AutoEllipsis = false;
+            this.lblEstado.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblEstado.CursorType = System.Windows.Forms.Cursors.Default;
+            this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.lblEstado.Location = new System.Drawing.Point(472, 54);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblEstado.Size = new System.Drawing.Size(139, 32);
+            this.lblEstado.TabIndex = 25;
+            this.lblEstado.Text = "Lorem Ipsum";
+            this.lblEstado.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
+            this.lblEstado.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // Perfil_Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1140,5 +1178,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnFinTurno;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnGuardarCambios;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel9;
+        private Bunifu.UI.WinForms.BunifuLabel lblEstado;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
     }
 }

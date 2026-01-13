@@ -236,6 +236,7 @@
             this.btnVenta.Name = "btnVenta";
             this.btnVenta.Size = new System.Drawing.Size(351, 246);
             this.btnVenta.TabIndex = 5;
+            this.btnVenta.Click += new System.EventHandler(this.btnVenta_Click);
             // 
             // btnPerfil
             // 
