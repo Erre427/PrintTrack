@@ -38,13 +38,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.btnProveedores = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnEntradas = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnRegistrar = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnMonitoreo = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnMateriaPrima = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvClientes = new System.Windows.Forms.DataGridView();
@@ -60,7 +61,6 @@
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnProveedores = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -101,7 +101,7 @@
             this.bunifuShadowPanel2.Controls.Add(this.btnRegistrar);
             this.bunifuShadowPanel2.Controls.Add(this.pictureBox2);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel3);
-            this.bunifuShadowPanel2.Controls.Add(this.btnMonitoreo);
+            this.bunifuShadowPanel2.Controls.Add(this.btnMateriaPrima);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuSeparator1);
             this.bunifuShadowPanel2.Controls.Add(this.txtBuscar);
             this.bunifuShadowPanel2.Controls.Add(this.dgvClientes);
@@ -119,6 +119,26 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(1120, 539);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 1;
+            // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.color = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Image = global::PrintTrack.Properties.Resources.anadir__1_;
+            this.btnProveedores.ImagePosition = 20;
+            this.btnProveedores.ImageZoom = 50;
+            this.btnProveedores.LabelPosition = 41;
+            this.btnProveedores.LabelText = "Proveedores";
+            this.btnProveedores.Location = new System.Drawing.Point(918, 104);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(6);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(182, 162);
+            this.btnProveedores.TabIndex = 14;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // bunifuLabel2
             // 
@@ -214,24 +234,24 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // btnMonitoreo
+            // btnMateriaPrima
             // 
-            this.btnMonitoreo.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnMonitoreo.color = System.Drawing.Color.RoyalBlue;
-            this.btnMonitoreo.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnMonitoreo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMonitoreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnMonitoreo.ForeColor = System.Drawing.Color.White;
-            this.btnMonitoreo.Image = global::PrintTrack.Properties.Resources.monitor_de_ekg;
-            this.btnMonitoreo.ImagePosition = 20;
-            this.btnMonitoreo.ImageZoom = 50;
-            this.btnMonitoreo.LabelPosition = 41;
-            this.btnMonitoreo.LabelText = "Monitoreo";
-            this.btnMonitoreo.Location = new System.Drawing.Point(724, 278);
-            this.btnMonitoreo.Margin = new System.Windows.Forms.Padding(6);
-            this.btnMonitoreo.Name = "btnMonitoreo";
-            this.btnMonitoreo.Size = new System.Drawing.Size(182, 162);
-            this.btnMonitoreo.TabIndex = 9;
+            this.btnMateriaPrima.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnMateriaPrima.color = System.Drawing.Color.RoyalBlue;
+            this.btnMateriaPrima.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnMateriaPrima.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMateriaPrima.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnMateriaPrima.ForeColor = System.Drawing.Color.White;
+            this.btnMateriaPrima.Image = global::PrintTrack.Properties.Resources.intercambio;
+            this.btnMateriaPrima.ImagePosition = 20;
+            this.btnMateriaPrima.ImageZoom = 50;
+            this.btnMateriaPrima.LabelPosition = 41;
+            this.btnMateriaPrima.LabelText = "Materia Prima";
+            this.btnMateriaPrima.Location = new System.Drawing.Point(724, 278);
+            this.btnMateriaPrima.Margin = new System.Windows.Forms.Padding(6);
+            this.btnMateriaPrima.Name = "btnMateriaPrima";
+            this.btnMateriaPrima.Size = new System.Drawing.Size(182, 162);
+            this.btnMateriaPrima.TabIndex = 9;
             // 
             // bunifuSeparator1
             // 
@@ -483,7 +503,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PrintTrack.Properties.Resources.personas1;
+            this.pictureBox1.Image = global::PrintTrack.Properties.Resources.inventario_disponible__1_;
             this.pictureBox1.Location = new System.Drawing.Point(32, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 79);
@@ -498,7 +518,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 27.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(147, 26);
+            this.bunifuLabel1.Location = new System.Drawing.Point(124, 30);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(172, 50);
@@ -506,26 +526,6 @@
             this.bunifuLabel1.Text = "Inventario";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
-            // 
-            // btnProveedores
-            // 
-            this.btnProveedores.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnProveedores.color = System.Drawing.Color.RoyalBlue;
-            this.btnProveedores.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnProveedores.ForeColor = System.Drawing.Color.White;
-            this.btnProveedores.Image = global::PrintTrack.Properties.Resources.anadir__1_;
-            this.btnProveedores.ImagePosition = 20;
-            this.btnProveedores.ImageZoom = 50;
-            this.btnProveedores.LabelPosition = 41;
-            this.btnProveedores.LabelText = "Proveedores";
-            this.btnProveedores.Location = new System.Drawing.Point(918, 104);
-            this.btnProveedores.Margin = new System.Windows.Forms.Padding(6);
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(182, 162);
-            this.btnProveedores.TabIndex = 14;
-            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // Inventario_Frm
             // 
@@ -559,7 +559,7 @@
         private Bunifu.Framework.UI.BunifuTileButton btnEntradas;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuTileButton btnRegistrar;
-        private Bunifu.Framework.UI.BunifuTileButton btnMonitoreo;
+        private Bunifu.Framework.UI.BunifuTileButton btnMateriaPrima;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;

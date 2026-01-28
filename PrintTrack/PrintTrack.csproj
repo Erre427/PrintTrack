@@ -308,6 +308,12 @@
     <Compile Include="Forms\F_Inventario\Inventario_Frm.Designer.cs">
       <DependentUpon>Inventario_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Inventario\MateriaPrima_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\MateriaPrima_Frm.Designer.cs">
+      <DependentUpon>MateriaPrima_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\Proveedores_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +406,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
       <DependentUpon>Inventario_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\MateriaPrima_Frm.resx">
+      <DependentUpon>MateriaPrima_Frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Proveedores_Frm.resx">
       <DependentUpon>Proveedores_Frm.cs</DependentUpon>
@@ -564,12 +573,23 @@
   <ItemGroup>
     <None Include="Resources\person.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\intercambio.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\correo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\correo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario-disponible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventario-disponible %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\materiaprima1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -89,7 +89,7 @@ namespace PrintTrack.Repositorios
 
         // Obtener una lista de usuarios de la base de datos, excluyendo al propietario (idRoles != 0)
         // Devuelve una lista de entidades Usuarios con su Rol asociado.
-        public List<Usuarios> ObtenerUsuarios()
+         public List<Usuarios> ObtenerUsuarios()
         {
             var lista = new List<Usuarios>();
             using (var conn = ConexionDB.ObtenerConexion())
