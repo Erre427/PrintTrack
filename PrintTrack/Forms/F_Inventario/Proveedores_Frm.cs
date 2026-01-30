@@ -15,7 +15,6 @@ namespace PrintTrack.Forms.F_Inventario
     public partial class Proveedores_Frm : Form
     {
         private List<Proveedores> listaProveedores = new List<Proveedores>();
-        private pantallaCarga carga = new pantallaCarga();
         private ProveedorRepositorio repo = new ProveedorRepositorio();
         public Proveedores_Frm()
         {
@@ -47,7 +46,7 @@ namespace PrintTrack.Forms.F_Inventario
             VaciarTxt();
         }
 
-        private async void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             try
             {
@@ -65,11 +64,7 @@ namespace PrintTrack.Forms.F_Inventario
                 };
 
                 this.Enabled = false;
-                carga.Show();
-                await Task.Run(() => repo.RegistrarNuevo(nuevoProveedor));
-                this.Activate();
-                this.Focus();
-                carga.Close();
+                repo.RegistrarNuevo(nuevoProveedor);
                 MessageBox.Show("Proveedor registrado con exito!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
@@ -80,7 +75,6 @@ namespace PrintTrack.Forms.F_Inventario
 
             finally
             {
-                carga.Dispose();
                 this.Enabled = true;
                 pnDatos.Enabled = false;
                 btnGuardar.Visible = false;

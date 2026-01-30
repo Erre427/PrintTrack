@@ -13,5 +13,10 @@ namespace PrintTrack.Entidades
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public string Correo { get; set; }
+
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
     }
 }

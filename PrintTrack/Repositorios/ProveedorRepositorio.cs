@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PrintTrack.Repositorios
 {
@@ -26,7 +27,7 @@ namespace PrintTrack.Repositorios
                             lista.Add(new Proveedores
                             {
                                 idProveedor = reader.GetInt32("idProveedor"),
-                                Nombre = reader.GetString("Nombre"),
+                                Nombre = reader.GetString("NombreProveedor"),
                                 Telefono = reader.GetString("Telefono"),
                                 Direccion = reader.GetString("Direccion"),
                                 Correo = reader.GetString("Correo")
@@ -41,11 +42,38 @@ namespace PrintTrack.Repositorios
         }
 
 
+        public List<Proveedores> ObtenerIDs()
+        {
+            var lista = new List<Proveedores>();
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "SELECT idProveedor, NombreProveedor FROM proveedores";
+
+                conn.Open();
+                using(var cmd = new MySqlCommand(query, conn))
+                {
+                    using(var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            lista.Add(new Proveedores
+                            {
+                                idProveedor = reader.GetInt32("idProveedor"),
+                                Nombre = reader.GetString("NombreProveedor")
+                            });
+                        }
+                    }
+                    conn.Close();
+                }
+                return lista;
+            }
+        }
+
         public bool RegistrarNuevo(Proveedores nuevoProveedor)
         {
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "INSERT INTO Proveedores (Nombre,Telefono,Direccion,Correo) VALUES (@nombre,@telefono,@direccion,@correo)";
+                string query = "INSERT INTO Proveedores (NombreProveedor,Telefono,Direccion,Correo) VALUES (@nombre,@telefono,@direccion,@correo)";
                 using(var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre", nuevoProveedor.Nombre);
@@ -61,6 +89,9 @@ namespace PrintTrack.Repositorios
                 }
             }
         }
+
+
+
 
 
     }

@@ -17,15 +17,14 @@ namespace PrintTrack.Repositorios
             var lista = new List<MateriaPrima>();
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT m.Nombre, m.Unidad, m.Stock, m.StockMinimo, p.Nombre " +
+                string query = "SELECT m.idMateriaPrima,m.Nombre, m.Unidad, m.Stock, m.StockMinimo, p.NombreProveedor, p.idProveedor  " +
                     "FROM materiaprima m " +
                     "INNER JOIN proveedores p ON m.idProveedor = p.idProveedor";
-
+                conn.Open();
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
-                        conn.Open();
                         while (reader.Read())
                         {
                             lista.Add(new MateriaPrima
@@ -37,7 +36,7 @@ namespace PrintTrack.Repositorios
                                 Proveedor = new Proveedores
                                 {
                                     idProveedor = reader.GetInt32("idProveedor"),
-                                    Nombre = reader.GetString("Nombre")
+                                    Nombre = reader.GetString("NombreProveedor")
                                 },
                                 StockMinimo = reader.GetDecimal("StockMinimo")
                             });
@@ -49,6 +48,29 @@ namespace PrintTrack.Repositorios
             return lista;
         }
         
+
+        public bool RegistrarNuevo(MateriaPrima nuevoMaterial)
+        {
+            using(var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "INSERT INTO materiaprima (Nombre,Unidad,Stock,idProveedor,StockMinimo) VALUES (@nombre,@unidad,@stock,@proveedor,@minimo)";
+                using(var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@nombre",nuevoMaterial.Nombre);
+                    cmd.Parameters.AddWithValue("@unidad", nuevoMaterial.Unidad);
+                    cmd.Parameters.AddWithValue("@stock", nuevoMaterial.Stock);
+                    cmd.Parameters.AddWithValue("@proveedor", nuevoMaterial.Proveedor.idProveedor);
+                    cmd.Parameters.AddWithValue("@minimo", nuevoMaterial.StockMinimo);
+
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    return filasAfectadas > 0;
+                }
+            }
+        }
+
 
 
 

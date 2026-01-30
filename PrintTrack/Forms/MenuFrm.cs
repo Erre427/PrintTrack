@@ -111,7 +111,7 @@ namespace PrintTrack.Forms
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            AbrirFormularioEnPanel(new Inventario_Frm());
+            AbrirFormularioEnPanel(new Inventario_Frm(this));
         }
     }
 }

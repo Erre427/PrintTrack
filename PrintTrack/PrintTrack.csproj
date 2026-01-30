@@ -314,6 +314,12 @@
     <Compile Include="Forms\F_Inventario\MateriaPrima_Frm.Designer.cs">
       <DependentUpon>MateriaPrima_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Inventario\NuevoMaterial_MateriaPrima_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\NuevoMaterial_MateriaPrima_Frm.Designer.cs">
+      <DependentUpon>NuevoMaterial_MateriaPrima_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\Proveedores_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\MateriaPrima_Frm.resx">
       <DependentUpon>MateriaPrima_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\NuevoMaterial_MateriaPrima_Frm.resx">
+      <DependentUpon>NuevoMaterial_MateriaPrima_Frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Proveedores_Frm.resx">
       <DependentUpon>Proveedores_Frm.cs</DependentUpon>
