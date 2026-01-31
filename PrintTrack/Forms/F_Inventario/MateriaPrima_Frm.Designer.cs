@@ -50,7 +50,7 @@
             this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Proveedor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Entrada = new System.Windows.Forms.DataGridViewButtonColumn();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -286,6 +286,7 @@
             this.txtBuscar.TextPlaceholder = "Buscar producto";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
+            this.txtBuscar.TextChange += new System.EventHandler(this.txtBuscar_TextChange);
             // 
             // dgvMateriaPrima
             // 
@@ -312,7 +313,7 @@
             this.Stock,
             this.Proveedor,
             this.StockMinimo,
-            this.Detalles,
+            this.Editar,
             this.Entrada});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.Azure;
@@ -332,6 +333,7 @@
             this.dgvMateriaPrima.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMateriaPrima.Size = new System.Drawing.Size(1069, 400);
             this.dgvMateriaPrima.TabIndex = 0;
+            this.dgvMateriaPrima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMateriaPrima_CellContentClick);
             // 
             // idProducto
             // 
@@ -386,21 +388,21 @@
             this.StockMinimo.ReadOnly = true;
             this.StockMinimo.Visible = false;
             // 
-            // Detalles
+            // Editar
             // 
-            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Editar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
-            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Detalles.FillWeight = 355.33F;
-            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Detalles.HeaderText = "";
-            this.Detalles.Name = "Detalles";
-            this.Detalles.ReadOnly = true;
-            this.Detalles.Text = "Editar";
-            this.Detalles.UseColumnTextForButtonValue = true;
-            this.Detalles.Width = 80;
+            this.Editar.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Editar.FillWeight = 355.33F;
+            this.Editar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Editar.HeaderText = "";
+            this.Editar.Name = "Editar";
+            this.Editar.ReadOnly = true;
+            this.Editar.Text = "Editar";
+            this.Editar.UseColumnTextForButtonValue = true;
+            this.Editar.Width = 80;
             // 
             // Entrada
             // 
@@ -505,7 +507,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
         private System.Windows.Forms.DataGridViewTextBoxColumn Proveedor;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
-        private System.Windows.Forms.DataGridViewButtonColumn Detalles;
+        private System.Windows.Forms.DataGridViewButtonColumn Editar;
         private System.Windows.Forms.DataGridViewButtonColumn Entrada;
     }
 }

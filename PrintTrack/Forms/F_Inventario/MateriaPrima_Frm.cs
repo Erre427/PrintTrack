@@ -45,5 +45,43 @@ namespace PrintTrack.Forms.F_Inventario
             frm.ShowDialog();
             CargarDatos();
         }
+
+        private void dgvMateriaPrima_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0 || e.ColumnIndex < 0)
+                return;
+
+            MateriaPrima materialSeleccionado = (MateriaPrima)dgvMateriaPrima.Rows[e.RowIndex].DataBoundItem;
+
+            switch (dgvMateriaPrima.Columns[e.ColumnIndex].Name)
+            {
+                case "Editar":
+                    NuevoMaterial_MateriaPrima_Frm frm = new NuevoMaterial_MateriaPrima_Frm(materialSeleccionado, ModoFormulario.Editar);
+                    frm.ShowDialog();
+                    CargarDatos();
+                    break;
+
+                case "Entrada":
+                    break;
+            }
+        }
+
+        private void txtBuscar_TextChange(object sender, EventArgs e)
+        {
+            string textoBuscar = txtBuscar.Text.ToLower();
+
+            // Si el texto de busqueda esta vacio, recargar todos los datos
+            if (String.IsNullOrEmpty(textoBuscar))
+            {
+                CargarDatos();
+            }
+            // Filtrar la lista de empleados por nombre, alias, telefono o rol
+            else
+            {
+                var resultado = listaMateriales.Where(c => c.Nombre.ToLower().Contains(textoBuscar) || c.Proveedor.Nombre.ToLower().Contains(textoBuscar)).ToList();
+
+                dgvMateriaPrima.DataSource = resultado;
+            }
+        }
     }
 }

@@ -74,6 +74,7 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void ModoEditar()
         {
+            CargarDatos();
             lblTitulo.Text = "Editar Material";
             pnlModificar.Visible = true;
             pnlInfo.Visible = false;
@@ -81,10 +82,17 @@ namespace PrintTrack.Forms.F_Inventario
             panel2.Size = new Size(659, 247);
             this.Size = new Size(699, 388);
 
+            pnlProveedor.Enabled = false;
+            txtNombre.Enabled = false;
             btnCancelar.Enabled = false;
             btnGuardar.Enabled = false;
         }
 
+        private void CargarDatos()
+        {
+            txtNombre.Text = materialCargado.Nombre;
+            dropProveedores.Text = materialCargado.Proveedor.Nombre;
+        }
         private void btnModificar_Click(object sender, EventArgs e)
         {
             btnModificar.Enabled = false;
@@ -163,7 +171,28 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void EditarMateria()
         {
-            
+            MateriaPrima materialEditado = new MateriaPrima
+            {
+                idMateriaPrima = materialCargado.idMateriaPrima,
+                Nombre = txtNombre.Text,
+                Proveedor = new Proveedores
+                {
+                    idProveedor = Convert.ToInt32(dropProveedores.SelectedValue)
+                }
+            };
+
+            bool exito = repo.EditarMaterial(materialEditado);
+
+            if (exito)
+            {
+                MessageBox.Show("Material editado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                this.Dispose();
+            }
+            else
+            {
+                throw new Exception("Ocurrio un error");
+            }
         }
 
     }

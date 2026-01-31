@@ -71,6 +71,26 @@ namespace PrintTrack.Repositorios
             }
         }
 
+        public bool EditarMaterial(MateriaPrima materialEditado)
+        {
+            using (var conn = ConexionDB.ObtenerConexion())
+            {
+                string query = "UPDATE materiaprima SET Nombre = @nombre, idProveedor = @proveedor WHERE idMateriaPrima = @id";
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", materialEditado.idMateriaPrima);
+                    cmd.Parameters.AddWithValue("@nombre", materialEditado.Nombre);
+                    cmd.Parameters.AddWithValue("@proveedor", materialEditado.Proveedor.idProveedor);
+
+                    conn.Open();
+                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    return filasAfectadas > 0;
+                }
+
+            }
+        }
 
 
 
