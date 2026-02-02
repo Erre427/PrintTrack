@@ -15,5 +15,9 @@ namespace PrintTrack.Entidades
         public decimal StockMinimo { get; set; }
         public Proveedores Proveedor { get; set; }
 
+        public override string ToString()
+        {
+            return this.Nombre;
+        }
     }
 }

@@ -34,5 +34,11 @@ namespace PrintTrack.Forms.F_Inventario
         {
 
         }
+
+        private void btnRegEntradas_Click(object sender, EventArgs e)
+        {
+            Registro_Entradas_Frm frm = new Registro_Entradas_Frm();
+            frm.ShowDialog();
+        }
     }
 }

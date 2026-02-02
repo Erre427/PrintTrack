@@ -83,6 +83,16 @@ namespace PrintTrack.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap almacenar1 {
+            get {
+                object obj = ResourceManager.GetObject("almacenar1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anadir {
             get {
                 object obj = ResourceManager.GetObject("anadir", resourceCulture);
@@ -216,6 +226,16 @@ namespace PrintTrack.Properties {
         internal static System.Drawing.Bitmap empleado__1_ {
             get {
                 object obj = ResourceManager.GetObject("empleado (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap entrada {
+            get {
+                object obj = ResourceManager.GetObject("entrada", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -426,6 +446,26 @@ namespace PrintTrack.Properties {
         internal static System.Drawing.Bitmap pexels_hson_27893067 {
             get {
                 object obj = ResourceManager.GetObject("pexels-hson-27893067", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap proveedor_de_servicio {
+            get {
+                object obj = ResourceManager.GetObject("proveedor-de-servicio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap proveedor_de_servicio__1_ {
+            get {
+                object obj = ResourceManager.GetObject("proveedor-de-servicio (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

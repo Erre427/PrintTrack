@@ -62,6 +62,9 @@ namespace PrintTrack.Forms.F_Inventario
                     break;
 
                 case "Entrada":
+                    Entrada_MateriaPrima_Frm frmEntrada = new Entrada_MateriaPrima_Frm(materialSeleccionado.idMateriaPrima);
+                    frmEntrada.ShowDialog();
+                    CargarDatos();
                     break;
             }
         }
