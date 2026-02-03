@@ -47,6 +47,7 @@ namespace PrintTrack.Forms.F_Inventario
             txtNombre.Enabled = false;
             pnlProveedor.Enabled = false;
             btnGuardar.Enabled = false;
+            pnlEntrada.Enabled = false;
         }
 
         private void ActivarControles()
@@ -83,6 +84,8 @@ namespace PrintTrack.Forms.F_Inventario
             this.Size = new Size(699, 388);
 
             pnlProveedor.Enabled = false;
+            pnlEntrada.Visible = false;
+            pnlCheck.Visible = false;
             txtNombre.Enabled = false;
             btnCancelar.Enabled = false;
             btnGuardar.Enabled = false;
@@ -137,7 +140,7 @@ namespace PrintTrack.Forms.F_Inventario
         private void NuevoMaterial()
         {
             if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(cmbUnidad.Text) 
-                || String.IsNullOrEmpty(numStockInicial.Text) || String.IsNullOrEmpty(numStockMinimo.Text))
+                || String.IsNullOrEmpty(numStockMinimo.Text))
             {
                 throw new Exception("Todos los campos deben de ser llenados para registrar un material!");
             }
@@ -146,7 +149,6 @@ namespace PrintTrack.Forms.F_Inventario
             {
                 Nombre = txtNombre.Text,
                 Unidad = cmbUnidad.Text,
-                Stock = numStockInicial.Value,
                 StockMinimo = numStockMinimo.Value,
                 Proveedor = new Proveedores
                 {
@@ -154,13 +156,33 @@ namespace PrintTrack.Forms.F_Inventario
                 }
             };
 
-            bool exito = repo.RegistrarNuevo(nuevoMaterial);
+            int idNuevo = repo.RegistrarNuevo(nuevoMaterial);
 
-            if (exito)
+           
+
+            if (idNuevo > 0)
             {
-                MessageBox.Show("Material registrado exitosamente!","Exito",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-                this.Dispose();
+                if (checkEntrada.Checked)
+                {
+                    decimal cantidadEntrada = numCantidad.Value;
+                    decimal precioEntrada = numCosto.Value;
+                    string referencia = txtRecibo.Text;
+
+                    bool exitoEntrada = repo.EntradaMateriaPrima(idNuevo, cantidadEntrada, precioEntrada, referencia);
+
+                    if (exitoEntrada)
+                    {
+                        MessageBox.Show("Material registrado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Close();
+                        this.Dispose();
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Material registrado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                    this.Dispose();
+                }
             }
             else
             {
@@ -195,5 +217,11 @@ namespace PrintTrack.Forms.F_Inventario
             }
         }
 
+        private void checkEntrada_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuCheckBox.CheckedChangedEventArgs e)
+        {
+            bool habilitar = checkEntrada.Checked;
+
+            pnlEntrada.Enabled = habilitar;
+        }
     }
 }

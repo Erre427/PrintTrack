@@ -50,24 +50,26 @@ namespace PrintTrack.Repositorios
         }
         
 
-        public bool RegistrarNuevo(MateriaPrima nuevoMaterial)
+        public int RegistrarNuevo(MateriaPrima nuevoMaterial)
         {
+            int idGenerado = 0;
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "INSERT INTO materiaprima (Nombre,Unidad,Stock,idProveedor,StockMinimo) VALUES (@nombre,@unidad,@stock,@proveedor,@minimo)";
+                string query = "INSERT INTO materiaprima (Nombre,Unidad,idProveedor,StockMinimo) VALUES (@nombre,@unidad,@proveedor,@minimo)";
                 using(var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre",nuevoMaterial.Nombre);
                     cmd.Parameters.AddWithValue("@unidad", nuevoMaterial.Unidad);
-                    cmd.Parameters.AddWithValue("@stock", nuevoMaterial.Stock);
                     cmd.Parameters.AddWithValue("@proveedor", nuevoMaterial.Proveedor.idProveedor);
                     cmd.Parameters.AddWithValue("@minimo", nuevoMaterial.StockMinimo);
 
                     conn.Open();
-                    int filasAfectadas = cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
+
+                    idGenerado = (int)cmd.LastInsertedId;
                     conn.Close();
 
-                    return filasAfectadas > 0;
+                    return idGenerado;
                 }
             }
         }
@@ -102,7 +104,7 @@ namespace PrintTrack.Repositorios
                 string query1 = "INSERT INTO movimientos_materiaprima (idMateriaPrima,cantidad,costoUnitario,tipoMovimiento,fechaMovimiento,referencia) VALUES" +
                     "(@id, @cantidad, @costo, 'Entrada', NOW(), @referencia)";
 
-                string query2 = "UPDATE materiaprima SET Stock = Stock + @cantidad WHERE idMateriaPrima = @id";
+                string query2 = "UPDATE materiaprima SET Stock = IFNULL(Stock,0) + @cantidad WHERE idMateriaPrima = @id";
 
                 using(var cmd = new MySqlCommand(query1, conn))
                 {

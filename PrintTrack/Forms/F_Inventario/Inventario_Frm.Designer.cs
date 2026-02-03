@@ -42,7 +42,7 @@
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnRegEntradas = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnRegistrar = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnNuevoProducto = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
             this.btnMateriaPrima = new Bunifu.Framework.UI.BunifuTileButton();
@@ -98,7 +98,7 @@
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel2);
             this.bunifuShadowPanel2.Controls.Add(this.comboBox2);
             this.bunifuShadowPanel2.Controls.Add(this.btnRegEntradas);
-            this.bunifuShadowPanel2.Controls.Add(this.btnRegistrar);
+            this.bunifuShadowPanel2.Controls.Add(this.btnNuevoProducto);
             this.bunifuShadowPanel2.Controls.Add(this.pictureBox2);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel3);
             this.bunifuShadowPanel2.Controls.Add(this.btnMateriaPrima);
@@ -189,24 +189,25 @@
             this.btnRegEntradas.TabIndex = 8;
             this.btnRegEntradas.Click += new System.EventHandler(this.btnRegEntradas_Click);
             // 
-            // btnRegistrar
+            // btnNuevoProducto
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnRegistrar.color = System.Drawing.Color.RoyalBlue;
-            this.btnRegistrar.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Image = global::PrintTrack.Properties.Resources.anadir__1_;
-            this.btnRegistrar.ImagePosition = 20;
-            this.btnRegistrar.ImageZoom = 50;
-            this.btnRegistrar.LabelPosition = 41;
-            this.btnRegistrar.LabelText = "Registrar";
-            this.btnRegistrar.Location = new System.Drawing.Point(724, 104);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(182, 162);
-            this.btnRegistrar.TabIndex = 6;
+            this.btnNuevoProducto.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNuevoProducto.color = System.Drawing.Color.RoyalBlue;
+            this.btnNuevoProducto.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnNuevoProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnNuevoProducto.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoProducto.Image = global::PrintTrack.Properties.Resources.anadir__1_;
+            this.btnNuevoProducto.ImagePosition = 20;
+            this.btnNuevoProducto.ImageZoom = 50;
+            this.btnNuevoProducto.LabelPosition = 41;
+            this.btnNuevoProducto.LabelText = "Nuevo";
+            this.btnNuevoProducto.Location = new System.Drawing.Point(724, 104);
+            this.btnNuevoProducto.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNuevoProducto.Name = "btnNuevoProducto";
+            this.btnNuevoProducto.Size = new System.Drawing.Size(182, 162);
+            this.btnNuevoProducto.TabIndex = 6;
+            this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
             // pictureBox2
             // 
@@ -561,7 +562,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.Framework.UI.BunifuTileButton btnRegEntradas;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuTileButton btnRegistrar;
+        private Bunifu.Framework.UI.BunifuTileButton btnNuevoProducto;
         private Bunifu.Framework.UI.BunifuTileButton btnMateriaPrima;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;

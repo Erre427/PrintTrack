@@ -350,6 +350,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Entrada_MateriaPrima_Frm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entrada_MateriaPrima_Frm";
             this.Load += new System.EventHandler(this.Entrada_MateriaPrima_Frm_Load);
             this.panel1.ResumeLayout(false);
