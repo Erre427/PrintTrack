@@ -48,15 +48,14 @@
             this.btnMateriaPrima = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.idProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ubicación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -64,7 +63,7 @@
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +103,7 @@
             this.bunifuShadowPanel2.Controls.Add(this.btnMateriaPrima);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuSeparator1);
             this.bunifuShadowPanel2.Controls.Add(this.txtBuscar);
-            this.bunifuShadowPanel2.Controls.Add(this.dgvClientes);
+            this.bunifuShadowPanel2.Controls.Add(this.dgvProductos);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel2.Location = new System.Drawing.Point(12, 124);
@@ -345,14 +344,14 @@
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
             // 
-            // dgvClientes
+            // dgvProductos
             // 
-            this.dgvClientes.AllowUserToDeleteRows = false;
-            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvClientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvProductos.AllowUserToDeleteRows = false;
+            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
@@ -360,18 +359,16 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvClientes.ColumnHeadersHeight = 30;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProducto,
             this.Nombre,
-            this.Telefono,
+            this.PrecioVenta,
             this.StockActual,
-            this.StockMinimo,
+            this.Categoria,
+            this.SKU,
             this.Estado,
-            this.Ubicación,
-            this.Lote,
             this.Detalles});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Azure;
@@ -380,26 +377,25 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvClientes.EnableHeadersVisualStyles = false;
-            this.dgvClientes.Location = new System.Drawing.Point(22, 123);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.ReadOnly = true;
-            this.dgvClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvClientes.RowHeadersWidth = 40;
-            this.dgvClientes.RowTemplate.Height = 40;
-            this.dgvClientes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.Size = new System.Drawing.Size(651, 397);
-            this.dgvClientes.TabIndex = 0;
+            this.dgvProductos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProductos.EnableHeadersVisualStyles = false;
+            this.dgvProductos.Location = new System.Drawing.Point(22, 123);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.ReadOnly = true;
+            this.dgvProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvProductos.RowHeadersWidth = 40;
+            this.dgvProductos.RowTemplate.Height = 40;
+            this.dgvProductos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProductos.Size = new System.Drawing.Size(651, 397);
+            this.dgvProductos.TabIndex = 0;
             // 
             // idProducto
             // 
-            this.idProducto.DataPropertyName = "idCliente";
+            this.idProducto.DataPropertyName = "idProducto";
             this.idProducto.HeaderText = "id";
             this.idProducto.Name = "idProducto";
             this.idProducto.ReadOnly = true;
             this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.idProducto.Width = 34;
             // 
             // Nombre
             // 
@@ -409,37 +405,43 @@
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Nombre.Width = 72;
             // 
-            // Telefono
+            // PrecioVenta
             // 
-            this.Telefono.DataPropertyName = "Telefono";
-            this.Telefono.FillWeight = 57.44501F;
-            this.Telefono.HeaderText = "Tipo";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefono.Width = 50;
+            this.PrecioVenta.DataPropertyName = "PrecioVenta";
+            this.PrecioVenta.FillWeight = 57.44501F;
+            this.PrecioVenta.HeaderText = "Precio";
+            this.PrecioVenta.Name = "PrecioVenta";
+            this.PrecioVenta.ReadOnly = true;
+            this.PrecioVenta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.PrecioVenta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // StockActual
             // 
-            this.StockActual.DataPropertyName = "Descripcion";
+            this.StockActual.DataPropertyName = "StockActual";
             this.StockActual.FillWeight = 57.44501F;
             this.StockActual.HeaderText = "Stock Actual";
             this.StockActual.Name = "StockActual";
             this.StockActual.ReadOnly = true;
             this.StockActual.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.StockActual.Width = 98;
+            this.StockActual.Visible = false;
             // 
-            // StockMinimo
+            // Categoria
             // 
-            this.StockMinimo.DataPropertyName = "Email";
-            this.StockMinimo.FillWeight = 57.44501F;
-            this.StockMinimo.HeaderText = "Stock Minimo";
-            this.StockMinimo.Name = "StockMinimo";
-            this.StockMinimo.ReadOnly = true;
-            this.StockMinimo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.StockMinimo.Width = 107;
+            this.Categoria.DataPropertyName = "Categoria";
+            this.Categoria.FillWeight = 57.44501F;
+            this.Categoria.HeaderText = "Tipo";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SKU
+            // 
+            this.SKU.DataPropertyName = "SKU";
+            this.SKU.HeaderText = "SKU";
+            this.SKU.Name = "SKU";
+            this.SKU.ReadOnly = true;
+            this.SKU.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Estado
             // 
@@ -447,23 +449,7 @@
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
-            this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Estado.Visible = false;
-            this.Estado.Width = 65;
-            // 
-            // Ubicación
-            // 
-            this.Ubicación.HeaderText = "Ubicación";
-            this.Ubicación.Name = "Ubicación";
-            this.Ubicación.ReadOnly = true;
-            this.Ubicación.Width = 101;
-            // 
-            // Lote
-            // 
-            this.Lote.HeaderText = "Lote";
-            this.Lote.Name = "Lote";
-            this.Lote.ReadOnly = true;
-            this.Lote.Width = 68;
             // 
             // Detalles
             // 
@@ -543,7 +529,7 @@
             this.bunifuShadowPanel2.ResumeLayout(false);
             this.bunifuShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -555,7 +541,7 @@
 
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -568,15 +554,14 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox comboBox2;
+        private Bunifu.Framework.UI.BunifuTileButton btnProveedores;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockActual;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ubicación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lote;
         private System.Windows.Forms.DataGridViewButtonColumn Detalles;
-        private Bunifu.Framework.UI.BunifuTileButton btnProveedores;
     }
 }

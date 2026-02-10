@@ -11,7 +11,6 @@ namespace PrintTrack.Entidades
         public Productos idProducto { get; set; }
         public MateriaPrima idMateriaPrima { get; set; }
         public decimal CantidadNeta { get; set; }
-        public decimal ProcentajeMerma { get; set; }
         public decimal CostoUnitarioHistorico { get; set; }
         public string NotaAdicional { get; set; }
 

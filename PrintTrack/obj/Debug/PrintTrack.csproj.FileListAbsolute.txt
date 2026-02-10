@@ -573,6 +573,7 @@ C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\Print
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Configuracion.F_Empleados.EmpleadosEnviarCorreos_Frm.resources
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.pantallaCarga.resources
 C:\Users\Marcos Daniel\Documents\Printrack\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Proveedores_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\bin\Debug\App.config
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe.config
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\bin\Debug\PrintTrack.exe
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\bin\Debug\PrintTrack.pdb
@@ -689,8 +690,12 @@ C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintT
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Configuracion.F_Empleados.EmpleadosArchivo.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Configuracion.F_Empleados.EmpleadosDetalles.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Configuracion.F_Empleados.EmpleadosEnviarCorreos_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Entrada_MateriaPrima_Frm.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Inventario_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.MateriaPrima_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.NuevoMaterial_MateriaPrima_Frm.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Proveedores_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Registro_Entradas_Frm.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Perfil.NuevoNombre_Frm.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Perfil.Perfil_Frm.resources
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.MenuFrm.resources
@@ -704,7 +709,4 @@ C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintT
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.csproj.Up2Date
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
-C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.MateriaPrima_Frm.resources
-C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.NuevoMaterial_MateriaPrima_Frm.resources
-C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Entrada_MateriaPrima_Frm.resources
-C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Registro_Entradas_Frm.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.nuevoProducto.resources

@@ -15,6 +15,7 @@ namespace PrintTrack.Repositorios
         public static MySqlConnection ObtenerConexion()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["ConexionDB"].ConnectionString;
+
             return new MySqlConnection(connectionString);
         }
     }

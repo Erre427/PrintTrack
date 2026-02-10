@@ -16,7 +16,7 @@ namespace PrintTrack.Repositorios
             var lista = new List<Proveedores>();
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT * FROM Proveedores";
+                string query = "SELECT * FROM proveedores";
                 conn.Open();
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -73,7 +73,7 @@ namespace PrintTrack.Repositorios
         {
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "INSERT INTO Proveedores (NombreProveedor,Telefono,Direccion,Correo) VALUES (@nombre,@telefono,@direccion,@correo)";
+                string query = "INSERT INTO proveedores (NombreProveedor,Telefono,Direccion,Correo) VALUES (@nombre,@telefono,@direccion,@correo)";
                 using(var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@nombre", nuevoProveedor.Nombre);

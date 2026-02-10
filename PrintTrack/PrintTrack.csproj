@@ -327,6 +327,12 @@
     <Compile Include="Forms\F_Inventario\NuevoMaterial_MateriaPrima_Frm.Designer.cs">
       <DependentUpon>NuevoMaterial_MateriaPrima_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Inventario\nuevoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\nuevoProducto.Designer.cs">
+      <DependentUpon>nuevoProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\Proveedores_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,16 +383,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\CategoriasRepositorio.cs" />
     <Compile Include="Repositorios\ClientesRepositorio.cs" />
     <Compile Include="Repositorios\ConexionDB.cs" />
     <Compile Include="Repositorios\MateriaPrimaRepositorio.cs" />
     <Compile Include="Repositorios\Plantillas\htmls.cs" />
+    <Compile Include="Repositorios\ProductoRepositorio.cs" />
     <Compile Include="Repositorios\ProtocoloEmail.cs" />
     <Compile Include="Repositorios\ProveedorRepositorio.cs" />
+    <Compile Include="Repositorios\RecetaRepository.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Repositorios\Verificador.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />
+    <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Forms\AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -435,6 +445,9 @@
     <EmbeddedResource Include="Forms\F_Inventario\NuevoMaterial_MateriaPrima_Frm.resx">
       <DependentUpon>NuevoMaterial_MateriaPrima_Frm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\nuevoProducto.resx">
+      <DependentUpon>nuevoProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Proveedores_Frm.resx">
       <DependentUpon>Proveedores_Frm.cs</DependentUpon>
     </EmbeddedResource>
@@ -482,7 +495,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\punto-de-venta.png" />

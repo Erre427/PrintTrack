@@ -9,6 +9,11 @@ namespace PrintTrack.Entidades
     public class CategoriaProductos
     {
         public int idCategoria { get; set; }
-        public string Nombre { get; set; }
+        public string NombreCategoria { get; set; }
+
+        public override string ToString()
+        {
+            return this.NombreCategoria;
+        }
     }
 }

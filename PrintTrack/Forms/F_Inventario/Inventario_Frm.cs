@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PrintTrack.Entidades;
+using PrintTrack.Repositorios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +15,9 @@ namespace PrintTrack.Forms.F_Inventario
     public partial class Inventario_Frm : Form
     {
         MenuFrm menu;
-        public Inventario_Frm(MenuFrm menu  )
+        ProductoRepositorio repo = new ProductoRepositorio();
+        List<Productos> listaProductos = new List<Productos>();
+        public Inventario_Frm(MenuFrm menu)
         {
             InitializeComponent();
             this.menu = menu;
@@ -32,7 +36,7 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void Inventario_Frm_Load(object sender, EventArgs e)
         {
-
+            CargarDatos();
         }
 
         private void btnRegEntradas_Click(object sender, EventArgs e)
@@ -43,7 +47,18 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void btnNuevoProducto_Click(object sender, EventArgs e)
         {
+            nuevoProducto frm = new nuevoProducto();
+            frm.ShowDialog();
+            CargarDatos();
+        }
 
+        private void CargarDatos()
+        {
+            dgvProductos.AutoGenerateColumns = false;
+            listaProductos = repo.ObtenerProductos();
+
+            listaProductos = listaProductos.OrderByDescending(c => c.idProducto).ToList();
+            dgvProductos.DataSource = listaProductos;
         }
     }
 }
