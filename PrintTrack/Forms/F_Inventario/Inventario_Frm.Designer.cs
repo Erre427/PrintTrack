@@ -38,32 +38,33 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.btnCategorias = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnProveedores = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btnEntradas = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnRegistrar = new Bunifu.Framework.UI.BunifuTileButton();
+            this.cmbCategorias = new System.Windows.Forms.ComboBox();
+            this.btnRegEntradas = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnNuevoProducto = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel3 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.btnMonitoreo = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnMateriaPrima = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.dgvClientes = new System.Windows.Forms.DataGridView();
-            this.idProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StockMinimo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ubicación = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Lote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.dgvProductos = new System.Windows.Forms.DataGridView();
             this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.idProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StockActual = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).BeginInit();
             this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -93,16 +94,18 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 10;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.btnCategorias);
+            this.bunifuShadowPanel2.Controls.Add(this.btnProveedores);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel2);
-            this.bunifuShadowPanel2.Controls.Add(this.comboBox2);
-            this.bunifuShadowPanel2.Controls.Add(this.btnEntradas);
-            this.bunifuShadowPanel2.Controls.Add(this.btnRegistrar);
+            this.bunifuShadowPanel2.Controls.Add(this.cmbCategorias);
+            this.bunifuShadowPanel2.Controls.Add(this.btnRegEntradas);
+            this.bunifuShadowPanel2.Controls.Add(this.btnNuevoProducto);
             this.bunifuShadowPanel2.Controls.Add(this.pictureBox2);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel3);
-            this.bunifuShadowPanel2.Controls.Add(this.btnMonitoreo);
+            this.bunifuShadowPanel2.Controls.Add(this.btnMateriaPrima);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuSeparator1);
             this.bunifuShadowPanel2.Controls.Add(this.txtBuscar);
-            this.bunifuShadowPanel2.Controls.Add(this.dgvClientes);
+            this.bunifuShadowPanel2.Controls.Add(this.dgvProductos);
             this.bunifuShadowPanel2.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.bunifuShadowPanel2.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             this.bunifuShadowPanel2.Location = new System.Drawing.Point(12, 124);
@@ -117,6 +120,46 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(1120, 539);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 1;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnCategorias.color = System.Drawing.Color.RoyalBlue;
+            this.btnCategorias.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnCategorias.ForeColor = System.Drawing.Color.White;
+            this.btnCategorias.Image = null;
+            this.btnCategorias.ImagePosition = 20;
+            this.btnCategorias.ImageZoom = 50;
+            this.btnCategorias.LabelPosition = 41;
+            this.btnCategorias.LabelText = "Categorias de Productos";
+            this.btnCategorias.Location = new System.Drawing.Point(771, 458);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(293, 52);
+            this.btnCategorias.TabIndex = 15;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
+            // 
+            // btnProveedores
+            // 
+            this.btnProveedores.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.color = System.Drawing.Color.RoyalBlue;
+            this.btnProveedores.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnProveedores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnProveedores.ForeColor = System.Drawing.Color.White;
+            this.btnProveedores.Image = global::PrintTrack.Properties.Resources.proveedor_de_servicio__1_;
+            this.btnProveedores.ImagePosition = 20;
+            this.btnProveedores.ImageZoom = 50;
+            this.btnProveedores.LabelPosition = 41;
+            this.btnProveedores.LabelText = "Proveedores";
+            this.btnProveedores.Location = new System.Drawing.Point(918, 104);
+            this.btnProveedores.Margin = new System.Windows.Forms.Padding(6);
+            this.btnProveedores.Name = "btnProveedores";
+            this.btnProveedores.Size = new System.Drawing.Size(182, 162);
+            this.btnProveedores.TabIndex = 14;
+            this.btnProveedores.Click += new System.EventHandler(this.btnProveedores_Click);
             // 
             // bunifuLabel2
             // 
@@ -135,55 +178,58 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // comboBox2
+            // cmbCategorias
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbCategorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategorias.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbCategorias.FormattingEnabled = true;
+            this.cmbCategorias.Items.AddRange(new object[] {
             "Filtrar Productos"});
-            this.comboBox2.Location = new System.Drawing.Point(521, 31);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(152, 29);
-            this.comboBox2.TabIndex = 13;
-            this.comboBox2.Text = "Filtrar Productos";
+            this.cmbCategorias.Location = new System.Drawing.Point(521, 31);
+            this.cmbCategorias.Name = "cmbCategorias";
+            this.cmbCategorias.Size = new System.Drawing.Size(152, 29);
+            this.cmbCategorias.TabIndex = 13;
+            this.cmbCategorias.SelectionChangeCommitted += new System.EventHandler(this.cmbCategorias_SelectionChangeCommitted);
             // 
-            // btnEntradas
+            // btnRegEntradas
             // 
-            this.btnEntradas.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnEntradas.color = System.Drawing.Color.RoyalBlue;
-            this.btnEntradas.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnEntradas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntradas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnEntradas.ForeColor = System.Drawing.Color.White;
-            this.btnEntradas.Image = global::PrintTrack.Properties.Resources.almacenar;
-            this.btnEntradas.ImagePosition = 20;
-            this.btnEntradas.ImageZoom = 50;
-            this.btnEntradas.LabelPosition = 41;
-            this.btnEntradas.LabelText = "Entradas";
-            this.btnEntradas.Location = new System.Drawing.Point(918, 278);
-            this.btnEntradas.Margin = new System.Windows.Forms.Padding(6);
-            this.btnEntradas.Name = "btnEntradas";
-            this.btnEntradas.Size = new System.Drawing.Size(186, 162);
-            this.btnEntradas.TabIndex = 8;
+            this.btnRegEntradas.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnRegEntradas.color = System.Drawing.Color.RoyalBlue;
+            this.btnRegEntradas.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnRegEntradas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegEntradas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegEntradas.ForeColor = System.Drawing.Color.White;
+            this.btnRegEntradas.Image = global::PrintTrack.Properties.Resources.almacenar;
+            this.btnRegEntradas.ImagePosition = 16;
+            this.btnRegEntradas.ImageZoom = 50;
+            this.btnRegEntradas.LabelPosition = 33;
+            this.btnRegEntradas.LabelText = "Registro de Entradas";
+            this.btnRegEntradas.Location = new System.Drawing.Point(918, 278);
+            this.btnRegEntradas.Margin = new System.Windows.Forms.Padding(6);
+            this.btnRegEntradas.Name = "btnRegEntradas";
+            this.btnRegEntradas.Size = new System.Drawing.Size(182, 162);
+            this.btnRegEntradas.TabIndex = 8;
+            this.btnRegEntradas.Click += new System.EventHandler(this.btnRegEntradas_Click);
             // 
-            // btnRegistrar
+            // btnNuevoProducto
             // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnRegistrar.color = System.Drawing.Color.RoyalBlue;
-            this.btnRegistrar.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Image = global::PrintTrack.Properties.Resources.anadir__1_;
-            this.btnRegistrar.ImagePosition = 20;
-            this.btnRegistrar.ImageZoom = 50;
-            this.btnRegistrar.LabelPosition = 41;
-            this.btnRegistrar.LabelText = "Registrar";
-            this.btnRegistrar.Location = new System.Drawing.Point(822, 102);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(6);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(182, 162);
-            this.btnRegistrar.TabIndex = 6;
+            this.btnNuevoProducto.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnNuevoProducto.color = System.Drawing.Color.RoyalBlue;
+            this.btnNuevoProducto.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnNuevoProducto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnNuevoProducto.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoProducto.Image = global::PrintTrack.Properties.Resources.anadir__1_;
+            this.btnNuevoProducto.ImagePosition = 20;
+            this.btnNuevoProducto.ImageZoom = 50;
+            this.btnNuevoProducto.LabelPosition = 41;
+            this.btnNuevoProducto.LabelText = "Nuevo";
+            this.btnNuevoProducto.Location = new System.Drawing.Point(724, 104);
+            this.btnNuevoProducto.Margin = new System.Windows.Forms.Padding(6);
+            this.btnNuevoProducto.Name = "btnNuevoProducto";
+            this.btnNuevoProducto.Size = new System.Drawing.Size(182, 162);
+            this.btnNuevoProducto.TabIndex = 6;
+            this.btnNuevoProducto.Click += new System.EventHandler(this.btnNuevoProducto_Click);
             // 
             // pictureBox2
             // 
@@ -212,24 +258,25 @@
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel3.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // btnMonitoreo
+            // btnMateriaPrima
             // 
-            this.btnMonitoreo.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnMonitoreo.color = System.Drawing.Color.RoyalBlue;
-            this.btnMonitoreo.colorActive = System.Drawing.Color.MidnightBlue;
-            this.btnMonitoreo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMonitoreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.btnMonitoreo.ForeColor = System.Drawing.Color.White;
-            this.btnMonitoreo.Image = global::PrintTrack.Properties.Resources.monitor_de_ekg;
-            this.btnMonitoreo.ImagePosition = 20;
-            this.btnMonitoreo.ImageZoom = 50;
-            this.btnMonitoreo.LabelPosition = 41;
-            this.btnMonitoreo.LabelText = "Monitoreo";
-            this.btnMonitoreo.Location = new System.Drawing.Point(724, 278);
-            this.btnMonitoreo.Margin = new System.Windows.Forms.Padding(6);
-            this.btnMonitoreo.Name = "btnMonitoreo";
-            this.btnMonitoreo.Size = new System.Drawing.Size(182, 162);
-            this.btnMonitoreo.TabIndex = 9;
+            this.btnMateriaPrima.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnMateriaPrima.color = System.Drawing.Color.RoyalBlue;
+            this.btnMateriaPrima.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnMateriaPrima.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMateriaPrima.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnMateriaPrima.ForeColor = System.Drawing.Color.White;
+            this.btnMateriaPrima.Image = global::PrintTrack.Properties.Resources.intercambio;
+            this.btnMateriaPrima.ImagePosition = 20;
+            this.btnMateriaPrima.ImageZoom = 50;
+            this.btnMateriaPrima.LabelPosition = 41;
+            this.btnMateriaPrima.LabelText = "Materia Prima";
+            this.btnMateriaPrima.Location = new System.Drawing.Point(724, 278);
+            this.btnMateriaPrima.Margin = new System.Windows.Forms.Padding(6);
+            this.btnMateriaPrima.Name = "btnMateriaPrima";
+            this.btnMateriaPrima.Size = new System.Drawing.Size(182, 162);
+            this.btnMateriaPrima.TabIndex = 9;
+            this.btnMateriaPrima.Click += new System.EventHandler(this.btnMateriaPrima_Click);
             // 
             // bunifuSeparator1
             // 
@@ -319,15 +366,16 @@
             this.txtBuscar.TextPlaceholder = "Buscar producto";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
+            this.txtBuscar.TextChange += new System.EventHandler(this.txtBuscar_TextChange);
             // 
-            // dgvClientes
+            // dgvProductos
             // 
-            this.dgvClientes.AllowUserToDeleteRows = false;
-            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            this.dgvClientes.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dgvClientes.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvClientes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvProductos.AllowUserToDeleteRows = false;
+            this.dgvProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvProductos.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dgvProductos.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvProductos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvProductos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
@@ -335,18 +383,16 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvClientes.ColumnHeadersHeight = 30;
-            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProductos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dgvProductos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idProducto,
             this.Nombre,
-            this.Telefono,
+            this.PrecioVenta,
             this.StockActual,
-            this.StockMinimo,
+            this.Categoria,
+            this.SKU,
             this.Estado,
-            this.Ubicación,
-            this.Lote,
             this.Detalles});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.Azure;
@@ -355,106 +401,19 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvClientes.EnableHeadersVisualStyles = false;
-            this.dgvClientes.Location = new System.Drawing.Point(22, 123);
-            this.dgvClientes.Name = "dgvClientes";
-            this.dgvClientes.ReadOnly = true;
-            this.dgvClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvClientes.RowHeadersWidth = 40;
-            this.dgvClientes.RowTemplate.Height = 40;
-            this.dgvClientes.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvClientes.Size = new System.Drawing.Size(651, 397);
-            this.dgvClientes.TabIndex = 0;
-            // 
-            // idProducto
-            // 
-            this.idProducto.DataPropertyName = "idCliente";
-            this.idProducto.HeaderText = "id";
-            this.idProducto.Name = "idProducto";
-            this.idProducto.ReadOnly = true;
-            this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.idProducto.Width = 34;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.FillWeight = 57.44501F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Nombre.Width = 72;
-            // 
-            // Telefono
-            // 
-            this.Telefono.DataPropertyName = "Telefono";
-            this.Telefono.FillWeight = 57.44501F;
-            this.Telefono.HeaderText = "Tipo";
-            this.Telefono.Name = "Telefono";
-            this.Telefono.ReadOnly = true;
-            this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefono.Width = 50;
-            // 
-            // StockActual
-            // 
-            this.StockActual.DataPropertyName = "Descripcion";
-            this.StockActual.FillWeight = 57.44501F;
-            this.StockActual.HeaderText = "Stock Actual";
-            this.StockActual.Name = "StockActual";
-            this.StockActual.ReadOnly = true;
-            this.StockActual.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.StockActual.Width = 98;
-            // 
-            // StockMinimo
-            // 
-            this.StockMinimo.DataPropertyName = "Email";
-            this.StockMinimo.FillWeight = 57.44501F;
-            this.StockMinimo.HeaderText = "Stock Minimo";
-            this.StockMinimo.Name = "StockMinimo";
-            this.StockMinimo.ReadOnly = true;
-            this.StockMinimo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.StockMinimo.Width = 107;
-            // 
-            // Estado
-            // 
-            this.Estado.DataPropertyName = "Estado";
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Estado.Visible = false;
-            this.Estado.Width = 65;
-            // 
-            // Ubicación
-            // 
-            this.Ubicación.HeaderText = "Ubicación";
-            this.Ubicación.Name = "Ubicación";
-            this.Ubicación.ReadOnly = true;
-            this.Ubicación.Width = 101;
-            // 
-            // Lote
-            // 
-            this.Lote.HeaderText = "Lote";
-            this.Lote.Name = "Lote";
-            this.Lote.ReadOnly = true;
-            this.Lote.Width = 68;
-            // 
-            // Detalles
-            // 
-            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
-            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Detalles.FillWeight = 355.33F;
-            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Detalles.HeaderText = "";
-            this.Detalles.Name = "Detalles";
-            this.Detalles.ReadOnly = true;
-            this.Detalles.Text = "Detalles";
-            this.Detalles.UseColumnTextForButtonValue = true;
-            this.Detalles.Width = 80;
+            this.dgvProductos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvProductos.EnableHeadersVisualStyles = false;
+            this.dgvProductos.Location = new System.Drawing.Point(22, 123);
+            this.dgvProductos.Name = "dgvProductos";
+            this.dgvProductos.ReadOnly = true;
+            this.dgvProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvProductos.RowHeadersWidth = 40;
+            this.dgvProductos.RowTemplate.Height = 40;
+            this.dgvProductos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvProductos.Size = new System.Drawing.Size(651, 397);
+            this.dgvProductos.TabIndex = 0;
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
+            this.dgvProductos.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvProductos_CellFormatting);
             // 
             // bunifuShadowPanel1
             // 
@@ -481,7 +440,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::PrintTrack.Properties.Resources.personas1;
+            this.pictureBox1.Image = global::PrintTrack.Properties.Resources.inventario_disponible__1_;
             this.pictureBox1.Location = new System.Drawing.Point(32, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 79);
@@ -496,7 +455,7 @@
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 27.75F, System.Drawing.FontStyle.Bold);
-            this.bunifuLabel1.Location = new System.Drawing.Point(147, 26);
+            this.bunifuLabel1.Location = new System.Drawing.Point(124, 30);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(172, 50);
@@ -504,6 +463,86 @@
             this.bunifuLabel1.Text = "Inventario";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // idProducto
+            // 
+            this.idProducto.DataPropertyName = "idProducto";
+            this.idProducto.HeaderText = "id";
+            this.idProducto.Name = "idProducto";
+            this.idProducto.ReadOnly = true;
+            this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.idProducto.Visible = false;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PrecioVenta
+            // 
+            this.PrecioVenta.DataPropertyName = "PrecioVenta";
+            this.PrecioVenta.FillWeight = 35.84641F;
+            this.PrecioVenta.HeaderText = "Precio";
+            this.PrecioVenta.Name = "PrecioVenta";
+            this.PrecioVenta.ReadOnly = true;
+            this.PrecioVenta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.PrecioVenta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // StockActual
+            // 
+            this.StockActual.DataPropertyName = "StockActual";
+            this.StockActual.FillWeight = 57.44501F;
+            this.StockActual.HeaderText = "Stock Actual";
+            this.StockActual.Name = "StockActual";
+            this.StockActual.ReadOnly = true;
+            this.StockActual.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.StockActual.Visible = false;
+            // 
+            // Categoria
+            // 
+            this.Categoria.DataPropertyName = "Categoria";
+            this.Categoria.FillWeight = 35.84641F;
+            this.Categoria.HeaderText = "Tipo";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SKU
+            // 
+            this.SKU.DataPropertyName = "SKU";
+            this.SKU.FillWeight = 62.40126F;
+            this.SKU.HeaderText = "SKU";
+            this.SKU.Name = "SKU";
+            this.SKU.ReadOnly = true;
+            this.SKU.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Estado
+            // 
+            this.Estado.DataPropertyName = "Estado";
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Visible = false;
+            // 
+            // Detalles
+            // 
+            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
+            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Detalles.FillWeight = 355.33F;
+            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Detalles.HeaderText = "";
+            this.Detalles.Name = "Detalles";
+            this.Detalles.ReadOnly = true;
+            this.Detalles.Text = "Detalles";
+            this.Detalles.UseColumnTextForButtonValue = true;
+            this.Detalles.Visible = false;
+            this.Detalles.Width = 80;
             // 
             // Inventario_Frm
             // 
@@ -513,11 +552,12 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Inventario_Frm";
             this.Text = "MateriaPrima_Frm";
+            this.Load += new System.EventHandler(this.Inventario_Frm_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel2.ResumeLayout(false);
             this.bunifuShadowPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProductos)).EndInit();
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -529,27 +569,28 @@
 
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel2;
-        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridView dgvProductos;
         private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
         private Bunifu.UI.WinForms.BunifuTextBox txtBuscar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private Bunifu.Framework.UI.BunifuTileButton btnEntradas;
+        private Bunifu.Framework.UI.BunifuTileButton btnRegEntradas;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
-        private Bunifu.Framework.UI.BunifuTileButton btnRegistrar;
-        private Bunifu.Framework.UI.BunifuTileButton btnMonitoreo;
+        private Bunifu.Framework.UI.BunifuTileButton btnNuevoProducto;
+        private Bunifu.Framework.UI.BunifuTileButton btnMateriaPrima;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbCategorias;
+        private Bunifu.Framework.UI.BunifuTileButton btnProveedores;
+        private Bunifu.Framework.UI.BunifuTileButton btnCategorias;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockActual;
-        private System.Windows.Forms.DataGridViewTextBoxColumn StockMinimo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Categoria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SKU;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ubicación;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Lote;
         private System.Windows.Forms.DataGridViewButtonColumn Detalles;
     }
 }

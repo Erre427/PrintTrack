@@ -19,7 +19,7 @@ namespace PrintTrack.Repositorios
                 using (var conn = ConexionDB.ObtenerConexion())
                 {
                     conn.Open();
-                    string query = "SELECT * FROM Cliente WHERE Estado = 1";
+                    string query = "SELECT * FROM cliente WHERE Estado = 1";
                     using (var cmd = new MySqlCommand(query, conn))
                     {
                         using (var reader = cmd.ExecuteReader())
@@ -50,7 +50,7 @@ namespace PrintTrack.Repositorios
             using (var conn = ConexionDB.ObtenerConexion())
             {
                 conn.Open();
-                string query = "SELECT * FROM Cliente WHERE Estado = 0";
+                string query = "SELECT * FROM cliente WHERE Estado = 0";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     using (var reader = cmd.ExecuteReader())
@@ -81,7 +81,7 @@ namespace PrintTrack.Repositorios
         {
             using(var conexion = ConexionDB.ObtenerConexion())
             {
-                string query = "INSERT INTO CLIENTE (Nombre,Telefono,Descripcion,Email) VALUES (@Nombre,@Telefono,@Descripcion,@Email)";
+                string query = "INSERT INTO cliente (Nombre,Telefono,Descripcion,Email) VALUES (@Nombre,@Telefono,@Descripcion,@Email)";
 
                 using (var cmd = new MySqlCommand(query, conexion))
                 {
@@ -103,7 +103,7 @@ namespace PrintTrack.Repositorios
         {
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE Cliente SET Estado = 0 WHERE (idCliente = @id)";
+                string query = "UPDATE cliente SET Estado = 0 WHERE (idCliente = @id)";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id",idCliente);
@@ -121,7 +121,7 @@ namespace PrintTrack.Repositorios
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE Cliente SET Estado = 1 WHERE (idCliente = @id)";
+                string query = "UPDATE cliente SET Estado = 1 WHERE (idCliente = @id)";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", idCliente);
@@ -139,7 +139,7 @@ namespace PrintTrack.Repositorios
         {
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE Cliente SET Nombre = @nombre, Telefono = @telefono, Descripcion = @descripcion, Email = @email WHERE (idCliente = @id)";
+                string query = "UPDATE cliente SET Nombre = @nombre, Telefono = @telefono, Descripcion = @descripcion, Email = @email WHERE (idCliente = @id)";
                 using (var cmd = new MySqlCommand (query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id",cliente.idCliente);

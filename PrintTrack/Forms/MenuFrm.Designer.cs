@@ -438,6 +438,7 @@
             this.btnProductos.TextMarginLeft = 0;
             this.btnProductos.TextPadding = new System.Windows.Forms.Padding(33, 0, 0, 0);
             this.btnProductos.UseDefaultRadiusAndThickness = true;
+            this.btnProductos.Click += new System.EventHandler(this.btnProductos_Click);
             // 
             // btnClientes
             // 
