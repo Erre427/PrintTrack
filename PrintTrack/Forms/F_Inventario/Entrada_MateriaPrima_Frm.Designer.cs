@@ -210,6 +210,7 @@
             // 
             // numCosto
             // 
+            this.numCosto.DecimalPlaces = 2;
             this.numCosto.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numCosto.Location = new System.Drawing.Point(167, 104);
             this.numCosto.Maximum = new decimal(new int[] {

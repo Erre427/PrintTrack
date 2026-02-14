@@ -38,9 +38,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.btnCategorias = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnProveedores = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbCategorias = new System.Windows.Forms.ComboBox();
             this.btnRegEntradas = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnNuevoProducto = new Bunifu.Framework.UI.BunifuTileButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -49,6 +50,9 @@
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.txtBuscar = new Bunifu.UI.WinForms.BunifuTextBox();
             this.dgvProductos = new System.Windows.Forms.DataGridView();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.idProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrecioVenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,9 +61,6 @@
             this.SKU = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Detalles = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuShadowPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -93,9 +94,10 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 10;
             this.bunifuShadowPanel2.BorderThickness = 1;
+            this.bunifuShadowPanel2.Controls.Add(this.btnCategorias);
             this.bunifuShadowPanel2.Controls.Add(this.btnProveedores);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel2);
-            this.bunifuShadowPanel2.Controls.Add(this.comboBox2);
+            this.bunifuShadowPanel2.Controls.Add(this.cmbCategorias);
             this.bunifuShadowPanel2.Controls.Add(this.btnRegEntradas);
             this.bunifuShadowPanel2.Controls.Add(this.btnNuevoProducto);
             this.bunifuShadowPanel2.Controls.Add(this.pictureBox2);
@@ -118,6 +120,26 @@
             this.bunifuShadowPanel2.Size = new System.Drawing.Size(1120, 539);
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 1;
+            // 
+            // btnCategorias
+            // 
+            this.btnCategorias.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnCategorias.color = System.Drawing.Color.RoyalBlue;
+            this.btnCategorias.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnCategorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.btnCategorias.ForeColor = System.Drawing.Color.White;
+            this.btnCategorias.Image = null;
+            this.btnCategorias.ImagePosition = 20;
+            this.btnCategorias.ImageZoom = 50;
+            this.btnCategorias.LabelPosition = 41;
+            this.btnCategorias.LabelText = "Categorias de Productos";
+            this.btnCategorias.Location = new System.Drawing.Point(771, 458);
+            this.btnCategorias.Margin = new System.Windows.Forms.Padding(6);
+            this.btnCategorias.Name = "btnCategorias";
+            this.btnCategorias.Size = new System.Drawing.Size(293, 52);
+            this.btnCategorias.TabIndex = 15;
+            this.btnCategorias.Click += new System.EventHandler(this.btnCategorias_Click);
             // 
             // btnProveedores
             // 
@@ -156,17 +178,18 @@
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel2.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
-            // comboBox2
+            // cmbCategorias
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbCategorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCategorias.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cmbCategorias.FormattingEnabled = true;
+            this.cmbCategorias.Items.AddRange(new object[] {
             "Filtrar Productos"});
-            this.comboBox2.Location = new System.Drawing.Point(521, 31);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(152, 29);
-            this.comboBox2.TabIndex = 13;
-            this.comboBox2.Text = "Filtrar Productos";
+            this.cmbCategorias.Location = new System.Drawing.Point(521, 31);
+            this.cmbCategorias.Name = "cmbCategorias";
+            this.cmbCategorias.Size = new System.Drawing.Size(152, 29);
+            this.cmbCategorias.TabIndex = 13;
+            this.cmbCategorias.SelectionChangeCommitted += new System.EventHandler(this.cmbCategorias_SelectionChangeCommitted);
             // 
             // btnRegEntradas
             // 
@@ -343,6 +366,7 @@
             this.txtBuscar.TextPlaceholder = "Buscar producto";
             this.txtBuscar.UseSystemPasswordChar = false;
             this.txtBuscar.WordWrap = true;
+            this.txtBuscar.TextChange += new System.EventHandler(this.txtBuscar_TextChange);
             // 
             // dgvProductos
             // 
@@ -388,84 +412,8 @@
             this.dgvProductos.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvProductos.Size = new System.Drawing.Size(651, 397);
             this.dgvProductos.TabIndex = 0;
-            // 
-            // idProducto
-            // 
-            this.idProducto.DataPropertyName = "idProducto";
-            this.idProducto.HeaderText = "id";
-            this.idProducto.Name = "idProducto";
-            this.idProducto.ReadOnly = true;
-            this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.FillWeight = 57.44501F;
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PrecioVenta
-            // 
-            this.PrecioVenta.DataPropertyName = "PrecioVenta";
-            this.PrecioVenta.FillWeight = 57.44501F;
-            this.PrecioVenta.HeaderText = "Precio";
-            this.PrecioVenta.Name = "PrecioVenta";
-            this.PrecioVenta.ReadOnly = true;
-            this.PrecioVenta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.PrecioVenta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // StockActual
-            // 
-            this.StockActual.DataPropertyName = "StockActual";
-            this.StockActual.FillWeight = 57.44501F;
-            this.StockActual.HeaderText = "Stock Actual";
-            this.StockActual.Name = "StockActual";
-            this.StockActual.ReadOnly = true;
-            this.StockActual.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.StockActual.Visible = false;
-            // 
-            // Categoria
-            // 
-            this.Categoria.DataPropertyName = "Categoria";
-            this.Categoria.FillWeight = 57.44501F;
-            this.Categoria.HeaderText = "Tipo";
-            this.Categoria.Name = "Categoria";
-            this.Categoria.ReadOnly = true;
-            this.Categoria.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SKU
-            // 
-            this.SKU.DataPropertyName = "SKU";
-            this.SKU.HeaderText = "SKU";
-            this.SKU.Name = "SKU";
-            this.SKU.ReadOnly = true;
-            this.SKU.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Estado
-            // 
-            this.Estado.DataPropertyName = "Estado";
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            this.Estado.ReadOnly = true;
-            this.Estado.Visible = false;
-            // 
-            // Detalles
-            // 
-            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
-            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Detalles.FillWeight = 355.33F;
-            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Detalles.HeaderText = "";
-            this.Detalles.Name = "Detalles";
-            this.Detalles.ReadOnly = true;
-            this.Detalles.Text = "Detalles";
-            this.Detalles.UseColumnTextForButtonValue = true;
-            this.Detalles.Width = 80;
+            this.dgvProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProductos_CellContentClick);
+            this.dgvProductos.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvProductos_CellFormatting);
             // 
             // bunifuShadowPanel1
             // 
@@ -516,6 +464,86 @@
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
+            // idProducto
+            // 
+            this.idProducto.DataPropertyName = "idProducto";
+            this.idProducto.HeaderText = "id";
+            this.idProducto.Name = "idProducto";
+            this.idProducto.ReadOnly = true;
+            this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.idProducto.Visible = false;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // PrecioVenta
+            // 
+            this.PrecioVenta.DataPropertyName = "PrecioVenta";
+            this.PrecioVenta.FillWeight = 35.84641F;
+            this.PrecioVenta.HeaderText = "Precio";
+            this.PrecioVenta.Name = "PrecioVenta";
+            this.PrecioVenta.ReadOnly = true;
+            this.PrecioVenta.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.PrecioVenta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // StockActual
+            // 
+            this.StockActual.DataPropertyName = "StockActual";
+            this.StockActual.FillWeight = 57.44501F;
+            this.StockActual.HeaderText = "Stock Actual";
+            this.StockActual.Name = "StockActual";
+            this.StockActual.ReadOnly = true;
+            this.StockActual.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.StockActual.Visible = false;
+            // 
+            // Categoria
+            // 
+            this.Categoria.DataPropertyName = "Categoria";
+            this.Categoria.FillWeight = 35.84641F;
+            this.Categoria.HeaderText = "Tipo";
+            this.Categoria.Name = "Categoria";
+            this.Categoria.ReadOnly = true;
+            this.Categoria.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // SKU
+            // 
+            this.SKU.DataPropertyName = "SKU";
+            this.SKU.FillWeight = 62.40126F;
+            this.SKU.HeaderText = "SKU";
+            this.SKU.Name = "SKU";
+            this.SKU.ReadOnly = true;
+            this.SKU.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Estado
+            // 
+            this.Estado.DataPropertyName = "Estado";
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            this.Estado.Visible = false;
+            // 
+            // Detalles
+            // 
+            this.Detalles.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Green;
+            this.Detalles.DefaultCellStyle = dataGridViewCellStyle2;
+            this.Detalles.FillWeight = 355.33F;
+            this.Detalles.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Detalles.HeaderText = "";
+            this.Detalles.Name = "Detalles";
+            this.Detalles.ReadOnly = true;
+            this.Detalles.Text = "Detalles";
+            this.Detalles.UseColumnTextForButtonValue = true;
+            this.Detalles.Visible = false;
+            this.Detalles.Width = 80;
+            // 
             // Inventario_Frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -553,8 +581,9 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel3;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbCategorias;
         private Bunifu.Framework.UI.BunifuTileButton btnProveedores;
+        private Bunifu.Framework.UI.BunifuTileButton btnCategorias;
         private System.Windows.Forms.DataGridViewTextBoxColumn idProducto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrecioVenta;

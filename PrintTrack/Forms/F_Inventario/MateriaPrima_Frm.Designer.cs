@@ -334,6 +334,7 @@
             this.dgvMateriaPrima.Size = new System.Drawing.Size(1069, 400);
             this.dgvMateriaPrima.TabIndex = 0;
             this.dgvMateriaPrima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMateriaPrima_CellContentClick);
+            this.dgvMateriaPrima.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvMateriaPrima_CellFormatting);
             // 
             // idProducto
             // 

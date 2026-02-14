@@ -37,6 +37,11 @@ namespace PrintTrack.Forms.F_Inventario
                     decimal cantidad = numCantidad.Value;
                     decimal costo = numCosto.Value;
                     string referencia = txtRecibo.Text;
+
+                    if(cantidad <= 0)
+                    {
+                        throw new Exception("No se permiten valores negativos o numeros en cero");
+                    }
                     repo.EntradaMateriaPrima(idMateriaPrima, cantidad, costo, referencia);
 
                     MessageBox.Show("Entrada de material registrada exitosamente","Exito Entrada",MessageBoxButtons.OK ,MessageBoxIcon.Information);

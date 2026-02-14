@@ -18,7 +18,7 @@ namespace PrintTrack.Repositorios
             var lista = new List<MateriaPrima>();
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT m.idMateriaPrima,m.Nombre, m.Unidad, m.Stock, m.StockMinimo, p.NombreProveedor, p.idProveedor  " +
+                string query = "SELECT m.idMateriaPrima,m.Nombre, m.Unidad, IFNULL(m.Stock,0) AS Stock, m.StockMinimo, p.NombreProveedor, p.idProveedor  " +
                     "FROM materiaprima m " +
                     "INNER JOIN proveedores p ON m.idProveedor = p.idProveedor";
                 conn.Open();
@@ -137,7 +137,7 @@ namespace PrintTrack.Repositorios
             {
                 string query = "SELECT r.idMovimiento,m.idMateriaPrima,m.Nombre AS Material,r.cantidad,r.costoUnitario,r.tipoMovimiento,r.fechaMovimiento,r.referencia " +
                     "FROM movimientos_materiaprima r " +
-                    "INNER JOIN materiaprima m ON m.idMateriaPrima = r.idMovimiento;";
+                    "INNER JOIN materiaprima m ON m.idMateriaPrima = r.idMateriaPrima;";
 
                 conn.Open();
                 using (var cmd = new MySqlCommand(query, conn))

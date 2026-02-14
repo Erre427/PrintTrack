@@ -86,5 +86,39 @@ namespace PrintTrack.Forms.F_Inventario
                 dgvMateriaPrima.DataSource = resultado;
             }
         }
+
+        private void dgvMateriaPrima_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            // 1. Validamos que el Grid tenga filas y columnas
+            if (dgvMateriaPrima.Columns["Stock"] == null || dgvMateriaPrima.Columns["StockMinimo"] == null) return;
+
+            // 2. Obtenemos la fila actual que se está pintando
+            var fila = dgvMateriaPrima.Rows[e.RowIndex];
+
+            // 3. Obtenemos los valores (Usamos decimal para ser precisos)
+            // El 'Try-Catch' o validación de nulos es vital aquí para que no truene
+            if (fila.Cells["Stock"].Value != null && fila.Cells["StockMinimo"].Value != null)
+            {
+                decimal stockActual = Convert.ToDecimal(fila.Cells["Stock"].Value);
+                decimal stockMinimo = Convert.ToDecimal(fila.Cells["StockMinimo"].Value);
+
+                // 4. LA CONDICIÓN: ¿Estamos en aprietos?
+                if (stockActual <= stockMinimo)
+                {
+                    // CASO CRÍTICO: Stock en 0 o negativo -> ROJO FUERTE
+                    if (stockActual <= 0)
+                    {
+                        fila.DefaultCellStyle.BackColor = Color.FromArgb(255, 192, 192); // Rojo suave
+                        fila.DefaultCellStyle.ForeColor = Color.DarkRed; // Letras oscuras
+                    }
+                    // CASO ADVERTENCIA: Menor al mínimo pero mayor a 0 -> AMARILLO
+                    else
+                    {
+                        fila.DefaultCellStyle.BackColor = Color.LightYellow;
+                        fila.DefaultCellStyle.ForeColor = Color.DarkGoldenrod;
+                    }
+                }
+            }
+        }
     }
 }

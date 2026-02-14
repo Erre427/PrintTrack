@@ -171,6 +171,7 @@
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=9.4.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.9.4.0\lib\net462\MySql.Data.dll</HintPath>
     </Reference>
@@ -303,6 +304,12 @@
     <Compile Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.Designer.cs">
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Inventario\Categorias_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Inventario\Categorias_Frm.Designer.cs">
+      <DependentUpon>Categorias_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Inventario\Entrada_MateriaPrima_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +439,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.resx">
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Inventario\Categorias_Frm.resx">
+      <DependentUpon>Categorias_Frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Entrada_MateriaPrima_Frm.resx">
       <DependentUpon>Entrada_MateriaPrima_Frm.cs</DependentUpon>
@@ -645,6 +655,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\almacenar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categoria.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

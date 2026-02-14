@@ -49,7 +49,8 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void CargarCategorias()
         {
-            var Categorias = repoCategorias.GetCategorias();
+            bool mostrarID0 = false;
+            var Categorias = repoCategorias.GetCategorias(mostrarID0);
             cmbCategorias.DataSource = Categorias;
 
             cmbCategorias.DisplayMember = "NombreCategoria";
@@ -239,6 +240,8 @@ namespace PrintTrack.Forms.F_Inventario
                 }
 
                 MessageBox.Show("Producto registrado exitosamente.");
+                this.Close();
+                this.Dispose();
                 
             }
             catch (Exception ex)

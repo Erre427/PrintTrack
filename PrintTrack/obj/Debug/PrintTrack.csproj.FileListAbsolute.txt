@@ -710,3 +710,4 @@ C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintT
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.exe
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.pdb
 C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.nuevoProducto.resources
+C:\Users\Marcos Daniel\Documents\Proyectos\PrintTrack Punto de Venta 2026\PrintTrack\PrintTrack\obj\Debug\PrintTrack.Forms.F_Inventario.Categorias_Frm.resources

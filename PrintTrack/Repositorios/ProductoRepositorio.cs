@@ -17,7 +17,7 @@ namespace PrintTrack.Repositorios
 
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT a.idProducto, a.Nombre, a.PrecioVenta, a.StockActual,a.Estado, b.NombreCategoria, a.SKU, b.idCategoria " +
+                string query = "SELECT a.idProducto, a.Nombre, a.PrecioVenta, IFNULL(a.StockActual,0) AS StockActual,a.Estado, b.NombreCategoria, a.SKU, b.idCategoria " +
                     "FROM productos a INNER JOIN categoriaproductos b ON a.idCategoria = b.idCategoria;";
 
                 conn.Open();

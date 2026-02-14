@@ -139,38 +139,64 @@ namespace PrintTrack.Forms.F_Inventario
 
         private void NuevoMaterial()
         {
-            if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(cmbUnidad.Text) 
-                || String.IsNullOrEmpty(numStockMinimo.Text))
+            try
             {
-                throw new Exception("Todos los campos deben de ser llenados para registrar un material!");
-            }
-
-            MateriaPrima nuevoMaterial = new MateriaPrima
-            {
-                Nombre = txtNombre.Text,
-                Unidad = cmbUnidad.Text,
-                StockMinimo = numStockMinimo.Value,
-                Proveedor = new Proveedores
+                if (String.IsNullOrEmpty(txtNombre.Text) || String.IsNullOrEmpty(cmbUnidad.Text)
+                                || String.IsNullOrEmpty(numStockMinimo.Text))
                 {
-                    idProveedor = Convert.ToInt32(dropProveedores.SelectedValue)
+                    throw new Exception("Todos los campos deben de ser llenados para registrar un material!");
                 }
-            };
 
-            int idNuevo = repo.RegistrarNuevo(nuevoMaterial);
-
-           
-
-            if (idNuevo > 0)
-            {
                 if (checkEntrada.Checked)
                 {
-                    decimal cantidadEntrada = numCantidad.Value;
-                    decimal precioEntrada = numCosto.Value;
-                    string referencia = txtRecibo.Text;
+                    if (numCantidad.Value <= 0)
+                    {
+                        throw new Exception("No se permiten valores en cero o negativos en cantidad");
+                    }
 
-                    bool exitoEntrada = repo.EntradaMateriaPrima(idNuevo, cantidadEntrada, precioEntrada, referencia);
+                    if (numCosto.Value < 0)
+                    {
+                        throw new Exception("El costo no puede ser negativo");
+                    }
 
-                    if (exitoEntrada)
+                }
+
+                MateriaPrima nuevoMaterial = new MateriaPrima
+                {
+                    Nombre = txtNombre.Text,
+                    Unidad = cmbUnidad.Text,
+                    StockMinimo = numStockMinimo.Value,
+                    Proveedor = new Proveedores
+                    {
+                        idProveedor = Convert.ToInt32(dropProveedores.SelectedValue)
+                    }
+                };
+
+                int idNuevo = repo.RegistrarNuevo(nuevoMaterial);
+
+                if (idNuevo > 0)
+                {
+                    if (checkEntrada.Checked)
+                    {
+                        decimal cantidadEntrada = numCantidad.Value;
+                        decimal precioEntrada = numCosto.Value;
+                        string referencia = txtRecibo.Text;
+
+                        if (cantidadEntrada <= 0)
+                        {
+                            throw new Exception("No se permiten valores negativos o en cero");
+                        }
+
+                        bool exitoEntrada = repo.EntradaMateriaPrima(idNuevo, cantidadEntrada, precioEntrada, referencia);
+
+                        if (exitoEntrada)
+                        {
+                            MessageBox.Show("Material registrado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            this.Close();
+                            this.Dispose();
+                        }
+                    }
+                    else
                     {
                         MessageBox.Show("Material registrado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
@@ -179,15 +205,14 @@ namespace PrintTrack.Forms.F_Inventario
                 }
                 else
                 {
-                    MessageBox.Show("Material registrado exitosamente!", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                    this.Dispose();
+                    throw new Exception("Ocurrio un error");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                throw new Exception("Ocurrio un error");
+                MessageBox.Show(ex.Message);
             }
+            
 
         }
 
