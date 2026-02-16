@@ -15,7 +15,6 @@ namespace PrintTrack.Entidades
         public DateTime? FechaInicio { get; set; }
         public DateTime? FechaFin { get; set; }
         public decimal TotalHoras { get; set; }
-        
 
     }
 }

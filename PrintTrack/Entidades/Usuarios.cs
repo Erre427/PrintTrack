@@ -23,7 +23,10 @@ namespace PrintTrack.Entidades
 
         public byte[] Foto { get; set; }
 
-
+        public override string ToString()
+        {
+            return NombreCompleto;
+        }
 
     }
 }

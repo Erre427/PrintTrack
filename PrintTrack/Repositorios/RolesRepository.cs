@@ -19,7 +19,7 @@ namespace PrintTrack.Repositorios
             {
                 conn.Open();
                 // Query SQL ignorando el rol 0 (Propietario o dueño)
-                string query = "SELECT idRoles, Tipo FROM Roles WHERE idRoles != 0";
+                string query = "SELECT idRoles, Tipo FROM roles WHERE idRoles != 0";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {

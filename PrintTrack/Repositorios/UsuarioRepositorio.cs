@@ -26,8 +26,8 @@ namespace PrintTrack.Repositorios
             {
                 string query = "SELECT u.idUsuarios,u.NombreCompleto,u.NombreAlias,u.Clave,u.Telefono,u.Email,u.Foto," +
                     "r.idRoles,r.Tipo,u.UltimoLogin,u.Estado " +
-                    "FROM Usuarios u " +
-                    "INNER JOIN Roles r ON u.Roles = r.idRoles " +
+                    "FROM usuarios u " +
+                    "INNER JOIN roles r ON u.Roles = r.idRoles " +
                     "WHERE NombreAlias = @Alias AND Estado = 1";
                 MySqlCommand cmd = new MySqlCommand(query, conexion);
                 cmd.Parameters.AddWithValue("@Alias", alias);
@@ -64,10 +64,11 @@ namespace PrintTrack.Repositorios
                                 };
                                 reader.Close();
 
-                                string updateDateQuery = "UPDATE usuarios SET UltimoLogin = NOW() WHERE idUsuarios = @id";
+                                string updateDateQuery = "UPDATE usuarios SET UltimoLogin = @hora WHERE idUsuarios = @id";
                                 using (MySqlCommand updateDateCmd = new MySqlCommand(updateDateQuery, conexion))
                                 {
                                     updateDateCmd.Parameters.AddWithValue("@id", usuarios.idUsuarios);
+                                    updateDateCmd.Parameters.AddWithValue("@hora", DateTime.Now);
                                     updateDateCmd.ExecuteNonQuery();
                                 }
                                 return usuarios;
@@ -97,8 +98,8 @@ namespace PrintTrack.Repositorios
                 conn.Open();
                 string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias,u.Telefono,u.Foto,u.Email," +
                     "r.idRoles, r.Tipo,u.UltimoLogin,u.Estado " +
-                    "FROM Usuarios u " +
-                    "INNER JOIN Roles r ON u.Roles = r.idRoles " +
+                    "FROM usuarios u " +
+                    "INNER JOIN roles r ON u.Roles = r.idRoles " +
                     "WHERE Estado = 1 AND idRoles != 0";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -139,8 +140,8 @@ namespace PrintTrack.Repositorios
                 conn.Open();
                 string query = "SELECT u.idUsuarios, u.NombreCompleto, u.NombreAlias, u.Telefono,u.Foto,u.Email," +
                     "r.idRoles, r.Tipo,u.UltimoLogin,u.Estado " +
-                    "FROM Usuarios u " +
-                    "INNER JOIN Roles r ON u.Roles = r.idRoles " +
+                    "FROM usuarios u " +
+                    "INNER JOIN roles r ON u.Roles = r.idRoles " +
                     "WHERE Estado = 0 AND idRoles != 0";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -178,7 +179,7 @@ namespace PrintTrack.Repositorios
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE USUARIOS SET ESTADO = 0 WHERE (idUsuarios = @id)";
+                string query = "UPDATE usuarios SET ESTADO = 0 WHERE (idUsuarios = @id)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -198,7 +199,7 @@ namespace PrintTrack.Repositorios
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE USUARIOS SET ESTADO = 1 WHERE (idUsuarios = @id)";
+                string query = "UPDATE usuarios SET ESTADO = 1 WHERE (idUsuarios = @id)";
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", idUsuario);
@@ -217,7 +218,7 @@ namespace PrintTrack.Repositorios
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "UPDATE USUARIOS SET NombreCompleto = @nombre, " +
+                string query = "UPDATE usuarios SET NombreCompleto = @nombre, " +
                     "NombreAlias = @Alias, Roles = @rol, Telefono = @telefono, Foto = @foto, Email = @email " +
                     "WHERE (idUsuarios = @id)";
 
@@ -252,7 +253,7 @@ namespace PrintTrack.Repositorios
                 // Hasheo a la contraseña
                 string hash = BCrypt.Net.BCrypt.HashPassword(NuevoEmpleado.Clave);
 
-                string query = "INSERT INTO USUARIOS (NombreCompleto,NombreAlias,Clave,Roles,Telefono,Foto,Email) VALUES (@nombre,@alias,@clave,@rol,@telefono,@foto,@email)";
+                string query = "INSERT INTO usuarios (NombreCompleto,NombreAlias,Clave,Roles,Telefono,Foto,Email) VALUES (@nombre,@alias,@clave,@rol,@telefono,@foto,@email)";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
@@ -285,7 +286,7 @@ namespace PrintTrack.Repositorios
                 string hash = BCrypt.Net.BCrypt.HashPassword(nuevaClave);
 
                 // Query SQL
-                string query = "UPDATE USUARIOS SET Clave = @clave WHERE (idUsuarios = @id)";
+                string query = "UPDATE usuarios SET Clave = @clave WHERE (idUsuarios = @id)";
 
                 using(var cmd = new MySqlCommand(query, conn))
                 {
@@ -308,7 +309,7 @@ namespace PrintTrack.Repositorios
             using (var conn = ConexionDB.ObtenerConexion())
             {
                 // Query SQL
-                string query = "UPDATE USUARIOS SET NombreAlias = @nuevo WHERE (idUsuarios = @id)";
+                string query = "UPDATE usuarios SET NombreAlias = @nuevo WHERE (idUsuarios = @id)";
 
                 using(var cmd = new MySqlCommand(query, conn))
                 {
@@ -333,8 +334,8 @@ namespace PrintTrack.Repositorios
                                 u.Telefono,u.Email,u.Foto,
                                 r.idRoles,r.Tipo,
                                 u.UltimoLogin,u.Estado
-                         FROM Usuarios u
-                         INNER JOIN Roles r ON u.Roles = r.idRoles
+                         FROM usuarios u
+                         INNER JOIN roles r ON u.Roles = r.idRoles
                          WHERE u.idUsuarios = @id";
 
                 MySqlCommand cmd = new MySqlCommand(query, conexion);
@@ -376,7 +377,7 @@ namespace PrintTrack.Repositorios
         {
             using (var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT COUNT(*) FROM USUARIOS WHERE NombreAlias = @usuario";
+                string query = "SELECT COUNT(*) FROM usuarios WHERE NombreAlias = @usuario";
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {

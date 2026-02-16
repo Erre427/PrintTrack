@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using PrintTrack.Entidades;
+using PrintTrack.Forms.F_Configuracion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,20 +18,20 @@ namespace PrintTrack.Repositorios
             var lista = new List<registroTurnos>();
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "SELECT r.idRegistro, u.idUsuarios, u.NombreCompleto, " +
-                    "r.Estado, r.FechaInicio, r.FechaFin, r.TotalHoras " +
-                    "FROM registroturnos r INNER JOIN usuarios u ON r.idUsuarios = u.idUsuarios";
+                string query = "SELECT r.idRegistro, u.idUsuarios, u.NombreCompleto, r.Estado, r.FechaInicio, r.FechaFin, r.TotalHoras " +
+                    "FROM usuarios u INNER JOIN registroturnos r ON r.idUsuarios = u.idUsuarios";
+
+                conn.Open();
 
                 using (var cmd = new MySqlCommand(query, conn))
                 {
                     using (var reader = cmd.ExecuteReader())
                     {
-                        conn.Open();
                         while (reader.Read())
                         {
                             lista.Add(new registroTurnos()
                             {
-                                idRegistro = Convert.ToInt32("idRegistro"),
+                                idRegistro = Convert.ToInt32(reader["idRegistro"]),
                                 Usuario = new Usuarios
                                 {
                                     idUsuarios = Convert.ToInt32(reader["idUsuarios"]),
@@ -39,7 +40,7 @@ namespace PrintTrack.Repositorios
                                 Estado = Convert.ToInt32(reader["Estado"]),
                                 FechaInicio = reader["FechaInicio"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(reader["FechaInicio"]),
                                 FechaFin = reader["FechaFin"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(reader["FechaFin"]),
-                                TotalHoras = Convert.ToDecimal("TotalHoras")
+                                TotalHoras = reader["TotalHoras"] == DBNull.Value ? 0 : Convert.ToDecimal(reader["TotalHoras"])
                             });
                         }
                         conn.Close();
@@ -53,12 +54,13 @@ namespace PrintTrack.Repositorios
         {
             using(var conn = ConexionDB.ObtenerConexion())
             {
-                string query = "INSERT INTO registroturnos (idUsuarios, Estado, FechaInicio) VALUES (@id, @estado, NOW())";
+                string query = "INSERT INTO registroturnos (idUsuarios, Estado, FechaInicio) VALUES (@id, @estado, @hora)";
 
                 using(var cmd = new MySqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", idUsuario);
                     cmd.Parameters.AddWithValue("@estado", estado);
+                    cmd.Parameters.AddWithValue("@hora", DateTime.Now);
 
                     conn.Open();
                     int filasAfectadas = cmd.ExecuteNonQuery();

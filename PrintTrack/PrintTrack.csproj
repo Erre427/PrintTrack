@@ -305,30 +305,6 @@
     <Compile Include="Forms\F_Configuracion\RegistroTurnos.Designer.cs">
       <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\EntradasProductos_Frm.Designer.cs">
-      <DependentUpon>EntradasProductos_Frm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\Inventario_Frm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\Inventario_Frm.Designer.cs">
-      <DependentUpon>Inventario_Frm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\MonitoreoInventario_Frm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\MonitoreoInventario_Frm.Designer.cs">
-      <DependentUpon>MonitoreoInventario_Frm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\DetallesProducto_Frm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\F_Inventario\DetallesProducto_Frm.Designer.cs">
-      <DependentUpon>DetallesProducto_Frm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\F_Perfil\NuevoNombre_Frm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -373,7 +349,7 @@
     <Compile Include="Repositorios\ProtocoloEmail.cs" />
     <Compile Include="Repositorios\RegistroTurnosRepositorio.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
-    <Compile Include="Repositorios\Sesion.cs" />
+    <Compile Include="Entidades\Sesion.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Repositorios\Verificador.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />
@@ -413,14 +389,8 @@
     <EmbeddedResource Include="Forms\F_Configuracion\F_Empleados\EmpleadosEnviarCorreos_Frm.resx">
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
-      <DependentUpon>Inventario_Frm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_Inventario\DetallesProducto_Frm.resx">
-      <DependentUpon>DetallesProducto_Frm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_Inventario\MonitoreoInventario_Frm.resx">
-      <DependentUpon>MonitoreoInventario_Frm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_Configuracion\RegistroTurnos.resx">
+      <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Perfil\NuevoNombre_Frm.resx">
       <DependentUpon>NuevoNombre_Frm.cs</DependentUpon>
@@ -582,12 +552,17 @@
   <ItemGroup>
     <None Include="Resources\person.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ausencia.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\correo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\correo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ausencia %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -41,7 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuShadowPanel2 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.bunifuTileButton3 = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnAsistencias = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuLabel6 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel4 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
@@ -251,7 +251,7 @@
             this.bunifuShadowPanel2.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuShadowPanel2.BorderRadius = 10;
             this.bunifuShadowPanel2.BorderThickness = 1;
-            this.bunifuShadowPanel2.Controls.Add(this.bunifuTileButton3);
+            this.bunifuShadowPanel2.Controls.Add(this.btnAsistencias);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel6);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel4);
             this.bunifuShadowPanel2.Controls.Add(this.bunifuLabel2);
@@ -275,24 +275,25 @@
             this.bunifuShadowPanel2.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.bunifuShadowPanel2.TabIndex = 4;
             // 
-            // bunifuTileButton3
+            // btnAsistencias
             // 
-            this.bunifuTileButton3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuTileButton3.color = System.Drawing.Color.RoyalBlue;
-            this.bunifuTileButton3.colorActive = System.Drawing.Color.MidnightBlue;
-            this.bunifuTileButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTileButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.bunifuTileButton3.ForeColor = System.Drawing.Color.White;
-            this.bunifuTileButton3.Image = global::PrintTrack.Properties.Resources.usuario;
-            this.bunifuTileButton3.ImagePosition = 24;
-            this.bunifuTileButton3.ImageZoom = 46;
-            this.bunifuTileButton3.LabelPosition = 38;
-            this.bunifuTileButton3.LabelText = "Archivo de Clientes";
-            this.bunifuTileButton3.Location = new System.Drawing.Point(545, 354);
-            this.bunifuTileButton3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bunifuTileButton3.Name = "bunifuTileButton3";
-            this.bunifuTileButton3.Size = new System.Drawing.Size(196, 163);
-            this.bunifuTileButton3.TabIndex = 14;
+            this.btnAsistencias.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnAsistencias.color = System.Drawing.Color.RoyalBlue;
+            this.btnAsistencias.colorActive = System.Drawing.Color.MidnightBlue;
+            this.btnAsistencias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAsistencias.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAsistencias.ForeColor = System.Drawing.Color.White;
+            this.btnAsistencias.Image = global::PrintTrack.Properties.Resources.ausencia;
+            this.btnAsistencias.ImagePosition = 24;
+            this.btnAsistencias.ImageZoom = 46;
+            this.btnAsistencias.LabelPosition = 38;
+            this.btnAsistencias.LabelText = "Control de asistencias";
+            this.btnAsistencias.Location = new System.Drawing.Point(545, 354);
+            this.btnAsistencias.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAsistencias.Name = "btnAsistencias";
+            this.btnAsistencias.Size = new System.Drawing.Size(196, 163);
+            this.btnAsistencias.TabIndex = 14;
+            this.btnAsistencias.Click += new System.EventHandler(this.btnAsistencias_Click);
             // 
             // bunifuLabel6
             // 
@@ -442,7 +443,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Configuracion_Frm";
             this.Text = "Configuracion_Frm";
-    //        this.Load += new System.EventHandler(this.Configuracion_Frm_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
@@ -471,7 +471,7 @@
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel4;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel6;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
-        private Bunifu.Framework.UI.BunifuTileButton bunifuTileButton3;
+        private Bunifu.Framework.UI.BunifuTileButton btnAsistencias;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDashBoard;
     }
 }
