@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -230,6 +230,8 @@
     <Compile Include="Entidades\Productos.cs" />
     <Compile Include="Entidades\Proveedores.cs" />
     <Compile Include="Entidades\Receta.cs" />
+    <Compile Include="Entidades\Enums\TipoTurnos.cs" />
+    <Compile Include="Entidades\registroTurnos.cs" />
     <Compile Include="Entidades\Roles.cs" />
     <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Forms\AdminLogin.cs">
@@ -305,10 +307,13 @@
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\F_Inventario\Categorias_Frm.cs">
+    <Compile Include="Forms\F_Configuracion\RegistroTurnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\F_Inventario\Categorias_Frm.Designer.cs">
       <DependentUpon>Categorias_Frm.cs</DependentUpon>
+    <Compile Include="Forms\F_Configuracion\RegistroTurnos.Designer.cs">
+      <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\F_Inventario\Entrada_MateriaPrima_Frm.cs">
       <SubType>Form</SubType>
@@ -399,7 +404,9 @@
     <Compile Include="Repositorios\ProtocoloEmail.cs" />
     <Compile Include="Repositorios\ProveedorRepositorio.cs" />
     <Compile Include="Repositorios\RecetaRepository.cs" />
+    <Compile Include="Repositorios\RegistroTurnosRepositorio.cs" />
     <Compile Include="Repositorios\RolesRepository.cs" />
+    <Compile Include="Entidades\Sesion.cs" />
     <Compile Include="Repositorios\UsuarioRepositorio.cs" />
     <Compile Include="Repositorios\Verificador.cs" />
     <Compile Include="Repositorios\VerificarUsuario.cs" />
@@ -448,6 +455,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
       <DependentUpon>Inventario_Frm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_Configuracion\RegistroTurnos.resx">
+      <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\MateriaPrima_Frm.resx">
       <DependentUpon>MateriaPrima_Frm.cs</DependentUpon>
@@ -630,6 +639,9 @@
     <None Include="Resources\intercambio.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\ausencia.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\correo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -658,6 +670,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\categoria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ausencia %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

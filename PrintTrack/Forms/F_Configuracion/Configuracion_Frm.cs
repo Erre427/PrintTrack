@@ -24,5 +24,10 @@ namespace PrintTrack.Forms.F_Configuracion
         {
             menu.AbrirFormularioEnPanel(new EmpleadosFrm());
         }
+
+        private void btnAsistencias_Click(object sender, EventArgs e)
+        {
+            menu.AbrirFormularioEnPanel(new RegistroTurnos());
+        }
     }
 }

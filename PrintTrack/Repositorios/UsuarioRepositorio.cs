@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using Mysqlx.Crud;
 using PrintTrack.Entidades;
 using System;
@@ -64,10 +64,11 @@ namespace PrintTrack.Repositorios
                                 };
                                 reader.Close();
 
-                                string updateDateQuery = "UPDATE usuarios SET UltimoLogin = NOW() WHERE idUsuarios = @id";
+                                string updateDateQuery = "UPDATE usuarios SET UltimoLogin = @hora WHERE idUsuarios = @id";
                                 using (MySqlCommand updateDateCmd = new MySqlCommand(updateDateQuery, conexion))
                                 {
                                     updateDateCmd.Parameters.AddWithValue("@id", usuarios.idUsuarios);
+                                    updateDateCmd.Parameters.AddWithValue("@hora", DateTime.Now);
                                     updateDateCmd.ExecuteNonQuery();
                                 }
                                 return usuarios;
