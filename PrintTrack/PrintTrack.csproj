@@ -307,11 +307,14 @@
       <DependentUpon>EmpleadosEnviarCorreos_Frm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\F_Inventario\Categorias_Frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\F_Configuracion\RegistroTurnos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\F_Inventario\Categorias_Frm.Designer.cs">
       <DependentUpon>Categorias_Frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Configuracion\RegistroTurnos.Designer.cs">
       <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </Compile>
@@ -455,6 +458,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Inventario\Inventario_Frm.resx">
       <DependentUpon>Inventario_Frm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Configuracion\RegistroTurnos.resx">
       <DependentUpon>RegistroTurnos.cs</DependentUpon>
     </EmbeddedResource>
