@@ -246,6 +246,12 @@
     <Compile Include="Forms\DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\F_Caja\CajaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_Caja\CajaFrm.Designer.cs">
+      <DependentUpon>CajaFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_Clientes\ClientesFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,6 +425,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_Caja\CajaFrm.resx">
+      <DependentUpon>CajaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_Clientes\ClientesFrm.resx">
       <DependentUpon>ClientesFrm.cs</DependentUpon>
@@ -677,6 +686,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ausencia %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67c93c6b27d32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\666b4a81f10fc7.32057293-original.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91ea92a85287ec4d058ef98a63a75373.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

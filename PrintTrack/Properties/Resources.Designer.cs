@@ -73,6 +73,36 @@ namespace PrintTrack.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _666b4a81f10fc7_32057293_original {
+            get {
+                object obj = ResourceManager.GetObject("666b4a81f10fc7.32057293-original", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _67c93c6b27d32 {
+            get {
+                object obj = ResourceManager.GetObject("67c93c6b27d32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _91ea92a85287ec4d058ef98a63a75373 {
+            get {
+                object obj = ResourceManager.GetObject("91ea92a85287ec4d058ef98a63a75373", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap almacenar {
             get {
                 object obj = ResourceManager.GetObject("almacenar", resourceCulture);
