@@ -143,6 +143,16 @@ namespace PrintTrack.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anadir_grupo {
+            get {
+                object obj = ResourceManager.GetObject("anadir-grupo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap archivo {
             get {
                 object obj = ResourceManager.GetObject("archivo", resourceCulture);
@@ -223,6 +233,16 @@ namespace PrintTrack.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap buscar {
+            get {
+                object obj = ResourceManager.GetObject("buscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camara_fotografica {
             get {
                 object obj = ResourceManager.GetObject("camara-fotografica", resourceCulture);
@@ -266,6 +286,16 @@ namespace PrintTrack.Properties {
         internal static System.Drawing.Bitmap correo__1_ {
             get {
                 object obj = ResourceManager.GetObject("correo (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editar_texto {
+            get {
+                object obj = ResourceManager.GetObject("editar-texto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -556,6 +586,16 @@ namespace PrintTrack.Properties {
         internal static System.Drawing.Bitmap SplashScreen_PrintTrack {
             get {
                 object obj = ResourceManager.GetObject("SplashScreen_PrintTrack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap United_States_one_dollar_bill__obverse {
+            get {
+                object obj = ResourceManager.GetObject("United_States_one_dollar_bill,_obverse", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

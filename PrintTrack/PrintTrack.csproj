@@ -696,5 +696,17 @@
   <ItemGroup>
     <None Include="Resources\91ea92a85287ec4d058ef98a63a75373.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anadir-grupo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar-texto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\United_States_one_dollar_bill,_obverse.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

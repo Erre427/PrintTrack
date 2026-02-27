@@ -14,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PrintTrack.Forms.F_Caja;
 
 namespace PrintTrack.Forms
 {
@@ -122,6 +123,14 @@ namespace PrintTrack.Forms
         private void btnProductos_Click(object sender, EventArgs e)
         {
             AbrirFormularioEnPanel(new Inventario_Frm(this));
+        }
+
+        private void btnCaja_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CajaFrm frm = new CajaFrm();
+            frm.ShowDialog();
+            this.Show();
         }
     }
 }

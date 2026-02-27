@@ -471,7 +471,6 @@
             this.idProducto.Name = "idProducto";
             this.idProducto.ReadOnly = true;
             this.idProducto.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.idProducto.Visible = false;
             // 
             // Nombre
             // 

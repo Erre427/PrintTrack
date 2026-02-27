@@ -29,6 +29,7 @@ namespace PrintTrack.Repositorios
                         {
                             list.Add(new Productos
                             {
+                                idProducto = reader.GetInt32("idProducto"),
                                 Nombre = reader.GetString("Nombre"),
                                 PrecioVenta = reader.GetDecimal("PrecioVenta"),
                                 StockActual = reader.GetDecimal("StockActual"),

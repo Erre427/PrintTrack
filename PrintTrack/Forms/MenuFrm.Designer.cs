@@ -618,6 +618,7 @@
             this.btnCaja.TextMarginLeft = 0;
             this.btnCaja.TextPadding = new System.Windows.Forms.Padding(55, -1, 0, 0);
             this.btnCaja.UseDefaultRadiusAndThickness = true;
+            this.btnCaja.Click += new System.EventHandler(this.btnCaja_Click);
             // 
             // pictureBox1
             // 
